@@ -1,0 +1,1303 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Health Screening at Beijing Friendship Hospital · IMD — Coordinated by YuanU | YuanU Medical Concierge</title>
+<meta name="description" content="Five-tier health screening packages (A–E) at Beijing Friendship Hospital's International Medical Department, in three versions: male, female-unmarried, female-married. Coordinated end-to-end by YuanU — bilingual, non-clinical, transparent hospital fee plus 15%–25% coordination fee shown as two separate line items.">
+<meta property="og:title" content="Health Screening at Beijing Friendship Hospital · IMD — Coordinated by YuanU">
+<meta property="og:description" content="Five-tier health screening packages at BFH·IMD, coordinated end-to-end by YuanU. Hospital fee and YuanU coordination fee (15%–25%) shown as two separate line items.">
+<meta property="og:type" content="website">
+
+<!-- Google Fonts: serif headings + sans body + mono numbers -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600&family=Lobster&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   YuanU Medical Concierge — v5 Design System
+   (Identical core to v5/index.html; see that file for source of truth)
+   ============================================================ */
+:root {
+  --teal-900: #0F2733;
+  --teal-700: #16384A;
+  --teal-500: #2E5A6E;
+  --teal-100: #DCE6EA;
+  --gold-600: #9F7E4F;
+  --gold-500: #B89668;
+  --gold-200: #E8DCC4;
+  --ivory:    #FAF7F2;
+  --ivory-2:  #F3EEE3;
+  --rule:     #E0DAD0;
+  --rule-2:   #CFC7B7;
+  --ink:      #1B1F23;
+  --ink-2:    #3D4350;
+  --muted:    #6B7280;
+  --container: 1240px;
+  --gutter: 24px;
+  --section-y: 110px;
+  --section-y-tight: 80px;
+  --serif-en: "Cormorant Garamond", "Noto Serif SC", Georgia, serif;
+  --serif-zh: "Noto Serif SC", "Cormorant Garamond", serif;
+  --sans-en: "Inter", "Noto Sans SC", -apple-system, BlinkMacSystemFont, sans-serif;
+  --script:  "Lobster", "Cormorant Garamond", cursive;
+  --sans-zh: "Noto Sans SC", "Inter", -apple-system, sans-serif;
+  --mono:    "JetBrains Mono", ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--sans-en);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--ink);
+  background: var(--ivory);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body[data-lang="zh"] { font-family: var(--sans-zh); }
+body[data-lang="en"] .lang-zh,
+body[data-lang="zh"] .lang-en { display: none; }
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+.container { max-width: var(--container); margin: 0 auto; padding: 0 var(--gutter); }
+
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 12px;
+  font-family: var(--sans-en);
+  font-size: 11px; font-weight: 500; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--gold-600); margin-bottom: 22px;
+}
+body[data-lang="zh"] .eyebrow { font-family: var(--sans-zh); letter-spacing: 0.18em; }
+.eyebrow::before { content: ""; width: 28px; height: 1px; background: var(--gold-500); }
+
+h1, h2, h3, h4 {
+  font-family: var(--serif-en);
+  color: var(--teal-900);
+  font-weight: 500;
+  letter-spacing: -0.005em;
+}
+body[data-lang="zh"] h1, body[data-lang="zh"] h2, body[data-lang="zh"] h3, body[data-lang="zh"] h4
+  { font-family: var(--serif-zh); font-weight: 600; letter-spacing: 0.01em; }
+h1 { font-size: clamp(40px, 5vw, 60px); line-height: 1.12; }
+h2 { font-size: clamp(30px, 3.4vw, 42px); line-height: 1.2; margin-bottom: 24px; }
+h3 { font-size: 22px; line-height: 1.35; margin-bottom: 12px; }
+h4 { font-size: 17px; line-height: 1.4; }
+p { margin-bottom: 14px; }
+p.lede { font-size: 19px; line-height: 1.7; color: var(--ink-2); max-width: 780px; }
+.mono { font-family: var(--mono); font-size: 0.92em; letter-spacing: 0.02em; }
+
+ul, ol { padding-left: 22px; color: var(--ink-2); }
+ul li, ol li { margin-bottom: 8px; line-height: 1.7; }
+ul li strong, ol li strong { color: var(--teal-900); font-weight: 600; }
+
+/* ====== top bar ====== */
+.topbar { border-bottom: 1px solid var(--rule); background: var(--ivory); position: sticky; top: 0; z-index: 100; backdrop-filter: blur(6px); }
+.topbar-inner { display: flex; align-items: center; justify-content: space-between; padding: 16px var(--gutter); max-width: var(--container); margin: 0 auto; gap: 24px; }
+.brand { display: flex; align-items: center; gap: 12px; font-family: var(--serif-en); font-weight: 600; font-size: 20px; color: var(--teal-900); letter-spacing: -0.005em; }
+.brand .mark { width: 36px; height: 36px; display: grid; place-items: center; border: 1px solid var(--teal-700); color: var(--teal-700); font-family: var(--serif-en); font-weight: 600; font-size: 17px; letter-spacing: -0.02em; }
+.brand .brand-line2 { display: block; font-family: var(--sans-en); font-size: 10px; letter-spacing: 0.18em; color: var(--gold-600); text-transform: uppercase; font-weight: 500; margin-top: 2px; }
+body[data-lang="zh"] .brand .brand-line2 { font-family: var(--sans-zh); letter-spacing: 0.12em; }
+.nav { display: flex; align-items: center; gap: 28px; }
+.nav a { font-family: var(--sans-en); font-size: 13.5px; font-weight: 500; color: var(--ink-2); position: relative; padding: 6px 0; transition: color 0.2s; }
+body[data-lang="zh"] .nav a { font-family: var(--sans-zh); font-size: 14px; }
+.nav a::after { content: ""; position: absolute; left: 0; bottom: 0; width: 0; height: 1px; background: var(--teal-700); transition: width 0.3s ease; }
+.nav a:hover { color: var(--teal-700); }
+.nav a:hover::after, .nav a.active::after { width: 100%; }
+.nav a.active { color: var(--teal-900); }
+.lang-toggle { display: flex; border: 1px solid var(--rule-2); font-family: var(--sans-en); font-size: 12px; font-weight: 500; overflow: hidden; }
+.lang-toggle button { background: transparent; border: 0; padding: 8px 14px; cursor: pointer; color: var(--muted); letter-spacing: 0.05em; transition: background 0.2s, color 0.2s; }
+.lang-toggle button.active { background: var(--teal-700); color: var(--ivory); }
+
+/* ====== hero (page-variant, no Brand Crest) ====== */
+.hero { padding: 100px 0 80px; border-bottom: 1px solid var(--rule); background: radial-gradient(ellipse at top right, rgba(184,150,104,0.06), transparent 50%), var(--ivory); }
+.hero-grid { display: grid; grid-template-columns: 1.55fr 1fr; gap: 80px; align-items: center; }
+.hero h1 { margin-bottom: 28px; color: var(--teal-900); }
+.hero .lede { margin-bottom: 36px; }
+.hero-cta { display: flex; gap: 18px; align-items: center; margin-top: 8px; flex-wrap: wrap; }
+.hero-meta { margin-top: 28px; font-family: var(--sans-en); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+body[data-lang="zh"] .hero-meta { font-family: var(--sans-zh); letter-spacing: 0.06em; text-transform: none; font-size: 13px; }
+
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px; font-family: var(--sans-en); font-size: 14px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; cursor: pointer; transition: all 0.25s ease; border: 1px solid var(--teal-700); }
+body[data-lang="zh"] .btn { font-family: var(--sans-zh); letter-spacing: 0.06em; text-transform: none; font-size: 14px; }
+.btn--primary { background: var(--teal-700); color: var(--ivory); }
+.btn--primary:hover { background: var(--teal-900); border-color: var(--teal-900); transform: translateY(-1px); }
+.btn--ghost { background: transparent; color: var(--teal-700); }
+.btn--ghost:hover { background: var(--teal-700); color: var(--ivory); }
+.btn .arrow { transition: transform 0.25s ease; }
+.btn:hover .arrow { transform: translateX(4px); }
+
+/* ====== section ====== */
+section.s { padding: var(--section-y) 0; border-bottom: 1px solid var(--rule); }
+section.s.alt { background: var(--ivory-2); }
+section.s.tight { padding: var(--section-y-tight) 0; }
+.section-head { max-width: 820px; margin-bottom: 56px; }
+
+/* ====== boundary block ====== */
+.boundary-block { padding: 32px 40px; border-left: 3px solid var(--gold-500); background: var(--ivory); margin: 28px 0; }
+section.s.alt .boundary-block { background: var(--ivory); }
+.boundary-block h4 { color: var(--teal-900); margin-bottom: 10px; font-size: 17px; }
+.boundary-block p, .boundary-block ul, .boundary-block ol { color: var(--ink-2); font-size: 15px; line-height: 1.75; margin-bottom: 10px; }
+.boundary-block p:last-child, .boundary-block ul:last-child, .boundary-block ol:last-child { margin-bottom: 0; }
+.boundary-block a { color: var(--teal-700); border-bottom: 1px solid var(--gold-500); }
+.boundary-block a:hover { background: var(--gold-200); }
+.boundary-block.warn { border-left-color: var(--teal-700); background: rgba(184,150,104,0.08); }
+section.s.alt .boundary-block.warn { background: rgba(184,150,104,0.10); }
+
+/* ====== entry-card (re-used from v5 home for SKU detail cards) ====== */
+.entry-card { background: var(--ivory); border: 1px solid var(--rule); padding: 30px 32px; transition: border-color 0.25s ease, box-shadow 0.25s ease; }
+section.s.alt .entry-card { background: var(--ivory); }
+.entry-card:hover { border-color: var(--gold-500); box-shadow: 0 6px 24px rgba(15,39,51,0.06); }
+.entry-card h3 { color: var(--teal-900); margin-bottom: 6px; font-size: 21px; }
+.entry-card .entry-sub { font-family: var(--sans-en); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-600); margin-bottom: 16px; }
+body[data-lang="zh"] .entry-card .entry-sub { font-family: var(--sans-zh); letter-spacing: 0.06em; text-transform: none; font-size: 13px; }
+
+/* ====== steps (6-step flow) ====== */
+.steps { display: grid; grid-template-columns: 1fr; gap: 0; counter-reset: step; margin-top: 24px; border-top: 1px solid var(--rule); }
+.step { display: grid; grid-template-columns: 80px 1fr; gap: 32px; padding: 28px 0; border-bottom: 1px solid var(--rule); align-items: start; }
+.step-num { font-family: var(--serif-en); color: var(--gold-500); font-size: 40px; line-height: 1; font-weight: 500; letter-spacing: -0.02em; }
+.step-body h4 { font-size: 18px; color: var(--teal-900); margin-bottom: 8px; }
+.step-body p { color: var(--ink-2); font-size: 15px; margin-bottom: 4px; }
+
+/* ====== footer ====== */
+footer { background: var(--teal-900); color: rgba(250,247,242,0.78); padding: 80px 0 36px; }
+footer .container { max-width: var(--container); }
+.footer-grid { display: grid; grid-template-columns: 2.2fr 1fr 1fr 1fr; gap: 56px; margin-bottom: 56px; }
+footer h4 { font-family: var(--serif-en); color: var(--ivory); font-size: 18px; font-weight: 500; margin-bottom: 16px; }
+body[data-lang="zh"] footer h4 { font-family: var(--serif-zh); font-weight: 600; }
+footer p { font-size: 13.5px; line-height: 1.7; margin-bottom: 10px; color: rgba(250,247,242,0.7); }
+footer .micro { font-size: 11.5px; color: rgba(250,247,242,0.5); margin-top: 10px; }
+footer ul { list-style: none; padding: 0; color: rgba(250,247,242,0.78); }
+footer ul li { margin-bottom: 10px; }
+footer ul li a { font-size: 13.5px; color: rgba(250,247,242,0.78); transition: color 0.2s; }
+footer ul li a:hover { color: var(--gold-500); }
+footer .footer-legal { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 28px; display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: rgba(250,247,242,0.5); flex-wrap: wrap; gap: 16px; }
+footer .footer-legal .license { font-family: var(--mono); }
+footer a.boundary-link { color: var(--gold-500); border-bottom: 1px dotted rgba(184,150,104,0.5); }
+footer a.boundary-link:hover { border-bottom-color: var(--gold-500); }
+
+/* ====== responsive ====== */
+@media (max-width: 1024px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+}
+@media (max-width: 720px) {
+  :root { --section-y: 70px; --section-y-tight: 50px; }
+  .nav { display: none; }
+  .topbar-inner { padding: 14px var(--gutter); }
+  .hero { padding: 60px 0 50px; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .step { grid-template-columns: 56px 1fr; gap: 18px; }
+  .step-num { font-size: 30px; }
+}
+
+/* ============================================================
+   PAGE-LOCAL EXTENSION: .tbl  (the only class added in v5)
+   墨青表头 + 金色强调行 + 米白底
+   ============================================================ */
+.tbl { width: 100%; border-collapse: collapse; margin: 24px 0; background: var(--ivory); border: 1px solid var(--rule); }
+.tbl thead th {
+  background: var(--teal-700); color: var(--ivory);
+  text-align: left; padding: 14px 18px;
+  font-family: var(--sans-en); font-weight: 500;
+  font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+  vertical-align: bottom; border-right: 1px solid rgba(255,255,255,0.10);
+}
+.tbl thead th:last-child { border-right: 0; }
+body[data-lang="zh"] .tbl thead th { font-family: var(--sans-zh); letter-spacing: 0.08em; font-weight: 600; font-size: 12.5px; text-transform: none; }
+.tbl tbody td {
+  padding: 14px 18px; font-size: 14px; color: var(--ink-2);
+  border-top: 1px solid var(--rule); vertical-align: top; line-height: 1.65;
+}
+.tbl tbody tr:nth-child(even) td { background: var(--ivory-2); }
+.tbl tbody td.col-key { font-weight: 600; color: var(--teal-900); }
+.tbl tbody td.col-price { font-family: var(--mono); color: var(--teal-900); font-size: 13.5px; letter-spacing: 0.01em; }
+.tbl tbody tr.row-emph td { background: rgba(184,150,104,0.10); }
+.tbl tbody tr.row-emph td.col-key { color: var(--teal-900); }
+.placeholder { background: rgba(184,150,104,0.16); color: var(--gold-600); padding: 1px 8px; border: 1px dashed var(--gold-500); font-size: 0.92em; }
+</style>
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="brand">
+      <span class="mark">Y</span>
+      <span>
+        <span class="lang-en">YuanU Medical Concierge</span>
+        <span class="lang-zh">远游 · 医疗协调</span>
+        <span class="brand-line2 lang-en">Beijing · Established 2006</span>
+        <span class="brand-line2 lang-zh">北京 · 始于 2006</span>
+      </span>
+    </a>
+    <nav class="nav">
+      <a href="index.html"><span class="lang-en">Home</span><span class="lang-zh">首页</span></a>
+      <a href="about.html"><span class="lang-en">About</span><span class="lang-zh">关于</span></a>
+      <a href="why-beijing.html"><span class="lang-en">Why Beijing</span><span class="lang-zh">为什么北京</span></a>
+      <a href="screening.html" class="active"><span class="lang-en">Health Screening</span><span class="lang-zh">健康体检</span></a>
+      <a href="endoscopy.html"><span class="lang-en">Endoscopy</span><span class="lang-zh">胃肠镜</span></a>
+      <a href="patient-support.html"><span class="lang-en">Patient Support</span><span class="lang-zh">患者支持</span></a>
+      <a href="faq.html"><span class="lang-en">FAQ</span><span class="lang-zh">问答</span></a>
+    </nav>
+    <div class="lang-toggle" role="group" aria-label="language switch">
+      <button data-set-lang="en" class="active">EN</button>
+      <button data-set-lang="zh">中文</button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">
+        <span class="lang-en">Specialty Page · Health Screening at BFH·IMD</span>
+        <span class="lang-zh">专题页 · BFH·IMD 健康体检</span>
+      </div>
+      <h1 class="lang-en">Health Screening at Beijing Friendship Hospital · International Medical Department</h1>
+      <h1 class="lang-zh">在北京友谊医院 · 国际医疗部完成的健康体检</h1>
+
+      <p class="lede lang-en">Five-tier packages (A through E), in three versions: male, female-unmarried and female-married. All packages are outpatient — typically completed within a single morning. Each item carries an explicit clinical-screening purpose, so you can see what every check is actually looking for before you choose a tier.</p>
+      <p class="lede lang-zh">5 档套餐（A–E），按男士 / 女士未婚 / 女士已婚分为三个版本；全部为门诊体检，通常一上午集中完成。每一项检查都标注其临床筛查目的，便于您在选择套餐时知道它在帮您看什么。</p>
+
+      <div class="hero-cta">
+        <a href="contact.html?intent=screening" class="btn btn--primary">
+          <span class="lang-en">Submit your checkup request</span>
+          <span class="lang-zh">提交体检申请</span>
+          <span class="arrow">→</span>
+        </a>
+        <a href="contact.html?intent=screening-discuss" class="btn btn--ghost">
+          <span class="lang-en">Talk with a coordinator about which package fits</span>
+          <span class="lang-zh">与协调员沟通适合的档位</span>
+        </a>
+      </div>
+
+      <div class="hero-meta">
+        <span class="lang-en">Beijing YuanU International Travel Co., Ltd. · License No. L-BJ-CJ00262 · Beijing, China</span>
+        <span class="lang-zh">北京远游国际旅行社有限责任公司 · 旅行社业务经营许可证 L-BJ-CJ00262 · 中国 · 北京</span>
+      </div>
+    </div>
+
+    <!-- hero side ornament: abstract health-monitor dashboard (gold lines) -->
+    <div aria-hidden="true" style="position: relative; aspect-ratio: 4/5; background: linear-gradient(180deg, var(--ivory-2) 0%, var(--ivory) 100%); border: 1px solid var(--rule); display: grid; place-items: center; overflow: hidden;">
+      <svg viewBox="0 0 200 250" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 86%; height: auto; opacity: 0.95;">
+        <!-- top label -->
+        <text x="100" y="22" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" font-weight="500" letter-spacing="3" fill="#9F7E4F">HEALTH PANEL</text>
+
+        <!-- outer monitor frame -->
+        <rect x="22" y="34" width="156" height="180" stroke="#B89668" stroke-width="0.6" fill="none" rx="2"/>
+
+        <!-- ECG waveform row -->
+        <g stroke="#B89668" stroke-width="0.7" fill="none" stroke-linejoin="round" stroke-linecap="round">
+          <line x1="30" y1="62" x2="170" y2="62" stroke-dasharray="1 2" stroke-width="0.3"/>
+          <path d="M 30 62 L 50 62 L 56 62 L 60 50 L 64 80 L 68 38 L 72 62 L 95 62 L 101 62 L 105 50 L 109 80 L 113 38 L 117 62 L 140 62 L 146 62 L 150 50 L 154 80 L 158 38 L 162 62 L 170 62"/>
+        </g>
+        <text x="30" y="52" font-family="Inter, sans-serif" font-size="4" font-weight="400" letter-spacing="1" fill="#9F7E4F">ECG · HR 72</text>
+
+        <!-- divider -->
+        <line x1="30" y1="92" x2="170" y2="92" stroke="#B89668" stroke-width="0.3" stroke-dasharray="1 2"/>
+
+        <!-- biochem trend line -->
+        <g stroke="#B89668" stroke-width="0.7" fill="none" stroke-linejoin="round" stroke-linecap="round">
+          <path d="M 30 124 L 50 118 L 70 122 L 90 110 L 110 116 L 130 108 L 150 114 L 170 105"/>
+          <circle cx="30" cy="124" r="1.2" fill="#B89668"/>
+          <circle cx="50" cy="118" r="1.2" fill="#B89668"/>
+          <circle cx="70" cy="122" r="1.2" fill="#B89668"/>
+          <circle cx="90" cy="110" r="1.2" fill="#B89668"/>
+          <circle cx="110" cy="116" r="1.2" fill="#B89668"/>
+          <circle cx="130" cy="108" r="1.2" fill="#B89668"/>
+          <circle cx="150" cy="114" r="1.2" fill="#B89668"/>
+          <circle cx="170" cy="105" r="1.2" fill="#B89668"/>
+        </g>
+        <text x="30" y="104" font-family="Inter, sans-serif" font-size="4" font-weight="400" letter-spacing="1" fill="#9F7E4F">BIOCHEM TREND</text>
+
+        <!-- divider -->
+        <line x1="30" y1="140" x2="170" y2="140" stroke="#B89668" stroke-width="0.3" stroke-dasharray="1 2"/>
+
+        <!-- imaging panel (4 thumbnails) -->
+        <text x="30" y="152" font-family="Inter, sans-serif" font-size="4" font-weight="400" letter-spacing="1" fill="#9F7E4F">IMAGING · 4 STUDIES</text>
+        <g stroke="#B89668" stroke-width="0.5" fill="none">
+          <rect x="30" y="156" width="30" height="22" rx="1"/>
+          <rect x="65" y="156" width="30" height="22" rx="1"/>
+          <rect x="100" y="156" width="30" height="22" rx="1"/>
+          <rect x="135" y="156" width="35" height="22" rx="1"/>
+          <!-- thumb decorations -->
+          <circle cx="45" cy="167" r="6"/>
+          <path d="M 70 168 Q 80 158 90 168 Q 82 178 70 168 Z"/>
+          <circle cx="115" cy="167" r="5"/>
+          <circle cx="115" cy="167" r="2"/>
+          <rect x="140" y="160" width="25" height="14"/>
+        </g>
+
+        <!-- bottom marker row -->
+        <g stroke="#B89668" stroke-width="0.5" fill="none">
+          <rect x="30" y="188" width="32" height="18" rx="1"/>
+          <rect x="68" y="188" width="32" height="18" rx="1"/>
+          <rect x="106" y="188" width="32" height="18" rx="1"/>
+          <rect x="144" y="188" width="26" height="18" rx="1"/>
+        </g>
+        <text x="46" y="200" text-anchor="middle" font-family="Inter, sans-serif" font-size="4.2" font-weight="500" letter-spacing="0.5" fill="#9F7E4F">AFP</text>
+        <text x="84" y="200" text-anchor="middle" font-family="Inter, sans-serif" font-size="4.2" font-weight="500" letter-spacing="0.5" fill="#9F7E4F">CEA</text>
+        <text x="122" y="200" text-anchor="middle" font-family="Inter, sans-serif" font-size="4.2" font-weight="500" letter-spacing="0.5" fill="#9F7E4F">PSA</text>
+        <text x="157" y="200" text-anchor="middle" font-family="Inter, sans-serif" font-size="4.2" font-weight="500" letter-spacing="0.5" fill="#9F7E4F">HPV</text>
+
+        <!-- bottom label -->
+        <text x="100" y="230" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="7" font-style="italic" fill="#16384A">BFH · IMD</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ §2 · Service Overview ============ -->
+<section class="s">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span class="lang-en">§ 4.2 · How health screening works at BFH·IMD</span>
+        <span class="lang-zh">§ 4.2 · 体检在 BFH·IMD 怎么做</span>
+      </div>
+      <h2 class="lang-en">2. Screenings happen at the International Medical Department — not the general clinic</h2>
+      <h2 class="lang-zh">2. 所有体检在国际医疗部完成 — 不是医院普通门诊</h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 56px;">
+      <div>
+        <p class="lang-en">All packages on this page are performed at Beijing Friendship Hospital's <strong>International Medical Department (IMD)</strong> — an independently staffed department with its own consultation rooms, examination pathway and multilingual reception (English, French, Japanese, Russian).</p>
+        <p class="lang-zh">所有套餐均在北京友谊医院 <strong>国际医疗部（IMD）</strong> 完成，<strong>不是医院普通门诊</strong>。</p>
+
+        <p class="lang-en" style="margin-top:14px;"><strong>The clinical workflow:</strong></p>
+        <p class="lang-zh" style="margin-top:14px;"><strong>临床流程：</strong></p>
+        <ul>
+          <li class="lang-en">The IMD is a dedicated department — separate consultation area, separate examination flow.</li>
+          <li class="lang-zh">IMD 是独立的科室，独立的诊区与检查路径</li>
+          <li class="lang-en">Multilingual reception in English, French, Japanese and Russian.</li>
+          <li class="lang-zh">多语言接待：英、法、日、俄</li>
+          <li class="lang-en">Most items are clustered into a single morning; packages that include endoscopy require an additional half-day.</li>
+          <li class="lang-zh">检查项目通常集中在一个上午完成（部分套餐含胃肠镜的需额外半天）</li>
+          <li class="lang-en">The screening report is issued by BFH·IMD in Chinese; YuanU coordinates an English summary as part of standard service.</li>
+          <li class="lang-zh">检查报告由 BFH·IMD 出具，英文摘要由远游协调翻译交付（含在标准协调服务中）</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="lang-en">What YuanU does on screening day</h3>
+        <h3 class="lang-zh">远游在体检日的工作</h3>
+        <div class="boundary-block" style="margin-top:14px;">
+          <p class="lang-en"><strong>Before</strong> — review your passport, visa, current medication and fasting status against the day's checklist.</p>
+          <p class="lang-zh"><strong>行前</strong> — 检查您的护照、签证、当前用药与禁食状态是否符合检查要求。</p>
+          <p class="lang-en"><strong>On the day</strong> — the YuanU Patient Coordinator (bilingual, non-clinical liaison) meets you at the hotel or airport, assists with check-in at the IMD, accompanies you between examination stations, and provides bilingual interpretation in every clinical interaction.</p>
+          <p class="lang-zh"><strong>当日</strong> — 协调员到酒店或机场接您 → 抵达 IMD 协助登记 → 各检查项之间陪同 → 临床场景需要时提供双语翻译。</p>
+          <p class="lang-en"><strong>After</strong> — once the report is finalized, YuanU coordinates the English summary delivery. If any finding warrants follow-up specialist consultation, we help schedule it.</p>
+          <p class="lang-zh"><strong>行后</strong> — 报告就绪后协调英文摘要交付 → 异常项目衔接进一步专家会诊（如需要）。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §3 · Who it's for ============ -->
+<section class="s alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span class="lang-en">§ 4.3 · Who is this for</span>
+        <span class="lang-zh">§ 4.3 · 适合谁</span>
+      </div>
+      <h2 class="lang-en">3. Five typical patient profiles, and where to start</h2>
+      <h2 class="lang-zh">3. 5 类典型客户画像，以及建议起点</h2>
+    </div>
+
+    <table class="tbl">
+      <thead>
+        <tr>
+          <th style="width:6%;">#</th>
+          <th style="width:64%;"><span class="lang-en">Who this package fits</span><span class="lang-zh">适合人群</span></th>
+          <th style="width:30%;"><span class="lang-en">Suggested starting tier</span><span class="lang-zh">建议起点</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col-key">1</td>
+          <td><span class="lang-en">Business / family-visit travellers aged 40+ who have not had a systematic checkup in years</span><span class="lang-zh">40 岁以上、长期未做系统体检的访京商务 / 探亲人士</span></td>
+          <td class="col-key"><span class="lang-en">Package C (In-depth)</span><span class="lang-zh">C 档（深度检查）</span></td>
+        </tr>
+        <tr>
+          <td class="col-key">2</td>
+          <td><span class="lang-en">Anyone with upper-GI symptoms or a family history of gastric cancer who also wants gastroscopy / colonoscopy on the same visit</span><span class="lang-zh">有上消化道症状或胃癌家族史、希望同时做胃肠镜筛查的人</span></td>
+          <td class="col-key"><span class="lang-en">Package D (In-depth + Endoscopy)</span><span class="lang-zh">D 档（深度 + 胃肠镜）</span></td>
+        </tr>
+        <tr>
+          <td class="col-key">3</td>
+          <td><span class="lang-en">Married women who want HPV / cervical screening added to the checkup</span><span class="lang-zh">已婚女性、希望在体检同时完成 HPV / 妇科筛查</span></td>
+          <td class="col-key"><span class="lang-en">Female-married Package B and above</span><span class="lang-zh">已婚 B 档及以上</span></td>
+        </tr>
+        <tr>
+          <td class="col-key">4</td>
+          <td><span class="lang-en">Adults focused on metabolic, tumor marker and genetic-level workups</span><span class="lang-zh">关注代谢、肿瘤标志物与基因层面的人</span></td>
+          <td class="col-key"><span class="lang-en">Package E (In-depth + Genetic &amp; Endocrine, no endoscopy)</span><span class="lang-zh">E 档（深度 + 基因与内分泌，不含胃肠镜）</span></td>
+        </tr>
+        <tr>
+          <td class="col-key">5</td>
+          <td><span class="lang-en">Adults in their early 30s having their first systematic checkup</span><span class="lang-zh">30 岁出头、首次系统体检</span></td>
+          <td class="col-key"><span class="lang-en">Package A or B</span><span class="lang-zh">A / B 档</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="boundary-block">
+      <p class="lang-en">This is general guidance, <strong>not medical advice</strong>. Final package selection should be discussed with the BFH·IMD physician at intake, taking into account your full medical history.</p>
+      <p class="lang-zh">以上为常见匹配方向，<strong>不构成医学建议</strong>；具体档位的最终选择，请在咨询时由 BFH·IMD 接诊医师参考您的既往病史给出建议。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §4 · Pricing — 15 SKUs ============ -->
+<section class="s">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span class="lang-en">§ 4.4 · Full package pricing — 15 SKUs</span>
+        <span class="lang-zh">§ 4.4 · 5 档套餐完整价目（15 个 SKU）</span>
+      </div>
+      <h2 class="lang-en">4. Reference pricing — hospital fee shown separately from YuanU coordination fee</h2>
+      <h2 class="lang-zh">4. 参考报价 — 医院端医疗费与远游协调服务费独立列出</h2>
+    </div>
+
+    <!-- §4.4.1 Three versions, five tiers -->
+    <h3 class="lang-en">Three versions, five tiers</h3>
+    <h3 class="lang-zh">三个版本，每档五级</h3>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 56px; margin-top: 18px;">
+      <div>
+        <p class="lang-en"><strong>Three versions:</strong></p>
+        <p class="lang-zh"><strong>三个版本：</strong></p>
+        <ul>
+          <li class="lang-en"><strong>Male version</strong> — baseline includes male-specific items.</li>
+          <li class="lang-zh"><strong>男士版</strong>：基础项目为男性专项。</li>
+          <li class="lang-en"><strong>Female unmarried version</strong> — baseline excludes items that require a history of intercourse (e.g. cervical TCT, bimanual gynecologic exam).</li>
+          <li class="lang-zh"><strong>女士未婚版</strong>：基础项目不含已婚女性专项（如 HPV、妇科常规）。</li>
+          <li class="lang-en"><strong>Female married version</strong> — baseline includes HPV typing and routine gynecologic examination.</li>
+          <li class="lang-zh"><strong>女士已婚版</strong>：基础项目含 HPV 与妇科常规。</li>
+        </ul>
+      </div>
+      <div>
+        <p class="lang-en"><strong>Five-tier escalation:</strong></p>
+        <p class="lang-zh"><strong>五档递进：</strong></p>
+        <ul>
+          <li class="lang-en"><strong>A · Basic</strong> — required items + sex-specific items.</li>
+          <li class="lang-zh"><strong>A · 基础体检</strong>：必查项 + 性别相关。</li>
+          <li class="lang-en"><strong>B · Tumor &amp; Metabolic</strong> — A + tumor markers + extended metabolism.</li>
+          <li class="lang-zh"><strong>B · 肿瘤与代谢筛查</strong>：A + 肿瘤标志物 + 代谢深度。</li>
+          <li class="lang-en"><strong>C · In-depth</strong> — B + cardiopulmonary and imaging depth.</li>
+          <li class="lang-zh"><strong>C · 深度检查</strong>：B + 心肺与影像深度。</li>
+          <li class="lang-en"><strong>D · In-depth + Endoscopy</strong> — C + gastroscopy / colonoscopy (anesthesia &amp; biopsy billed separately).</li>
+          <li class="lang-zh"><strong>D · 深度 + 胃肠镜</strong>：C + 胃肠镜（含麻醉与活检另计）。</li>
+          <li class="lang-en"><strong>E · In-depth + Genetic &amp; Endocrine</strong> — C + genetic and endocrine workup (<strong>does not include endoscopy</strong>).</li>
+          <li class="lang-zh"><strong>E · 深度 + 基因与内分泌</strong>：C + 基因 + 内分泌深度（<strong>不含胃肠镜</strong>）。</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Pricing note -->
+    <div class="boundary-block" style="margin-top: 36px;">
+      <h4 class="lang-en">How to read these prices</h4>
+      <h4 class="lang-zh">价格如何读取</h4>
+      <p class="lang-en">Each package card shows three numbers, vertically: (1) the <strong>hospital fee</strong>, charged directly by Beijing Friendship Hospital · IMD; (2) the <strong>YuanU coordination fee</strong>, a reference range of 15%–25% of the hospital fee, floating with package complexity and required accompaniment hours; (3) the <strong>estimated total range</strong>, sum of the two above.</p>
+      <p class="lang-zh">每张套餐卡片纵向展示三个数字：（1）<strong>医院端价</strong>，由北京友谊医院 · IMD 直接收取；（2）<strong>远游协调服务费</strong>，按医院端价的 15%–25% 区间浮动（按套餐复杂度与陪诊时长）；（3）<strong>估算总价区间</strong>，前两项之和。</p>
+      <p class="lang-en">All figures are <strong>reference only</strong>. Hospital prices follow the hospital's published rates and may be revised; the final invoice is settled directly with the hospital. Your YuanU coordination fee is provided in writing as an independent line item before any payment.</p>
+      <p class="lang-zh">所有数字为<strong>参考价</strong>。医院端价以医院当前公开价目为准，可能随医院调整；最终账单由您与医院直接结算。远游协调服务费在您行前以独立条目书面给出。</p>
+    </div>
+
+    <!-- ===== Master price-matrix (15 SKUs at a glance) ===== -->
+    <h3 class="lang-en" style="margin-top: 48px;">Pricing overview · all 15 SKUs at a glance</h3>
+    <h3 class="lang-zh" style="margin-top: 48px;">价格总览 · 15 个 SKU 一览</h3>
+
+    <table class="tbl">
+      <thead>
+        <tr>
+          <th style="width:20%;"><span class="lang-en">Version / Tier</span><span class="lang-zh">版本 / 档位</span></th>
+          <th style="width:20%;"><span class="lang-en">Hospital fee (CNY)</span><span class="lang-zh">医院端价 (CNY)</span></th>
+          <th style="width:30%;"><span class="lang-en">YuanU coord. (15%–25%, CNY)</span><span class="lang-zh">远游协调费 (15%–25%, CNY)</span></th>
+          <th style="width:30%;"><span class="lang-en">Est. total range (CNY)</span><span class="lang-zh">估算总价 (CNY)</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="col-key"><span class="lang-en">Male · A · Basic</span><span class="lang-zh">男士 · A · 基础</span></td><td class="col-price">1,700</td><td class="col-price">250 – 400</td><td class="col-price">1,950 – 2,100</td></tr>
+        <tr><td class="col-key"><span class="lang-en">Male · B · Tumor &amp; Metabolic</span><span class="lang-zh">男士 · B · 肿瘤代谢</span></td><td class="col-price">3,100</td><td class="col-price">450 – 800</td><td class="col-price">3,550 – 3,900</td></tr>
+        <tr><td class="col-key"><span class="lang-en">Male · C · In-depth</span><span class="lang-zh">男士 · C · 深度</span></td><td class="col-price">5,600</td><td class="col-price">850 – 1,400</td><td class="col-price">6,450 – 7,000</td></tr>
+        <tr class="row-emph"><td class="col-key"><span class="lang-en">Male · D · + Endoscopy</span><span class="lang-zh">男士 · D · 含胃肠镜</span></td><td class="col-price">13,950</td><td class="col-price">2,100 – 3,500</td><td class="col-price">16,050 – 17,450</td></tr>
+        <tr><td class="col-key"><span class="lang-en">Male · E · + Genetic &amp; Endocrine</span><span class="lang-zh">男士 · E · 基因内分泌</span></td><td class="col-price">9,700</td><td class="col-price">1,450 – 2,400</td><td class="col-price">11,150 – 12,100</td></tr>
+        <tr><td class="col-key"><span class="lang-en">Female · Unmarried · A · Basic</span><span class="lang-zh">女士未婚 · A · 基础</span></td><td class="col-price">1,950</td><td class="col-price">300 – 500</td><td class="col-price">2,250 – 2,450</td></tr>
+        <tr><td class="col-key"><span class="lang-en">Female · Unmarried · B</span><span class="lang-zh">女士未婚 · B · 肿瘤代谢</span></td><td class="col-price">3,350</td><td class="col-price">500 – 850</td><td class="col-price">3,850 – 4,200</td></tr>
+        <tr><td class="col-key"><span class="lang-en">Female · Unmarried · C</span><span class="lang-zh">女士未婚 · C · 深度</span></td><td class="col-price">5,850</td><td class="col-price">900 – 1,450</td><td class="col-price">6,750 – 7,300</td></tr>
+        <tr class="row-emph"><td class="col-key"><span class="lang-en">Female · Unmarried · D · + Endoscopy</span><span class="lang-zh">女士未婚 · D · 含胃肠镜</span></td><td class="col-price">14,200</td><td class="col-price">2,150 – 3,550</td><td class="col-price">16,350 – 17,750</td></tr>
+        <tr><td class="col-key"><span class="lang-en">Female · Unmarried · E</span><span class="lang-zh">女士未婚 · E · 基因内分泌</span></td><td class="col-price">9,950</td><td class="col-price">1,500 – 2,500</td><td class="col-price">11,450 – 12,450</td></tr>
+        <tr><td class="col-key"><span class="lang-en">Female · Married · A · Basic + Gynecology</span><span class="lang-zh">女士已婚 · A · 基础 + 妇科</span></td><td class="col-price">2,300</td><td class="col-price">350 – 600</td><td class="col-price">2,650 – 2,900</td></tr>
+        <tr><td class="col-key"><span class="lang-en">Female · Married · B · + HPV &amp; Metabolic</span><span class="lang-zh">女士已婚 · B · + HPV 与代谢</span></td><td class="col-price">3,850</td><td class="col-price">600 – 950</td><td class="col-price">4,450 – 4,800</td></tr>
+        <tr><td class="col-key"><span class="lang-en">Female · Married · C</span><span class="lang-zh">女士已婚 · C · 深度</span></td><td class="col-price">6,400</td><td class="col-price">950 – 1,600</td><td class="col-price">7,350 – 8,000</td></tr>
+        <tr class="row-emph"><td class="col-key"><span class="lang-en">Female · Married · D · + Endoscopy</span><span class="lang-zh">女士已婚 · D · 含胃肠镜</span></td><td class="col-price">14,750</td><td class="col-price">2,200 – 3,700</td><td class="col-price">16,950 – 18,450</td></tr>
+        <tr><td class="col-key"><span class="lang-en">Female · Married · E</span><span class="lang-zh">女士已婚 · E · 基因内分泌</span></td><td class="col-price">10,500</td><td class="col-price">1,600 – 2,600</td><td class="col-price">12,100 – 13,100</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ §4 (cont.) · SKU details — MALE A-E ============ -->
+<section class="s alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span class="lang-en">§ 4.4 · Male version · A through E · full item list</span>
+        <span class="lang-zh">§ 4.4 · 男士版 · A 至 E · 完整项目清单</span>
+      </div>
+      <h2 class="lang-en">Male version · per-tier items &amp; clinical purpose</h2>
+      <h2 class="lang-zh">男士版 · 各档项目与临床意义</h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr; gap: 28px;">
+
+      <!-- Male A -->
+      <div class="entry-card">
+        <div class="entry-sub"><span class="lang-en">CNY 1,700 · YuanU coord. 250 – 400 · Total 1,950 – 2,100</span><span class="lang-zh">医院端 CNY 1,700 · 远游协调 250 – 400 · 总计 1,950 – 2,100</span></div>
+        <h3 class="lang-en">Package A · Male · Basic Health Screening</h3>
+        <h3 class="lang-zh">男士 A 套餐 · 基础体检</h3>
+        <p class="lang-en">For healthy individuals aged 25–35 needing an annual baseline.</p>
+        <p class="lang-zh">适合 25–35 岁健康人群的年度基础体检。</p>
+        <h4 class="lang-en" style="margin-top:18px; color: var(--gold-600); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase;">Items included &amp; clinical purpose</h4>
+        <h4 class="lang-zh" style="margin-top:18px; color: var(--gold-600); font-size: 13px; letter-spacing: 0.08em;">检查项目与临床意义</h4>
+        <ul style="margin-top: 10px;">
+          <li class="lang-en">BMI &amp; vital signs — baseline body composition and risk staging.</li>
+          <li class="lang-zh">身高体重 BMI 与生命体征 — 体成分基线与风险初筛。</li>
+          <li class="lang-en">Internal medicine consult — history-taking, organ palpation, general assessment.</li>
+          <li class="lang-zh">内科查体 — 病史采集、脏器触诊、一般临床评估。</li>
+          <li class="lang-en">Surgery consult — skin, lymph nodes, thyroid, abdomen, limbs and spine.</li>
+          <li class="lang-zh">外科查体 — 皮肤、淋巴结、甲状腺、腹部、四肢与脊柱。</li>
+          <li class="lang-en">12-lead ECG — resting cardiac rhythm and conduction screening.</li>
+          <li class="lang-zh">十二导联心电图 — 静息心律与传导筛查。</li>
+          <li class="lang-en">Flow-cytometry urine sediment — urinary tract inflammation and renal indicators.</li>
+          <li class="lang-zh">流式尿沉渣分析 — 泌尿系炎症与肾脏指标筛查。</li>
+          <li class="lang-en">Stool routine + microscopy — GI bleeding, parasites, digestion.</li>
+          <li class="lang-zh">便常规 + 镜检 — 消化道出血、寄生虫与消化功能。</li>
+          <li class="lang-en">Blood routine — anemia, infection and platelet baseline.</li>
+          <li class="lang-zh">血常规 — 贫血、感染与血小板基线。</li>
+          <li class="lang-en">ESR — non-specific inflammation marker.</li>
+          <li class="lang-zh">血沉 — 非特异性炎症指标。</li>
+          <li class="lang-en">Biochemistry, 11-panel — liver, kidney, lipids, glucose baseline.</li>
+          <li class="lang-zh">生化 11 项 — 肝功、肾功、血脂、血糖基线。</li>
+          <li class="lang-en">Tumor markers (Male A set) — first-tier screen including AFP, CEA, PSA, etc.</li>
+          <li class="lang-zh">肿瘤标志物（男士 A 组）— 含 AFP、CEA、PSA 等一线筛查项。</li>
+          <li class="lang-en">Thyroid ultrasound — nodules, structural anomalies.</li>
+          <li class="lang-zh">甲状腺超声 — 结节与结构异常。</li>
+          <li class="lang-en">Hepato-biliary-pancreatic ultrasound — fatty liver, gallstones, pancreas.</li>
+          <li class="lang-zh">肝胆胰超声 — 脂肪肝、胆结石、胰腺初筛。</li>
+          <li class="lang-en">Urinary system ultrasound — kidney, ureter, bladder.</li>
+          <li class="lang-zh">泌尿系超声 — 肾、输尿管、膀胱。</li>
+          <li class="lang-en">Chest X-ray — lung field, mediastinum, bony thorax overview.</li>
+          <li class="lang-zh">胸部 X 光 — 肺野、纵隔与胸廓总体观察。</li>
+        </ul>
+      </div>
+
+      <!-- Male B -->
+      <div class="entry-card">
+        <div class="entry-sub"><span class="lang-en">CNY 3,100 · YuanU coord. 450 – 800 · Total 3,550 – 3,900</span><span class="lang-zh">医院端 CNY 3,100 · 远游协调 450 – 800 · 总计 3,550 – 3,900</span></div>
+        <h3 class="lang-en">Package B · Male · Tumor &amp; Metabolic Screening</h3>
+        <h3 class="lang-zh">男士 B 套餐 · 肿瘤与代谢筛查</h3>
+        <p class="lang-en">For ages 35–45 — adds tumor markers, metabolic depth, thyroid, low-dose chest CT.</p>
+        <p class="lang-zh">适合 35–45 岁，在 A 基础上加肿瘤、代谢、甲状腺与胸部 CT。</p>
+        <p class="lang-en" style="color: var(--muted); font-size: 13px; margin-top: 12px;">Everything in Package A, plus the following items:</p>
+        <p class="lang-zh" style="color: var(--muted); font-size: 13px; margin-top: 12px;">包含 A 套餐全部项目，另增以下项目：</p>
+        <ul style="margin-top: 8px;">
+          <li class="lang-en">Tumor markers (Male B set) — extended panel beyond the A set.</li>
+          <li class="lang-zh">肿瘤标志物（男士 B 组）— 在 A 基础上延伸的扩展组。</li>
+          <li class="lang-en">Biochemistry, 21-panel — fuller liver/kidney/lipid/glucose detail.</li>
+          <li class="lang-zh">生化 21 项 — 更全面的肝肾血脂血糖指标。</li>
+          <li class="lang-en">HbA1c — three-month average blood glucose.</li>
+          <li class="lang-zh">糖化血红蛋白 — 近三个月平均血糖。</li>
+          <li class="lang-en">Fasting insulin + C-peptide — pancreatic β-cell function.</li>
+          <li class="lang-zh">空腹胰岛素 + C 肽 — 胰岛 β 细胞功能。</li>
+          <li class="lang-en">Thyroid function series — full TSH/T3/T4 panel.</li>
+          <li class="lang-zh">甲状腺功能系列 — 完整 TSH/T3/T4 组合。</li>
+          <li class="lang-en">Transcranial cerebral blood flow (TCD) — intracranial vessel flow screening.</li>
+          <li class="lang-zh">经颅多普勒脑血流（TCD）— 颅内血管血流筛查。</li>
+          <li class="lang-en">Low-dose chest CT — earlier detection of lung nodules vs plain X-ray.</li>
+          <li class="lang-zh">胸部 CT — 较 X 光更早发现肺结节。</li>
+          <li class="lang-en">Bone density — osteopenia / osteoporosis screening.</li>
+          <li class="lang-zh">骨密度 — 骨量减少与骨质疏松筛查。</li>
+        </ul>
+      </div>
+
+      <!-- Male C -->
+      <div class="entry-card">
+        <div class="entry-sub"><span class="lang-en">CNY 5,600 · YuanU coord. 850 – 1,400 · Total 6,450 – 7,000</span><span class="lang-zh">医院端 CNY 5,600 · 远游协调 850 – 1,400 · 总计 6,450 – 7,000</span></div>
+        <h3 class="lang-en">Package C · Male · In-depth Examination</h3>
+        <h3 class="lang-zh">男士 C 套餐 · 深度检查</h3>
+        <p class="lang-en">For ages 40+ — extended cardiovascular, cerebral imaging and bone metabolism work-up.</p>
+        <p class="lang-zh">适合 40 岁以上 — 增加心脑血管影像与骨代谢深度评估。</p>
+        <p class="lang-en" style="color: var(--muted); font-size: 13px; margin-top: 12px;">Everything in Package B, plus the following items:</p>
+        <p class="lang-zh" style="color: var(--muted); font-size: 13px; margin-top: 12px;">包含 B 套餐全部项目，另增以下项目：</p>
+        <ul style="margin-top: 8px;">
+          <li class="lang-en">Tumor markers — full 12-item panel.</li>
+          <li class="lang-zh">肿瘤标志物 — 12 项完整组合。</li>
+          <li class="lang-en">Biochemistry, 26-panel — most comprehensive routine biochemistry.</li>
+          <li class="lang-zh">生化 26 项 — 最完整的常规生化组合。</li>
+          <li class="lang-en">DIC panel — coagulation safety baseline.</li>
+          <li class="lang-zh">DIC 凝血组合 — 凝血安全基线。</li>
+          <li class="lang-en">Urine microalbumin / creatinine ratio — early diabetic nephropathy marker.</li>
+          <li class="lang-zh">尿微量白蛋白 / 肌酐比 — 早期糖尿病肾病指标。</li>
+          <li class="lang-en">Echocardiography — structural and functional assessment of the heart.</li>
+          <li class="lang-zh">心脏彩超 — 心脏结构与功能评估。</li>
+          <li class="lang-en">Segmental limb artery pressure — peripheral arterial disease screen.</li>
+          <li class="lang-zh">四肢节段动脉压 — 外周动脉病变筛查。</li>
+          <li class="lang-en">C13 urea breath test — non-invasive screen for active H. pylori infection.</li>
+          <li class="lang-zh">C13 尿素呼气试验 — 无创筛查现症幽门螺杆菌感染。</li>
+          <li class="lang-en">Bone metabolism markers — bone turnover rate.</li>
+          <li class="lang-zh">骨代谢标志物 — 骨代谢转换率。</li>
+          <li class="lang-en">Carotid ultrasound — carotid plaque / stenosis screening.</li>
+          <li class="lang-zh">颈动脉超声 — 颈动脉斑块与狭窄筛查。</li>
+          <li class="lang-en">Head CT — cranial structural baseline.</li>
+          <li class="lang-zh">头颅 CT — 颅内结构基线。</li>
+        </ul>
+      </div>
+
+      <!-- Male D -->
+      <div class="entry-card">
+        <div class="entry-sub"><span class="lang-en">CNY 13,950 · YuanU coord. 2,100 – 3,500 · Total 16,050 – 17,450</span><span class="lang-zh">医院端 CNY 13,950 · 远游协调 2,100 – 3,500 · 总计 16,050 – 17,450</span></div>
+        <h3 class="lang-en">Package D · Male · In-depth + Gastroscopy / Colonoscopy</h3>
+        <h3 class="lang-zh">男士 D 套餐 · 深度 + 胃肠镜</h3>
+        <p class="lang-en">For family history of digestive cancers, or ages 40+ wanting an endoscopic baseline. Anesthesia, biopsy / pathology and any endoscopic treatment fees are billed by the hospital separately.</p>
+        <p class="lang-zh">适合有消化道肿瘤家族史，或 40 岁以上希望建立内镜基线者。麻醉、活检 / 病理与内镜下治疗费用由医院另行收取。</p>
+        <p class="lang-en" style="color: var(--muted); font-size: 13px; margin-top: 12px;">Everything in Package C, plus the following items:</p>
+        <p class="lang-zh" style="color: var(--muted); font-size: 13px; margin-top: 12px;">包含 C 套餐全部项目，另增以下项目：</p>
+        <ul style="margin-top: 8px;">
+          <li class="lang-en">H. pylori antibody test — additional serological assessment alongside the C13 breath test.</li>
+          <li class="lang-zh">幽门螺杆菌抗体 — 在 C13 呼气试验之外补充血清学评估。</li>
+          <li class="lang-en">HIV / Syphilis / Hepatitis B &amp; C panel — pre-endoscopy infectious disease screen.</li>
+          <li class="lang-zh">艾滋 / 梅毒 / 乙肝 / 丙肝四项组合 — 内镜前感染性疾病筛查。</li>
+          <li class="lang-en">Electronic gastroscopy (expert) — direct visualization of the upper GI tract.</li>
+          <li class="lang-zh">电子胃镜(专家级) — 上消化道直视检查。</li>
+          <li class="lang-en">Electronic colonoscopy (expert) — direct visualization of the colon.</li>
+          <li class="lang-zh">电子结肠镜(专家级) — 结肠直视检查。</li>
+        </ul>
+        <div class="boundary-block warn" style="margin-top: 18px;">
+          <p class="lang-en"><strong>Anesthesia (painless option), biopsy / pathology and any endoscopic treatment are billed by Beijing Friendship Hospital separately.</strong> The hospital's actual same-day invoice prevails. YuanU's coordination fee for these add-on items is calculated as a separate line item under the same 15%–25% range. See the <a href="endoscopy.html">Endoscopy</a> page for detailed reference ranges.</p>
+          <p class="lang-zh"><strong>麻醉（无痛方式）、活检 / 病理、内镜下治疗均由医院另行收费。</strong>具体金额以医院当日账单为准；远游协调服务费另以独立条目按相同 15%–25% 区间核算。详细参考费用见 <a href="endoscopy.html">胃肠镜</a> 专题页。</p>
+        </div>
+      </div>
+
+      <!-- Male E -->
+      <div class="entry-card">
+        <div class="entry-sub"><span class="lang-en">CNY 9,700 · YuanU coord. 1,450 – 2,400 · Total 11,150 – 12,100</span><span class="lang-zh">医院端 CNY 9,700 · 远游协调 1,450 – 2,400 · 总计 11,150 – 12,100</span></div>
+        <h3 class="lang-en">Package E · Male · In-depth + Genetic &amp; Endocrine</h3>
+        <h3 class="lang-zh">男士 E 套餐 · 深度 + 基因与内分泌</h3>
+        <p class="lang-en">For sub-health or chronic conditions, on top of Package C — adds molecular pathology, endocrine, immunology and neuroimaging. <strong>Does not include endoscopy.</strong></p>
+        <p class="lang-zh">适合亚健康或慢病人群，在 C 基础上加分子病理、内分泌、免疫与神经影像。<strong>不含胃肠镜。</strong></p>
+        <p class="lang-en" style="color: var(--muted); font-size: 13px; margin-top: 12px;">Everything in Package C, plus the following items:</p>
+        <p class="lang-zh" style="color: var(--muted); font-size: 13px; margin-top: 12px;">包含 C 套餐全部项目，另增以下项目：</p>
+        <ul style="margin-top: 8px;">
+          <li class="lang-en">SDC-2 molecular pathology test — non-invasive stool DNA screen for colorectal cancer.</li>
+          <li class="lang-zh">SDC-2 分子病理检测 — 结直肠癌无创粪便 DNA 筛查。</li>
+          <li class="lang-en">Gastric function panel (3 items) — pepsinogen I/II and gastrin-17.</li>
+          <li class="lang-zh">胃功 3 项 — 胃蛋白酶原 I/II 与胃泌素 17。</li>
+          <li class="lang-en">Biochemistry, C1 panel — extended biochemistry beyond the 26-panel.</li>
+          <li class="lang-zh">生化 C1 组合 — 在 26 项之外的扩展生化。</li>
+          <li class="lang-en">Endocrine six-panel — gonadal and pituitary hormones.</li>
+          <li class="lang-zh">内分泌六项 — 性腺与垂体激素组合。</li>
+          <li class="lang-en">Immunoglobulins + complement — humoral immunity baseline.</li>
+          <li class="lang-zh">免疫球蛋白 + 补体 — 体液免疫基线。</li>
+          <li class="lang-en">Platelet function (AA pathway) — platelet aggregation via the arachidonic acid pathway.</li>
+          <li class="lang-zh">血小板功能（AA 途径）— 花生四烯酸途径下的血小板聚集功能。</li>
+          <li class="lang-en">Brain MRI — soft-tissue cranial imaging beyond CT.</li>
+          <li class="lang-zh">头颅 MRI — 在 CT 之外的软组织颅内成像。</li>
+          <li class="lang-en">Head MRA — intracranial vascular structure.</li>
+          <li class="lang-zh">头颅 MRA — 颅内血管结构。</li>
+          <li class="lang-en">Lumbar spine CT — lower-back structural imaging.</li>
+          <li class="lang-zh">腰椎 CT — 腰椎结构影像。</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ §4 (cont.) · SKU details — FEMALE UNMARRIED A-E ============ -->
+<section class="s">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span class="lang-en">§ 4.4 · Female (Unmarried) version · A through E · full item list</span>
+        <span class="lang-zh">§ 4.4 · 女士未婚版 · A 至 E · 完整项目清单</span>
+      </div>
+      <h2 class="lang-en">Female (Unmarried) version · per-tier items &amp; clinical purpose</h2>
+      <h2 class="lang-zh">女士未婚版 · 各档项目与临床意义</h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr; gap: 28px;">
+
+      <!-- FU A -->
+      <div class="entry-card">
+        <div class="entry-sub"><span class="lang-en">CNY 1,950 · YuanU coord. 300 – 500 · Total 2,250 – 2,450</span><span class="lang-zh">医院端 CNY 1,950 · 远游协调 300 – 500 · 总计 2,250 – 2,450</span></div>
+        <h3 class="lang-en">Package A · Female (Unmarried) · Basic Health Screening</h3>
+        <h3 class="lang-zh">女士未婚 A 套餐 · 基础体检</h3>
+        <p class="lang-en">For healthy individuals aged 25–35 with no history of intercourse — includes non-invasive gynecologic ultrasound.</p>
+        <p class="lang-zh">适合 25–35 岁、无性生活史人群 — 含非侵入性妇科超声。</p>
+        <p class="lang-en" style="color: var(--muted); font-size: 13px; margin-top: 12px;">Same baseline as Male A (with the Female A tumor-marker set), plus the following female items:</p>
+        <p class="lang-zh" style="color: var(--muted); font-size: 13px; margin-top: 12px;">基线项目与男士 A 一致（肿瘤标志物为女性 A 组），并增以下女性项目：</p>
+        <ul style="margin-top: 8px;">
+          <li class="lang-en">All items in Male A, with tumor markers replaced by the Female A set.</li>
+          <li class="lang-zh">男士 A 全部项目，肿瘤标志物替换为女性 A 组。</li>
+          <li class="lang-en">Pelvic ultrasound (full bladder, transabdominal) — non-invasive screen of uterus and ovaries.</li>
+          <li class="lang-zh">妇科憋尿彩超 — 经腹无创筛查子宫与卵巢。</li>
+          <li class="lang-en">Breast ultrasound — early screen for nodules and structural anomalies.</li>
+          <li class="lang-zh">乳腺彩超 — 结节与结构异常的早期筛查。</li>
+        </ul>
+        <div class="boundary-block" style="margin-top: 18px;">
+          <p class="lang-en">The unmarried version intentionally excludes gynecologic palpation and the ThinPrep cytology test (TCT), which require a history of intercourse. If your situation differs from this assumption, tell your coordinator — we can switch you to the married version.</p>
+          <p class="lang-zh">未婚版本不包含需要性生活史的妇科查体与宫颈 TCT。如您的实际情况与此假设不同，可告知协调员，调整为已婚版本。</p>
+        </div>
+      </div>
+
+      <!-- FU B -->
+      <div class="entry-card">
+        <div class="entry-sub"><span class="lang-en">CNY 3,350 · YuanU coord. 500 – 850 · Total 3,850 – 4,200</span><span class="lang-zh">医院端 CNY 3,350 · 远游协调 500 – 850 · 总计 3,850 – 4,200</span></div>
+        <h3 class="lang-en">Package B · Female (Unmarried) · Tumor &amp; Metabolic</h3>
+        <h3 class="lang-zh">女士未婚 B 套餐 · 肿瘤代谢</h3>
+        <p class="lang-en">For ages 35–45 — A baseline plus Female B tumor markers, metabolic profile, thyroid, low-dose chest CT and bone density.</p>
+        <p class="lang-zh">适合 35–45 岁 — A 之上加女性 B 组肿瘤标志物、代谢、甲状腺、胸部 CT、骨密度。</p>
+        <p class="lang-en" style="color: var(--muted); font-size: 13px; margin-top: 12px;">Everything in Package A (unmarried), plus the same B-tier additions as Male B (with the Female B tumor-marker set):</p>
+        <p class="lang-zh" style="color: var(--muted); font-size: 13px; margin-top: 12px;">包含未婚 A 套餐全部项目，B 档新增项与男士 B 一致（肿瘤标志物为女性 B 组）：</p>
+        <ul style="margin-top: 8px;">
+          <li class="lang-en">Tumor markers (Female B set), Biochemistry 21-panel, HbA1c, Fasting insulin + C-peptide.</li>
+          <li class="lang-zh">肿瘤标志物（女性 B 组）、生化 21 项、糖化血红蛋白、空腹胰岛素 + C 肽。</li>
+          <li class="lang-en">Thyroid function series, Transcranial cerebral blood flow (TCD).</li>
+          <li class="lang-zh">甲状腺功能系列、经颅多普勒脑血流（TCD）。</li>
+          <li class="lang-en">Low-dose chest CT, Bone density.</li>
+          <li class="lang-zh">胸部 CT、骨密度。</li>
+        </ul>
+      </div>
+
+      <!-- FU C -->
+      <div class="entry-card">
+        <div class="entry-sub"><span class="lang-en">CNY 5,850 · YuanU coord. 900 – 1,450 · Total 6,750 – 7,300</span><span class="lang-zh">医院端 CNY 5,850 · 远游协调 900 – 1,450 · 总计 6,750 – 7,300</span></div>
+        <h3 class="lang-en">Package C · Female (Unmarried) · In-depth</h3>
+        <h3 class="lang-zh">女士未婚 C 套餐 · 深度</h3>
+        <p class="lang-en">For ages 40+ — adds full tumor panel, echocardiography, carotid and head imaging.</p>
+        <p class="lang-zh">适合 40 岁以上 — 增加完整肿瘤组合、心脏彩超、颈动脉与头部影像。</p>
+        <p class="lang-en" style="color: var(--muted); font-size: 13px; margin-top: 12px;">Everything in Package B (unmarried), plus the same C-tier additions as Male C:</p>
+        <p class="lang-zh" style="color: var(--muted); font-size: 13px; margin-top: 12px;">包含未婚 B 套餐全部项目，C 档新增项与男士 C 一致：</p>
+        <ul style="margin-top: 8px;">
+          <li class="lang-en">Tumor markers (12-item full panel), Biochemistry 26-panel, DIC panel, Urine microalbumin / creatinine ratio.</li>
+          <li class="lang-zh">肿瘤标志物（12 项完整组合）、生化 26 项、DIC 凝血组合、尿微量白蛋白 / 肌酐比。</li>
+          <li class="lang-en">Echocardiography, Segmental limb artery pressure, C13 urea breath test.</li>
+          <li class="lang-zh">心脏彩超、四肢节段动脉压、C13 尿素呼气试验。</li>
+          <li class="lang-en">Bone metabolism markers, Carotid ultrasound, Head CT.</li>
+          <li class="lang-zh">骨代谢标志物、颈动脉超声、头颅 CT。</li>
+        </ul>
+      </div>
+
+      <!-- FU D -->
+      <div class="entry-card">
+        <div class="entry-sub"><span class="lang-en">CNY 14,200 · YuanU coord. 2,150 – 3,550 · Total 16,350 – 17,750</span><span class="lang-zh">医院端 CNY 14,200 · 远游协调 2,150 – 3,550 · 总计 16,350 – 17,750</span></div>
+        <h3 class="lang-en">Package D · Female (Unmarried) · In-depth + Endoscopy</h3>
+        <h3 class="lang-zh">女士未婚 D 套餐 · 深度 + 胃肠镜</h3>
+        <p class="lang-en">For family history of digestive cancers, or wanting an endoscopic baseline. Anesthesia, biopsy / pathology and any endoscopic treatment fees are billed by the hospital separately.</p>
+        <p class="lang-zh">适合有消化道肿瘤家族史或希望建立内镜基线者。麻醉、活检 / 病理与内镜下治疗费用由医院另行收取。</p>
+        <p class="lang-en" style="color: var(--muted); font-size: 13px; margin-top: 12px;">Everything in Package C (unmarried), plus the following items:</p>
+        <p class="lang-zh" style="color: var(--muted); font-size: 13px; margin-top: 12px;">包含未婚 C 套餐全部项目，另增以下项目：</p>
+        <ul style="margin-top: 8px;">
+          <li class="lang-en">H. pylori antibody test — additional serological assessment.</li>
+          <li class="lang-zh">幽门螺杆菌抗体 — 补充血清学评估。</li>
+          <li class="lang-en">Electronic gastroscopy (expert) and Electronic colonoscopy (expert).</li>
+          <li class="lang-zh">电子胃镜(专家级)与电子结肠镜(专家级)。</li>
+        </ul>
+        <div class="boundary-block warn" style="margin-top: 18px;">
+          <p class="lang-en"><strong>Anesthesia (painless option), biopsy / pathology and any endoscopic treatment are billed by Beijing Friendship Hospital separately.</strong> The hospital's same-day invoice prevails. YuanU's coordination fee for these add-on items uses the same 15%–25% range as a separate line item. See the <a href="endoscopy.html">Endoscopy</a> page for detailed reference ranges.</p>
+          <p class="lang-zh"><strong>麻醉（无痛方式）、活检 / 病理、内镜下治疗均由医院另行收费。</strong>以医院当日账单为准；远游协调服务费按相同 15%–25% 区间另列条目。详细参考费用见 <a href="endoscopy.html">胃肠镜</a> 专题页。</p>
+        </div>
+      </div>
+
+      <!-- FU E -->
+      <div class="entry-card">
+        <div class="entry-sub"><span class="lang-en">CNY 9,950 · YuanU coord. 1,500 – 2,500 · Total 11,450 – 12,450</span><span class="lang-zh">医院端 CNY 9,950 · 远游协调 1,500 – 2,500 · 总计 11,450 – 12,450</span></div>
+        <h3 class="lang-en">Package E · Female (Unmarried) · Genetic &amp; Endocrine</h3>
+        <h3 class="lang-zh">女士未婚 E 套餐 · 基因与内分泌</h3>
+        <p class="lang-en">In-depth (C) plus molecular pathology, endocrine, immunology and neuroimaging. <strong>Does not include endoscopy.</strong></p>
+        <p class="lang-zh">在深度（C）基础上加分子病理、内分泌、免疫与神经影像。<strong>不含胃肠镜。</strong></p>
+        <p class="lang-en" style="color: var(--muted); font-size: 13px; margin-top: 12px;">Everything in Package C (unmarried), plus the same E-tier additions as Male E:</p>
+        <p class="lang-zh" style="color: var(--muted); font-size: 13px; margin-top: 12px;">包含未婚 C 套餐全部项目，E 档新增项与男士 E 一致：</p>
+        <ul style="margin-top: 8px;">
+          <li class="lang-en">SDC-2 molecular pathology, Gastric function panel (3 items), Biochemistry C1 panel.</li>
+          <li class="lang-zh">SDC-2 分子病理、胃功 3 项、生化 C1 组合。</li>
+          <li class="lang-en">Endocrine six-panel, Immunoglobulins + complement, Platelet function (AA).</li>
+          <li class="lang-zh">内分泌六项、免疫球蛋白 + 补体、血小板功能（AA）。</li>
+          <li class="lang-en">Brain MRI, Head MRA, Lumbar spine CT.</li>
+          <li class="lang-zh">头颅 MRI、头颅 MRA、腰椎 CT。</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ §4 (cont.) · SKU details — FEMALE MARRIED A-E ============ -->
+<section class="s alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span class="lang-en">§ 4.4 · Female (Married) version · A through E · full item list</span>
+        <span class="lang-zh">§ 4.4 · 女士已婚版 · A 至 E · 完整项目清单</span>
+      </div>
+      <h2 class="lang-en">Female (Married) version · per-tier items &amp; clinical purpose</h2>
+      <h2 class="lang-zh">女士已婚版 · 各档项目与临床意义</h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr; gap: 28px;">
+
+      <!-- FM A -->
+      <div class="entry-card">
+        <div class="entry-sub"><span class="lang-en">CNY 2,300 · YuanU coord. 350 – 600 · Total 2,650 – 2,900</span><span class="lang-zh">医院端 CNY 2,300 · 远游协调 350 – 600 · 总计 2,650 – 2,900</span></div>
+        <h3 class="lang-en">Package A · Female (Married) · Basic + Gynecology</h3>
+        <h3 class="lang-zh">女士已婚 A 套餐 · 基础 + 妇科</h3>
+        <p class="lang-en">Adds gynecologic palpation, ThinPrep cytology (TCT) and transvaginal ultrasound to the basic baseline.</p>
+        <p class="lang-zh">在基础体检之上增加妇科查体、宫颈 TCT 与阴式彩超。</p>
+        <p class="lang-en" style="color: var(--muted); font-size: 13px; margin-top: 12px;">Same baseline as Male A (with Female A tumor markers), plus dedicated women's items:</p>
+        <p class="lang-zh" style="color: var(--muted); font-size: 13px; margin-top: 12px;">基线项目与男士 A 一致（肿瘤标志物为女性 A 组），并加女性专项：</p>
+        <ul style="margin-top: 8px;">
+          <li class="lang-en">All items in Male A, with tumor markers replaced by Female A.</li>
+          <li class="lang-zh">男士 A 全部项目，肿瘤标志物替换为女性 A 组。</li>
+          <li class="lang-en">Gynecologic examination — bimanual palpation and speculum exam.</li>
+          <li class="lang-zh">妇科查体 — 双合诊与窥器检查。</li>
+          <li class="lang-en">ThinPrep cytology test (TCT) — cervical cancer cytological screen.</li>
+          <li class="lang-zh">宫颈 TCT — 宫颈癌细胞学筛查。</li>
+          <li class="lang-en">Transvaginal ultrasound — uterus, endometrium and ovary detail.</li>
+          <li class="lang-zh">阴式彩超 — 子宫、内膜与卵巢的细致观察。</li>
+          <li class="lang-en">Breast ultrasound — early screen for nodules and structural anomalies.</li>
+          <li class="lang-zh">乳腺彩超 — 结节与结构异常的早期筛查。</li>
+        </ul>
+      </div>
+
+      <!-- FM B -->
+      <div class="entry-card">
+        <div class="entry-sub"><span class="lang-en">CNY 3,850 · YuanU coord. 600 – 950 · Total 4,450 – 4,800</span><span class="lang-zh">医院端 CNY 3,850 · 远游协调 600 – 950 · 总计 4,450 – 4,800</span></div>
+        <h3 class="lang-en">Package B · Female (Married) · + HPV &amp; Metabolic</h3>
+        <h3 class="lang-zh">女士已婚 B 套餐 · + HPV 与代谢</h3>
+        <p class="lang-en">A baseline plus HPV typing and the standard B-tier additions.</p>
+        <p class="lang-zh">在 A 之上加 HPV 分型与标准 B 档项目。</p>
+        <p class="lang-en" style="color: var(--muted); font-size: 13px; margin-top: 12px;">Everything in Package A (married), plus HPV typing and the standard B-tier additions:</p>
+        <p class="lang-zh" style="color: var(--muted); font-size: 13px; margin-top: 12px;">包含已婚 A 套餐全部项目，另增 HPV 分型与标准 B 档项目：</p>
+        <ul style="margin-top: 8px;">
+          <li class="lang-en">HPV typing — high-risk HPV testing; complements TCT for cervical screening.</li>
+          <li class="lang-zh">HPV 分型 — 高危型 HPV 检测，与 TCT 联合用于宫颈筛查。</li>
+          <li class="lang-en">Tumor markers (Female B set), Biochemistry 21-panel, HbA1c, Fasting insulin + C-peptide.</li>
+          <li class="lang-zh">肿瘤标志物（女性 B 组）、生化 21 项、糖化、空腹胰岛素 + C 肽。</li>
+          <li class="lang-en">Thyroid function series, Transcranial cerebral blood flow (TCD).</li>
+          <li class="lang-zh">甲状腺功能系列、经颅多普勒脑血流（TCD）。</li>
+          <li class="lang-en">Low-dose chest CT, Bone density.</li>
+          <li class="lang-zh">胸部 CT、骨密度。</li>
+        </ul>
+      </div>
+
+      <!-- FM C -->
+      <div class="entry-card">
+        <div class="entry-sub"><span class="lang-en">CNY 6,400 · YuanU coord. 950 – 1,600 · Total 7,350 – 8,000</span><span class="lang-zh">医院端 CNY 6,400 · 远游协调 950 – 1,600 · 总计 7,350 – 8,000</span></div>
+        <h3 class="lang-en">Package C · Female (Married) · In-depth</h3>
+        <h3 class="lang-zh">女士已婚 C 套餐 · 深度</h3>
+        <p class="lang-en">For ages 40+ — adds full tumor panel, echocardiography, carotid &amp; head imaging.</p>
+        <p class="lang-zh">适合 40 岁以上 — 增加完整肿瘤组合、心脏彩超、颈动脉与头部影像。</p>
+        <p class="lang-en" style="color: var(--muted); font-size: 13px; margin-top: 12px;">Everything in Package B (married), plus the same C-tier additions as Male C:</p>
+        <p class="lang-zh" style="color: var(--muted); font-size: 13px; margin-top: 12px;">包含已婚 B 套餐全部项目，C 档新增项与男士 C 一致：</p>
+        <ul style="margin-top: 8px;">
+          <li class="lang-en">Tumor markers (12-item), Biochemistry 26-panel, DIC panel, Urine microalbumin / creatinine ratio.</li>
+          <li class="lang-zh">肿瘤标志物（12 项）、生化 26 项、DIC 凝血组合、尿微量白蛋白 / 肌酐比。</li>
+          <li class="lang-en">Echocardiography, Segmental limb artery pressure, C13 urea breath test.</li>
+          <li class="lang-zh">心脏彩超、四肢节段动脉压、C13 尿素呼气试验。</li>
+          <li class="lang-en">Bone metabolism markers, Carotid ultrasound, Head CT.</li>
+          <li class="lang-zh">骨代谢标志物、颈动脉超声、头颅 CT。</li>
+        </ul>
+      </div>
+
+      <!-- FM D -->
+      <div class="entry-card">
+        <div class="entry-sub"><span class="lang-en">CNY 14,750 · YuanU coord. 2,200 – 3,700 · Total 16,950 – 18,450</span><span class="lang-zh">医院端 CNY 14,750 · 远游协调 2,200 – 3,700 · 总计 16,950 – 18,450</span></div>
+        <h3 class="lang-en">Package D · Female (Married) · In-depth + Endoscopy</h3>
+        <h3 class="lang-zh">女士已婚 D 套餐 · 深度 + 胃肠镜</h3>
+        <p class="lang-en">Anesthesia, biopsy / pathology and any endoscopic treatment fees are billed by the hospital separately.</p>
+        <p class="lang-zh">麻醉、活检 / 病理与内镜下治疗费用由医院另行收取。</p>
+        <p class="lang-en" style="color: var(--muted); font-size: 13px; margin-top: 12px;">Everything in Package C (married), plus the following items:</p>
+        <p class="lang-zh" style="color: var(--muted); font-size: 13px; margin-top: 12px;">包含已婚 C 套餐全部项目，另增以下项目：</p>
+        <ul style="margin-top: 8px;">
+          <li class="lang-en">H. pylori antibody test — additional serological assessment.</li>
+          <li class="lang-zh">幽门螺杆菌抗体 — 补充血清学评估。</li>
+          <li class="lang-en">Electronic gastroscopy (expert) and Electronic colonoscopy (expert).</li>
+          <li class="lang-zh">电子胃镜(专家级)与电子结肠镜(专家级)。</li>
+        </ul>
+        <div class="boundary-block warn" style="margin-top: 18px;">
+          <p class="lang-en"><strong>Anesthesia, biopsy / pathology and any endoscopic treatment are billed by Beijing Friendship Hospital separately.</strong> The hospital's same-day invoice prevails. YuanU's coordination fee for these add-on items uses the same 15%–25% range as a separate line item. See the <a href="endoscopy.html">Endoscopy</a> page for detailed reference ranges.</p>
+          <p class="lang-zh"><strong>麻醉、活检 / 病理与内镜下治疗均由医院另行收费。</strong>以医院当日账单为准；远游协调服务费按相同 15%–25% 区间另列条目。详细参考费用见 <a href="endoscopy.html">胃肠镜</a> 专题页。</p>
+        </div>
+      </div>
+
+      <!-- FM E -->
+      <div class="entry-card">
+        <div class="entry-sub"><span class="lang-en">CNY 10,500 · YuanU coord. 1,600 – 2,600 · Total 12,100 – 13,100</span><span class="lang-zh">医院端 CNY 10,500 · 远游协调 1,600 – 2,600 · 总计 12,100 – 13,100</span></div>
+        <h3 class="lang-en">Package E · Female (Married) · Genetic &amp; Endocrine</h3>
+        <h3 class="lang-zh">女士已婚 E 套餐 · 基因与内分泌</h3>
+        <p class="lang-en">In-depth (C) plus molecular pathology, endocrine, immunology and neuroimaging. <strong>Does not include endoscopy.</strong></p>
+        <p class="lang-zh">在深度（C）基础上加分子病理、内分泌、免疫与神经影像。<strong>不含胃肠镜。</strong></p>
+        <p class="lang-en" style="color: var(--muted); font-size: 13px; margin-top: 12px;">Everything in Package C (married), plus the same E-tier additions as Male E:</p>
+        <p class="lang-zh" style="color: var(--muted); font-size: 13px; margin-top: 12px;">包含已婚 C 套餐全部项目，E 档新增项与男士 E 一致：</p>
+        <ul style="margin-top: 8px;">
+          <li class="lang-en">SDC-2 molecular pathology, Gastric function panel (3 items), Biochemistry C1 panel.</li>
+          <li class="lang-zh">SDC-2 分子病理、胃功 3 项、生化 C1 组合。</li>
+          <li class="lang-en">Endocrine six-panel, Immunoglobulins + complement, Platelet function (AA).</li>
+          <li class="lang-zh">内分泌六项、免疫球蛋白 + 补体、血小板功能（AA）。</li>
+          <li class="lang-en">Brain MRI, Head MRA, Lumbar spine CT.</li>
+          <li class="lang-zh">头颅 MRI、头颅 MRA、腰椎 CT。</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ §5 · 6-step flow ============ -->
+<section class="s">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span class="lang-en">§ 4.5 · How the screening day works · 6 steps</span>
+        <span class="lang-zh">§ 4.5 · 体检流程 · 6 步</span>
+      </div>
+      <h2 class="lang-en">5. How the screening day works · 6 steps</h2>
+      <h2 class="lang-zh">5. 体检流程 · 6 步</h2>
+      <p class="lede lang-en">From your inquiry to post-trip follow-up. YuanU coordinates the logistics; BFH·IMD delivers the clinical work.</p>
+      <p class="lede lang-zh">从您发起咨询到回国后随访。远游负责协调与陪诊，BFH·IMD 完成所有临床工作。</p>
+    </div>
+
+    <div class="steps">
+
+      <div class="step">
+        <div class="step-num">01</div>
+        <div class="step-body">
+          <h4 class="lang-en">You submit a screening request</h4>
+          <h4 class="lang-zh">您提交体检意向</h4>
+          <p class="lang-en">Use the form or email to share your expected dates in Beijing, gender, marital status, and any specific needs (endoscopy, HPV, tumor markers, etc.).</p>
+          <p class="lang-zh">通过表单或邮件告知预计来京时间、性别、是否已婚、是否有特定体检需求（如胃肠镜、HPV、肿瘤标志物等）。</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">02</div>
+        <div class="step-body">
+          <h4 class="lang-en">YuanU replies within 1 business day</h4>
+          <h4 class="lang-zh">远游 1 个工作日内回复</h4>
+          <p class="lang-en">A coordinator replies by email and asks for your past 3 months of medical records, current medication list, and allergy history.</p>
+          <p class="lang-zh">协调员邮件回复，请您补充近 3 个月病历、用药清单、过敏史。</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">03</div>
+        <div class="step-body">
+          <h4 class="lang-en">Package &amp; date confirmation (2–5 business days)</h4>
+          <h4 class="lang-zh">确认套餐与档期（2–5 工作日）</h4>
+          <p class="lang-en">YuanU coordinates with BFH·IMD on physician availability and returns a "suggested package + reference price + available dates" proposal.</p>
+          <p class="lang-zh">远游与 BFH·IMD 沟通医生档期，给出"建议套餐 + 参考价 + 可选日期"。</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">04</div>
+        <div class="step-body">
+          <h4 class="lang-en">You confirm → YuanU issues the appointment letter</h4>
+          <h4 class="lang-zh">您确认 → 远游出具预约确认函</h4>
+          <p class="lang-en">The letter supports your Chinese medical visa application (if needed). You also receive a pre-visit checklist (fasting hours, medication notes, documents to bring).</p>
+          <p class="lang-zh">用于支持您的中国医疗签证申请（如需要）；同时给出行前准备清单（禁食时间、停药提示、需带文件）。</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">05</div>
+        <div class="step-body">
+          <h4 class="lang-en">Screening day</h4>
+          <h4 class="lang-zh">体检日</h4>
+          <p class="lang-en">Coordinator meets you at the airport or hotel → arrival at BFH·IMD → bilingual escort throughout → all items completed in one day (packages including endoscopy may need an additional half-day).</p>
+          <p class="lang-zh">协调员接机或到酒店 → 抵达 BFH·IMD → 全程陪诊 → 当日完成所有项目（含胃肠镜的需额外半天）。</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">06</div>
+        <div class="step-body">
+          <h4 class="lang-en">Report delivery + follow-up handoff</h4>
+          <h4 class="lang-zh">报告交付 + 后续衔接</h4>
+          <p class="lang-en">Once reports are ready, YuanU coordinates the English summary translation and delivery (typically 5–7 business days). Abnormal findings can be linked to a specialist consultation, or the report sent to your home-country physician.</p>
+          <p class="lang-zh">报告就绪后远游协调英文摘要翻译并发送（通常 5–7 个工作日）；异常项目可衔接专家会诊或协助报告寄回您本国医师。</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ §6 · Report handling ============ -->
+<section class="s alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span class="lang-en">§ 4.6 · How we handle your report</span>
+        <span class="lang-zh">§ 4.6 · 远游如何处理您的体检报告</span>
+      </div>
+      <h2 class="lang-en">6. How we handle your report</h2>
+      <h2 class="lang-zh">6. 远游如何处理您的体检报告</h2>
+      <p class="lede lang-en">BFH·IMD issues the original Chinese report. YuanU's work on the report layer is concrete and bounded.</p>
+      <p class="lede lang-zh">体检报告由 BFH·IMD 出具中文原版。远游在报告交付环节的工作如下，边界明确。</p>
+    </div>
+
+    <table class="tbl">
+      <thead>
+        <tr>
+          <th style="width:6%;">#</th>
+          <th style="width:36%;"><span class="lang-en">Service item</span><span class="lang-zh">服务项</span></th>
+          <th style="width:58%;"><span class="lang-en">Detail</span><span class="lang-zh">说明</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col-key">1</td>
+          <td class="col-key"><span class="lang-en">Report delivery (included in standard coordination)</span><span class="lang-zh">报告交付（含在标准协调服务）</span></td>
+          <td><span class="lang-en">YuanU coordinates an English summary translation that covers each item's clinical findings, flagged abnormalities, and the BFH physician's notes.</span><span class="lang-zh">协调英文摘要翻译，覆盖各检查项的临床发现 + 异常项标注 + 医院端医生的建议。</span></td>
+        </tr>
+        <tr>
+          <td class="col-key">2</td>
+          <td class="col-key"><span class="lang-en">Report consultation session (on request)</span><span class="lang-zh">报告解读会（按需）</span></td>
+          <td><span class="lang-en">If you wish to discuss the report with the BFH·IMD physician (remote or in-person, 30–45 min), YuanU coordinates the schedule and interpretation. The consultation itself is billed by the hospital under its outpatient or specialist consultation fees.</span><span class="lang-zh">如您希望与 BFH·IMD 医生远程或现场进行报告解读会（30–45 分钟），远游协调员协调档期与翻译；远程解读会本身由医院按其门诊或专家会诊费用单独计费。</span></td>
+        </tr>
+        <tr>
+          <td class="col-key">3</td>
+          <td class="col-key"><span class="lang-en">Report relay (included in standard coordination)</span><span class="lang-zh">报告传递（含在标准协调服务）</span></td>
+          <td><span class="lang-en">The English summary together with the original Chinese report can be sent through an encrypted channel to a physician you designate in your home country.</span><span class="lang-zh">可将英文摘要 + 中文原报告，通过加密渠道发送给您指定的本国医师。</span></td>
+        </tr>
+        <tr>
+          <td class="col-key">4</td>
+          <td class="col-key"><span class="lang-en">Abnormal-finding handoff (on request)</span><span class="lang-zh">异常衔接（按需）</span></td>
+          <td><span class="lang-en">If the report indicates further work-up or specialist consultation is needed, YuanU can arrange the follow-up appointment at BFH·IMD or a partner hospital.</span><span class="lang-zh">如报告显示需要进一步检查或专科会诊，远游协调员可协助安排 BFH·IMD 或合作医院的后续预约。</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="boundary-block warn">
+      <p class="lang-en"><strong>To be explicit again:</strong> YuanU coordinators do not interpret your medical report. All medical conclusions follow the assessment of the BFH·IMD physician after a clinical consultation.</p>
+      <p class="lang-zh"><strong>再次明确：</strong>远游协调员不解读您的医疗报告。所有医学结论以 BFH·IMD 医师面诊后的判断为准。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §7.1 · Fees & what's included ============ -->
+<section class="s">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span class="lang-en">§ 4.7.1 · Fees &amp; what's included</span>
+        <span class="lang-zh">§ 4.7.1 · 费用与服务内容</span>
+      </div>
+      <h2 class="lang-en">7. Fees &amp; what's included</h2>
+      <h2 class="lang-zh">7. 费用与服务内容</h2>
+    </div>
+
+    <div class="boundary-block" style="margin-bottom: 32px;">
+      <h4 class="lang-en">How we quote: two separate line items, not bundled</h4>
+      <h4 class="lang-zh">如何报价：两条独立条目，不打包</h4>
+      <ul style="padding-left: 20px;">
+        <li class="lang-en"><strong>Hospital medical fee:</strong> calculated by BFH·IMD according to the hospital's public price list. You pay the hospital directly on screening day (or pre-pay per hospital rules). Reference prices per package are in §4.</li>
+        <li class="lang-zh"><strong>医院端医疗费：</strong>由 BFH·IMD 按医院公开价目核算，体检日由您直接支付给医院（或按医院规定预付）。各套餐参考价见 §4。</li>
+        <li class="lang-en"><strong>YuanU coordination fee:</strong> calculated as <strong>15%–25%</strong> of the hospital medical fee, varying with package complexity and escort hours. Invoiced as a separate line item before screening day.</li>
+        <li class="lang-zh"><strong>远游协调服务费：</strong>按医院端医疗费用的 <strong>15%–25%</strong> 区间核算，按套餐复杂度与陪诊时长浮动；体检日前以独立条目发票形式给出。</li>
+      </ul>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 56px;">
+      <div>
+        <h3 class="lang-en">Included in the coordination fee</h3>
+        <h3 class="lang-zh">含在协调服务费内的工作</h3>
+        <ul style="margin-top: 14px;">
+          <li class="lang-en">Pre-visit document review and fasting / medication reminders</li>
+          <li class="lang-zh">行前材料检查与禁食 / 停药提醒</li>
+          <li class="lang-en">Pickup on screening day + check-in support at BFH·IMD</li>
+          <li class="lang-zh">体检日接送 + 抵达 BFH·IMD 协助登记</li>
+          <li class="lang-en">Bilingual interpretation in clinical settings</li>
+          <li class="lang-zh">临床场景双语翻译</li>
+          <li class="lang-en">Meals and beverages on screening day (per IMD's arrangement)</li>
+          <li class="lang-zh">体检日餐食与饮品（按医院 IMD 安排）</li>
+          <li class="lang-en">English summary translation of the screening report (standard version)</li>
+          <li class="lang-zh">体检报告英文摘要翻译（标准版）</li>
+          <li class="lang-en">One remote follow-up after you return home</li>
+          <li class="lang-zh">回国后 1 轮远程随访</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="lang-en">Not included</h3>
+        <h3 class="lang-zh">不含在内的费用</h3>
+        <ul style="margin-top: 14px;">
+          <li class="lang-en">Hospital medical fee (paid directly to the hospital)</li>
+          <li class="lang-zh">医院端医疗费（医院直收）</li>
+          <li class="lang-en">Anesthesia, biopsy, endoscopic treatments and other hospital add-ons (billed by the hospital per its rules)</li>
+          <li class="lang-zh">麻醉、活检、内镜下治疗等医院附加项（医院按规则计费）</li>
+          <li class="lang-en">Flights / hotels / visa application fees / personal spending</li>
+          <li class="lang-zh">机票 / 酒店 / 签证申请费 / 个人消费</li>
+          <li class="lang-en">Third-language professional medical interpretation (French / Japanese / Russian, etc.) — quoted separately, book 5 business days in advance</li>
+          <li class="lang-zh">第三方语种（法 / 日 / 俄等）的专业医学翻译（按需另计，5 工作日前预约）</li>
+        </ul>
+
+        <p class="lang-en" style="margin-top: 18px; font-size: 13px; color: var(--muted);">Accepted insurance direct-billing: <span class="placeholder">[To be confirmed: BFH·IMD's list of accepted insurance direct-pay arrangements]</span></p>
+        <p class="lang-zh" style="margin-top: 18px; font-size: 13px; color: var(--muted);">可直付保险范围：<span class="placeholder">[待确认：BFH·IMD 可接受的保险直付清单]</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §7.2 · FAQ + Service Boundary short ============ -->
+<section class="s alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span class="lang-en">§ 4.7.2 · Screening-specific FAQ</span>
+        <span class="lang-zh">§ 4.7.2 · 体检相关常见问题</span>
+      </div>
+      <h2 class="lang-en">8. Screening-specific FAQ</h2>
+      <h2 class="lang-zh">8. 体检相关常见问题</h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr; gap: 18px;">
+
+      <div class="entry-card">
+        <h4 class="lang-en">Q1 · Can I have just the screening without endoscopy?</h4>
+        <h4 class="lang-zh">Q1 · 我可以只做体检，不做胃肠镜吗？</h4>
+        <p class="lang-en" style="margin-top: 8px;">Yes. Packages A / B / C / E do not include endoscopy. Endoscopy requires a dedicated exam day and bowel preparation; if you need it, we recommend Package D or a separate appointment (see the <a href="endoscopy.html" style="color: var(--teal-700); border-bottom: 1px solid var(--gold-500);">Endoscopy page</a>).</p>
+        <p class="lang-zh" style="margin-top: 8px;">可以。A / B / C / E 四档套餐均不含胃肠镜。胃肠镜需要单独的检查日与肠道准备，建议有需求的客户选 D 档或单独预约（详见 <a href="endoscopy.html" style="color: var(--teal-700); border-bottom: 1px solid var(--gold-500);">Endoscopy 专题页</a>）。</p>
+      </div>
+
+      <div class="entry-card">
+        <h4 class="lang-en">Q2 · Do I need to fast? For how long?</h4>
+        <h4 class="lang-zh">Q2 · 体检需要空腹吗？要空腹多久？</h4>
+        <p class="lang-en" style="margin-top: 8px;">Most items require 8–12 hours of fasting (no food or drink after 22:00 the night before). Specific fasting and medication rules are delivered by your YuanU coordinator in a personalized pre-visit checklist. Package D, which includes endoscopy, has additional bowel-cleansing requirements.</p>
+        <p class="lang-zh" style="margin-top: 8px;">大多数项目要求 8–12 小时空腹（晚 22:00 后禁食水）。具体禁食 / 停药要求由远游协调员在行前发您专属准备清单。含胃肠镜的 D 档套餐另有肠道清洁要求。</p>
+      </div>
+
+      <div class="entry-card">
+        <h4 class="lang-en">Q3 · When are the reports ready? Can I wait in Beijing for the results?</h4>
+        <h4 class="lang-zh">Q3 · 报告什么时候出？我可以在北京等结果吗？</h4>
+        <p class="lang-en" style="margin-top: 8px;">Most items return same-day results. Biopsy / pathology items take 5–7 business days. Genetic tests take 2–4 weeks. If you wish to wait in Beijing for a BFH physician's in-person review, plan about one week; if you prefer to return home sooner, YuanU coordinates the English summary remotely.</p>
+        <p class="lang-zh" style="margin-top: 8px;">大部分项目当日出结果；活检 / 病理类项目需 5–7 个工作日；基因检测类需 2–4 周。如您希望在京等待并由 BFH 医师面诊解读，建议预留 1 周；如希望尽快回国，远游协调英文摘要远程发送。</p>
+      </div>
+
+    </div>
+
+    <div class="boundary-block warn" style="margin-top: 36px;" id="boundary-short">
+      <h4 class="lang-en">Service Boundary · short version</h4>
+      <h4 class="lang-zh">服务边界 · 简版</h4>
+      <p class="lang-en">YuanU does not diagnose, prescribe, or interpret medical results. All medical conclusions are issued independently by the BFH·IMD physician. See the <a href="about.html#boundary">full Service Boundary on the About page</a>.</p>
+      <p class="lang-zh">远游不诊断、不开具处方、不解读医疗结果。所有医学结论由 BFH·IMD 医师独立给出。完整服务边界见 <a href="about.html#boundary">About 页</a>。</p>
+    </div>
+
+    <!-- Final CTA -->
+    <div class="hero-cta" style="margin-top: 48px; justify-content: center;">
+      <a href="contact.html" class="btn btn--primary">
+        <span class="lang-en">Start a screening inquiry</span>
+        <span class="lang-zh">发起体检意向</span>
+        <span class="arrow">→</span>
+      </a>
+      <a href="patient-support.html" class="btn btn--ghost">
+        <span class="lang-en">See full patient support</span>
+        <span class="lang-zh">查看全部患者支持</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4><span class="lang-en">YuanU Medical Concierge</span><span class="lang-zh">YuanU Medical Concierge · 远游医疗</span></h4>
+        <p class="lang-en">A service of Beijing YuanU International Travel Co., Ltd., founded 2006.</p>
+        <p class="lang-zh">北京远游国际旅行社有限责任公司旗下品牌，公司成立于 2006 年。</p>
+        <p class="lang-en">YuanU is a <a href="about.html#boundary" class="boundary-link">licensed medical-coordination service company</a>, not a medical institution. All diagnoses, examinations and treatments are provided independently by licensed physicians at partnering hospitals. YuanU does not provide medical opinions or guarantee clinical outcomes.</p>
+        <p class="lang-zh">远游是经许可的<a href="about.html#boundary" class="boundary-link">医疗协调服务公司</a>，非医疗机构。所有诊断、检查与治疗均由合作医院的执业医师独立提供；远游不出具医学意见，不就医疗结果做承诺。</p>
+        <p class="micro lang-en">YuanU is an independent travel / concierge company; we do not provide clinical services and do not speak for any hospital.</p>
+        <p class="micro lang-zh">远游是独立的旅行服务/陪诊公司，不提供临床医疗服务，亦不代表任何医院发言。</p>
+      </div>
+
+      <div>
+        <h4><span class="lang-en">Navigate</span><span class="lang-zh">导航</span></h4>
+        <ul>
+          <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-zh">首页</span></a></li>
+          <li><a href="about.html"><span class="lang-en">About</span><span class="lang-zh">关于</span></a></li>
+          <li><a href="why-beijing.html"><span class="lang-en">Why Beijing</span><span class="lang-zh">为什么北京</span></a></li>
+          <li><a href="screening.html"><span class="lang-en">Health Screening</span><span class="lang-zh">健康体检</span></a></li>
+          <li><a href="endoscopy.html"><span class="lang-en">Endoscopy</span><span class="lang-zh">胃肠镜</span></a></li>
+          <li><a href="patient-support.html"><span class="lang-en">Patient Support</span><span class="lang-zh">患者支持</span></a></li>
+          <li><a href="faq.html"><span class="lang-en">FAQ</span><span class="lang-zh">问答</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4><span class="lang-en">Other</span><span class="lang-zh">其他</span></h4>
+        <ul>
+          <li><a href="other-services.html"><span class="lang-en">Other Services</span><span class="lang-zh">其它服务</span></a></li>
+          <li><a href="contact.html"><span class="lang-en">Contact Us</span><span class="lang-zh">联系我们</span></a></li>
+          <li><a href="contact.html#privacy"><span class="lang-en">Privacy Notice</span><span class="lang-zh">隐私声明</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4><span class="lang-en">Beijing Office</span><span class="lang-zh">北京办公</span></h4>
+        <p class="lang-en">Beijing YuanU International Travel Co., Ltd.</p>
+        <p class="lang-zh">北京远游国际旅行社有限责任公司</p>
+        <p class="lang-en">Beijing, China</p>
+        <p class="lang-zh">中国 · 北京</p>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <span class="license">
+        <span class="lang-en">Travel agency license · L-BJ-CJ00262</span>
+        <span class="lang-zh">旅行社经营许可证 · L-BJ-CJ00262</span>
+      </span>
+      <span>© 2026 Beijing YuanU International Travel Co., Ltd. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* === minimal lang-switch script === */
+(function () {
+  var body = document.body;
+  var buttons = document.querySelectorAll('.lang-toggle button');
+  function setLang(lang) {
+    body.setAttribute('data-lang', lang);
+    document.documentElement.setAttribute('lang', lang === 'zh' ? 'zh-CN' : 'en');
+    buttons.forEach(function (b) {
+      b.classList.toggle('active', b.getAttribute('data-set-lang') === lang);
+    });
+    try { localStorage.setItem('yuanu-lang', lang); } catch (e) {}
+  }
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () { setLang(b.getAttribute('data-set-lang')); });
+  });
+  try {
+    var saved = localStorage.getItem('yuanu-lang');
+    if (saved === 'zh' || saved === 'en') setLang(saved);
+  } catch (e) {}
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Page not found · YuanU Medical Concierge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #1A1A1A;
+      --ink-soft: #555;
+      --gold: #B89668;
+      --gold-soft: #D9C9A3;
+      --bg: #FAF7F0;
+      --serif-en: 'Cormorant Garamond', 'Times New Roman', serif;
+      --serif-zh: 'Noto Serif SC', serif;
+      --sans-en: 'Inter', sans-serif;
+      --sans-zh: 'Noto Sans SC', sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--sans-en);
+      color: var(--ink);
+      background: var(--bg);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+    }
+    body[data-lang="en"] .lang-zh,
+    body[data-lang="zh"] .lang-en { display: none; }
+    body[data-lang="zh"] { font-family: var(--sans-zh); }
+    body[data-lang="zh"] h1 { font-family: var(--serif-zh); }
+    .wrap { max-width: 560px; text-align: center; }
+    .code {
+      font-family: var(--serif-en);
+      font-size: 96px;
+      font-weight: 500;
+      color: var(--gold);
+      letter-spacing: 0.04em;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: var(--gold);
+      margin: 24px auto;
+    }
+    h1 {
+      font-family: var(--serif-en);
+      font-size: 28px;
+      font-weight: 500;
+      color: var(--ink);
+      letter-spacing: 0.02em;
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 15px;
+      color: var(--ink-soft);
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+    .actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: 1px solid var(--ink);
+      color: var(--ink);
+      background: transparent;
+      transition: all .2s;
+    }
+    .btn:hover { background: var(--ink); color: var(--bg); }
+    .btn--primary {
+      background: var(--ink);
+      color: var(--bg);
+    }
+    .btn--primary:hover { background: var(--gold); border-color: var(--gold); }
+    .lang-toggle {
+      position: fixed;
+      top: 24px;
+      right: 24px;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      color: var(--ink-soft);
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-family: inherit;
+    }
+  </style>
+</head>
+<body>
+  <button class="lang-toggle" onclick="toggleLang()">中文 / EN</button>
+  <div class="wrap">
+    <div class="code">404</div>
+    <div class="divider"></div>
+    <h1>
+      <span class="lang-en">The page you are looking for could not be found</span>
+      <span class="lang-zh">未找到您要访问的页面</span>
+    </h1>
+    <p>
+      <span class="lang-en">The page may have been moved, renamed, or the link you followed may be out of date. Please return to the homepage or write to our coordinator directly.</span>
+      <span class="lang-zh">该页面可能已被移动或重命名，或您访问的链接已失效。您可以返回首页，或直接通过邮件与我们的协调员联系。</span>
+    </p>
+    <div class="actions">
+      <a class="btn btn--primary" href="/">
+        <span class="lang-en">Return to homepage</span>
+        <span class="lang-zh">返回首页</span>
+      </a>
+      <a class="btn" href="mailto:zhangjianping@yuanu.com">
+        <span class="lang-en">Email a coordinator</span>
+        <span class="lang-zh">联系协调员</span>
+      </a>
+    </div>
+  </div>
+  <script>
+    function toggleLang() {
+      const cur = document.body.getAttribute('data-lang');
+      const next = cur === 'en' ? 'zh' : 'en';
+      document.body.setAttribute('data-lang', next);
+      document.documentElement.setAttribute('lang', next === 'zh' ? 'zh-CN' : 'en');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+# robots.txt — interim staging, before production domain (yuanumedical.com) goes live
+# After the production domain is bound on Vercel, replace this file with:
+#
+# User-agent: *
+# Allow: /
+# Sitemap: https://yuanumedical.com/sitemap.xml
+
+User-agent: *
+Disallow: /

@@ -1,0 +1,1308 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — YuanU Medical Concierge</title>
+<meta name="description" content="Submit your inquiry to a YuanU Patient Coordinator — first reply within one Beijing working day. Includes the privacy notice covering how your information is handled under China's Personal Information Protection Law (PIPL).">
+<meta property="og:title" content="Contact — YuanU Medical Concierge">
+<meta property="og:description" content="Submit your inquiry to a YuanU Patient Coordinator — first reply within one Beijing working day. Includes the privacy notice covering how your information is handled under China's Personal Information Protection Law (PIPL).">
+<meta property="og:type" content="website">
+
+<!-- Google Fonts: serif headings + sans body + mono numbers -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600&family=Lobster&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   YuanU Medical Concierge — v5 Design System
+   Defined by Bottle (Agent), 2026-06-07
+   Color: deep teal (#16384A) + cold gold (#B89668)
+   Type: Cormorant Garamond / Inter / Noto Serif SC / Noto Sans SC
+   ============================================================ */
+:root {
+  /* brand colors */
+  --teal-900: #0F2733;
+  --teal-700: #16384A;
+  --teal-500: #2E5A6E;
+  --teal-100: #DCE6EA;
+  --gold-600: #9F7E4F;
+  --gold-500: #B89668;
+  --gold-200: #E8DCC4;
+
+  /* neutrals */
+  --ivory:    #FAF7F2;
+  --ivory-2:  #F3EEE3;
+  --rule:     #E0DAD0;
+  --rule-2:   #CFC7B7;
+  --ink:      #1B1F23;
+  --ink-2:    #3D4350;
+  --muted:    #6B7280;
+
+  /* layout */
+  --container: 1240px;
+  --gutter: 24px;
+  --section-y: 110px;
+  --section-y-tight: 80px;
+
+  /* type */
+  --serif-en: "Cormorant Garamond", "Noto Serif SC", Georgia, serif;
+  --serif-zh: "Noto Serif SC", "Cormorant Garamond", serif;
+  --sans-en: "Inter", "Noto Sans SC", -apple-system, BlinkMacSystemFont, sans-serif;
+  --script:  "Lobster", "Cormorant Garamond", cursive;
+  --sans-zh: "Noto Sans SC", "Inter", -apple-system, sans-serif;
+  --mono:    "JetBrains Mono", ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--sans-en);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--ink);
+  background: var(--ivory);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body[data-lang="zh"] { font-family: var(--sans-zh); }
+body[data-lang="en"] .lang-zh,
+body[data-lang="zh"] .lang-en { display: none; }
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+/* ====== eyebrow (small caps label above section title) ====== */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--sans-en);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-600);
+  margin-bottom: 22px;
+}
+body[data-lang="zh"] .eyebrow { font-family: var(--sans-zh); letter-spacing: 0.18em; }
+.eyebrow::before {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background: var(--gold-500);
+}
+
+/* ====== typography ====== */
+h1, h2, h3, h4 {
+  font-family: var(--serif-en);
+  color: var(--teal-900);
+  font-weight: 500;
+  letter-spacing: -0.005em;
+}
+body[data-lang="zh"] h1,
+body[data-lang="zh"] h2,
+body[data-lang="zh"] h3,
+body[data-lang="zh"] h4 { font-family: var(--serif-zh); font-weight: 600; letter-spacing: 0.01em; }
+
+h1 { font-size: clamp(40px, 5vw, 60px); line-height: 1.12; }
+h2 { font-size: clamp(30px, 3.4vw, 42px); line-height: 1.2; margin-bottom: 24px; }
+h3 { font-size: 22px; line-height: 1.35; margin-bottom: 12px; }
+h4 { font-size: 17px; line-height: 1.4; }
+
+p { margin-bottom: 14px; }
+p.lede {
+  font-size: 19px;
+  line-height: 1.7;
+  color: var(--ink-2);
+  max-width: 780px;
+}
+.mono { font-family: var(--mono); font-size: 0.92em; letter-spacing: 0.02em; }
+
+/* ====== top bar ====== */
+.topbar {
+  border-bottom: 1px solid var(--rule);
+  background: var(--ivory);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(6px);
+}
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px var(--gutter);
+  max-width: var(--container);
+  margin: 0 auto;
+  gap: 24px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--serif-en);
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--teal-900);
+  letter-spacing: -0.005em;
+}
+.brand .mark {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--teal-700);
+  color: var(--teal-700);
+  font-family: var(--serif-en);
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: -0.02em;
+}
+.brand .brand-line2 {
+  display: block;
+  font-family: var(--sans-en);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--gold-600);
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 2px;
+}
+body[data-lang="zh"] .brand .brand-line2 { font-family: var(--sans-zh); letter-spacing: 0.12em; }
+
+.nav { display: flex; align-items: center; gap: 28px; }
+.nav a {
+  font-family: var(--sans-en);
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--ink-2);
+  position: relative;
+  padding: 6px 0;
+  transition: color 0.2s;
+}
+body[data-lang="zh"] .nav a { font-family: var(--sans-zh); font-size: 14px; }
+.nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background: var(--teal-700);
+  transition: width 0.3s ease;
+}
+.nav a:hover { color: var(--teal-700); }
+.nav a:hover::after { width: 100%; }
+
+.lang-toggle {
+  display: flex;
+  border: 1px solid var(--rule-2);
+  font-family: var(--sans-en);
+  font-size: 12px;
+  font-weight: 500;
+  overflow: hidden;
+}
+.lang-toggle button {
+  background: transparent;
+  border: 0;
+  padding: 8px 14px;
+  cursor: pointer;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+  transition: background 0.2s, color 0.2s;
+}
+.lang-toggle button.active {
+  background: var(--teal-700);
+  color: var(--ivory);
+}
+
+/* ====== hero ====== */
+.hero {
+  padding: 100px 0 80px;
+  border-bottom: 1px solid var(--rule);
+  background:
+    radial-gradient(ellipse at top right, rgba(184,150,104,0.06), transparent 50%),
+    var(--ivory);
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.55fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.hero h1 {
+  margin-bottom: 28px;
+  color: var(--teal-900);
+}
+.hero .lede { margin-bottom: 36px; }
+.hero-cta {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  font-family: var(--sans-en);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: 1px solid var(--teal-700);
+}
+body[data-lang="zh"] .btn { font-family: var(--sans-zh); letter-spacing: 0.06em; text-transform: none; font-size: 14px; }
+.btn--primary {
+  background: var(--teal-700);
+  color: var(--ivory);
+}
+.btn--primary:hover {
+  background: var(--teal-900);
+  border-color: var(--teal-900);
+  transform: translateY(-1px);
+}
+.btn--ghost {
+  background: transparent;
+  color: var(--teal-700);
+}
+.btn--ghost:hover {
+  background: var(--teal-700);
+  color: var(--ivory);
+}
+.btn .arrow { transition: transform 0.25s ease; }
+.btn:hover .arrow { transform: translateX(4px); }
+
+/* hero side ornament: 抽象北方建筑剪影 */
+.hero-ornament {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  background: linear-gradient(180deg, var(--ivory-2) 0%, var(--ivory) 100%);
+  border: 1px solid var(--rule);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.hero-ornament svg {
+  width: 86%;
+  height: auto;
+  opacity: 0.85;
+}
+.hero-ornament::before {
+  content: "BEIJING · 北京";
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  font-family: var(--sans-en);
+  font-size: 10px;
+  letter-spacing: 0.3em;
+  color: var(--gold-600);
+}
+.hero-ornament::after {
+  content: "established 2006";
+  position: absolute;
+  bottom: 18px;
+  right: 18px;
+  font-family: var(--serif-en);
+  font-style: italic;
+  font-size: 13px;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
+/* ====== section base ====== */
+section.s {
+  padding: var(--section-y) 0;
+  border-bottom: 1px solid var(--rule);
+}
+section.s.alt { background: var(--ivory-2); }
+section.s.tight { padding: var(--section-y-tight) 0; }
+
+.section-head {
+  max-width: 820px;
+  margin-bottom: 56px;
+}
+
+/* ====== trust strip (4 数据 / 资质条) ====== */
+.trust {
+  padding: 60px 0;
+  background: var(--teal-900);
+  color: var(--ivory);
+  border-bottom: 0;
+}
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+.trust-item {
+  padding: 12px 32px;
+  border-right: 1px solid rgba(255,255,255,0.12);
+}
+.trust-item:last-child { border-right: 0; }
+.trust-item:first-child { padding-left: 0; }
+.trust-num {
+  font-family: var(--serif-en);
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--gold-500);
+  margin-bottom: 14px;
+  letter-spacing: -0.02em;
+}
+.trust-num .unit { font-size: 22px; color: var(--gold-200); margin-left: 4px; vertical-align: super; }
+.trust-label {
+  font-family: var(--sans-en);
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--gold-200);
+  margin-bottom: 8px;
+  display: block;
+}
+body[data-lang="zh"] .trust-label { font-family: var(--sans-zh); letter-spacing: 0.14em; }
+.trust-desc {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: rgba(250,247,242,0.78);
+}
+
+/* ====== three columns generic ====== */
+.three-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.entry-card {
+  display: block;
+  padding: 36px 32px 32px;
+  background: var(--ivory);
+  border: 1px solid var(--rule);
+  transition: all 0.3s ease;
+  position: relative;
+}
+section.s.alt .entry-card { background: var(--ivory); }
+.entry-card:hover {
+  border-color: var(--teal-700);
+  transform: translateY(-2px);
+}
+.entry-card .eyebrow { margin-bottom: 16px; }
+.entry-card h3 { color: var(--teal-900); }
+.entry-card p { color: var(--ink-2); font-size: 15px; margin-bottom: 24px; }
+.entry-card .read-more {
+  font-family: var(--sans-en);
+  font-size: 12.5px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--teal-700);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+body[data-lang="zh"] .entry-card .read-more { font-family: var(--sans-zh); letter-spacing: 0.06em; text-transform: none; font-size: 13.5px; }
+.entry-card .read-more::after {
+  content: "→";
+  transition: transform 0.25s;
+}
+.entry-card:hover .read-more::after { transform: translateX(4px); }
+
+/* ====== Why YuanU 4 facts ====== */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 48px 64px;
+}
+.why-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 24px;
+}
+.why-num {
+  font-family: var(--serif-en);
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--gold-500);
+  border-top: 1px solid var(--gold-500);
+  padding-top: 12px;
+  letter-spacing: -0.02em;
+}
+.why-item h3 {
+  font-size: 21px;
+  margin-bottom: 14px;
+  color: var(--teal-900);
+}
+.why-item p { font-size: 15px; color: var(--ink-2); line-height: 1.7; }
+.why-item p strong { color: var(--teal-900); font-weight: 600; }
+
+/* ====== 6-step journey ====== */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--rule);
+  border-left: 1px solid var(--rule);
+}
+.step {
+  border-right: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  padding: 36px 32px 40px;
+  background: var(--ivory);
+  position: relative;
+  min-height: 240px;
+}
+section.s.alt .step { background: var(--ivory-2); }
+.step-num {
+  font-family: var(--serif-en);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  color: var(--gold-600);
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  display: block;
+}
+.step h4 {
+  font-size: 18px;
+  color: var(--teal-900);
+  margin-bottom: 10px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+body[data-lang="zh"] .step h4 { font-weight: 600; }
+.step p {
+  font-size: 14px;
+  color: var(--ink-2);
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+.step p strong { color: var(--teal-900); font-weight: 600; }
+
+/* ====== credentials strip ====== */
+.creds {
+  padding: 56px 0;
+  background: var(--ivory-2);
+  border-bottom: 1px solid var(--rule);
+  border-top: 1px solid var(--rule);
+}
+.creds-head {
+  text-align: center;
+  margin-bottom: 36px;
+}
+.creds-head .eyebrow { justify-content: center; display: inline-flex; }
+.creds-head .eyebrow::before { display: none; }
+.creds-head p {
+  font-family: var(--serif-en);
+  font-style: italic;
+  font-size: 15px;
+  color: var(--muted);
+  margin: 0;
+}
+body[data-lang="zh"] .creds-head p { font-family: var(--serif-zh); font-style: normal; }
+.creds-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+.cred {
+  text-align: center;
+  padding: 20px 24px;
+  border-right: 1px solid var(--rule);
+}
+.cred:last-child { border-right: 0; }
+.cred-mark {
+  font-family: var(--serif-en);
+  font-size: 28px;
+  color: var(--teal-700);
+  margin-bottom: 8px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+.cred-label {
+  font-family: var(--sans-en);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-weight: 500;
+}
+body[data-lang="zh"] .cred-label { font-family: var(--sans-zh); letter-spacing: 0.1em; }
+
+/* ====== boundary block ====== */
+.boundary-block {
+  padding: 36px 40px;
+  border-left: 3px solid var(--gold-500);
+  background: var(--ivory);
+  margin: 36px 0;
+}
+.boundary-block p { color: var(--ink-2); font-size: 15.5px; line-height: 1.75; margin-bottom: 0; }
+.boundary-block p a { color: var(--teal-700); border-bottom: 1px solid var(--gold-500); }
+.boundary-block p a:hover { background: var(--gold-200); }
+
+/* ====== footer ====== */
+footer {
+  background: var(--teal-900);
+  color: rgba(250,247,242,0.78);
+  padding: 80px 0 36px;
+}
+footer .container { max-width: var(--container); }
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr 1fr 1fr;
+  gap: 56px;
+  margin-bottom: 56px;
+}
+footer h4 {
+  font-family: var(--serif-en);
+  color: var(--ivory);
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+body[data-lang="zh"] footer h4 { font-family: var(--serif-zh); font-weight: 600; }
+footer p { font-size: 13.5px; line-height: 1.7; margin-bottom: 10px; color: rgba(250,247,242,0.7); }
+footer .micro { font-size: 11.5px; color: rgba(250,247,242,0.5); margin-top: 10px; }
+footer ul { list-style: none; }
+footer ul li { margin-bottom: 10px; }
+footer ul li a {
+  font-size: 13.5px;
+  color: rgba(250,247,242,0.78);
+  transition: color 0.2s;
+}
+footer ul li a:hover { color: var(--gold-500); }
+footer .footer-legal {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: rgba(250,247,242,0.5);
+  flex-wrap: wrap;
+  gap: 16px;
+}
+footer .footer-legal .license { font-family: var(--mono); }
+footer a.boundary-link { color: var(--gold-500); border-bottom: 1px dotted rgba(184,150,104,0.5); }
+footer a.boundary-link:hover { border-bottom-color: var(--gold-500); }
+
+/* ====== responsive ====== */
+@media (max-width: 1024px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+  .hero-ornament { max-width: 380px; }
+  .trust-grid { grid-template-columns: repeat(2, 1fr); }
+  .trust-item { padding: 24px 24px; border-bottom: 1px solid rgba(255,255,255,0.12); }
+  .trust-item:nth-child(odd) { padding-left: 0; }
+  .trust-item:nth-child(2n) { border-right: 0; }
+  .three-col { grid-template-columns: 1fr; }
+  .why-grid { grid-template-columns: 1fr; gap: 32px; }
+  .steps { grid-template-columns: repeat(2, 1fr); }
+  .creds-row { grid-template-columns: repeat(2, 1fr); }
+  .cred:nth-child(2n) { border-right: 0; }
+  .cred:nth-child(-n+2) { border-bottom: 1px solid var(--rule); }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+}
+@media (max-width: 720px) {
+  :root { --section-y: 70px; --section-y-tight: 50px; }
+  .nav { display: none; }
+  .topbar-inner { padding: 14px var(--gutter); }
+  .hero { padding: 60px 0 50px; }
+  .steps { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .why-item { grid-template-columns: 60px 1fr; gap: 16px; }
+  .trust-grid { grid-template-columns: 1fr; }
+  .trust-item { border-right: 0; padding: 20px 0; }
+  .cred-mark { font-size: 22px; }
+}
+
+/* ====== additional helpers shared across inner pages ====== */
+.nav a.active { color: var(--teal-700); }
+.nav a.active::after { width: 100%; background: var(--gold-500); }
+
+/* simplified hero (no Brand Crest) for inner pages */
+.hero--inner { padding: 90px 0 70px; }
+.hero--inner h1 { margin-bottom: 24px; }
+.hero--inner .lede { margin-bottom: 22px; }
+.hero--inner .hero-grid { grid-template-columns: 1.45fr 0.85fr; gap: 64px; }
+.hero--inner .hero-ornament {
+  aspect-ratio: 5 / 4;
+  max-width: 360px;
+  margin-left: auto;
+}
+.hero--inner .hero-ornament::before,
+.hero--inner .hero-ornament::after { content: none; }
+.hero--inner .hero-meta {
+  margin-top: 18px;
+  font-size: 13.5px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+.hero--inner .hero-meta strong { color: var(--teal-700); font-weight: 600; }
+
+@media (max-width: 1024px) {
+  .hero--inner .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+  .hero--inner .hero-ornament { margin: 0; max-width: 320px; }
+}
+
+
+/* ====== contact: inquiry form ====== */
+.ct-form {
+  margin-top: 8px;
+  border: 1px solid var(--rule);
+  background: var(--ivory);
+  padding: 40px 44px;
+}
+section.s.alt .ct-form { background: var(--ivory-2); }
+.ct-form-title {
+  font-family: var(--serif-en);
+  font-size: 22px;
+  color: var(--teal-900);
+  font-weight: 500;
+  margin: 0 0 8px;
+  letter-spacing: -0.005em;
+}
+body[data-lang="zh"] .ct-form-title { font-family: var(--serif-zh); font-weight: 600; }
+.ct-form-sub {
+  font-size: 13.5px;
+  color: var(--muted);
+  margin-bottom: 28px;
+  line-height: 1.65;
+}
+.ct-form-sub .req-mark { color: var(--gold-600); }
+.ct-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 28px;
+}
+.ct-field { display: flex; flex-direction: column; }
+.ct-field--full { grid-column: 1 / -1; }
+.ct-field label {
+  font-family: var(--sans-en);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--teal-700);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+body[data-lang="zh"] .ct-field label { font-family: var(--sans-zh); letter-spacing: 0.04em; text-transform: none; font-size: 13px; }
+.ct-field label .req { color: var(--gold-600); margin-left: 4px; font-weight: 600; }
+.ct-field label .hint {
+  color: var(--muted);
+  font-weight: 400;
+  margin-left: 8px;
+  font-size: 11.5px;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}
+.ct-field input,
+.ct-field select,
+.ct-field textarea {
+  font-family: var(--sans-en);
+  font-size: 14.5px;
+  color: var(--ink);
+  background: var(--ivory);
+  border: 1px solid var(--rule-2);
+  padding: 12px 14px;
+  line-height: 1.5;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+body[data-lang="zh"] .ct-field input,
+body[data-lang="zh"] .ct-field select,
+body[data-lang="zh"] .ct-field textarea { font-family: var(--sans-zh); }
+.ct-field input:focus,
+.ct-field select:focus,
+.ct-field textarea:focus {
+  outline: none;
+  border-color: var(--teal-700);
+  box-shadow: 0 0 0 3px rgba(184,150,104,0.18);
+}
+.ct-field textarea { min-height: 110px; resize: vertical; }
+.ct-checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  padding: 6px 0 2px;
+}
+.ct-checks label {
+  display: flex; align-items: center; gap: 8px;
+  font-family: var(--sans-en);
+  font-size: 14px;
+  color: var(--ink-2);
+  text-transform: none;
+  letter-spacing: 0;
+  margin: 0;
+  cursor: pointer;
+  font-weight: 400;
+}
+body[data-lang="zh"] .ct-checks label { font-family: var(--sans-zh); }
+.ct-checks input[type="checkbox"],
+.ct-checks input[type="radio"] {
+  margin: 0;
+  accent-color: var(--teal-700);
+}
+.ct-char {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 6px;
+  text-align: right;
+}
+.ct-consent {
+  margin-top: 24px;
+  padding: 18px 22px;
+  background: var(--ivory-2);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--gold-500);
+  font-size: 13.5px;
+  color: var(--ink-2);
+  line-height: 1.7;
+}
+section.s.alt .ct-consent { background: var(--ivory); }
+.ct-consent a { color: var(--teal-700); border-bottom: 1px solid var(--gold-500); }
+.ct-submit-row {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.ct-submit-note {
+  font-size: 12.5px;
+  color: var(--muted);
+  line-height: 1.6;
+  max-width: 460px;
+}
+
+/* contact info cards */
+.ct-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 8px;
+}
+.ct-info-card {
+  border: 1px solid var(--rule);
+  background: var(--ivory);
+  padding: 30px 32px;
+  position: relative;
+}
+section.s.alt .ct-info-card { background: var(--ivory-2); }
+.ct-info-card h3 {
+  font-family: var(--serif-en);
+  font-size: 19px;
+  color: var(--teal-900);
+  font-weight: 600;
+  margin-bottom: 14px;
+  letter-spacing: 0;
+}
+body[data-lang="zh"] .ct-info-card h3 { font-family: var(--serif-zh); }
+.ct-info-card p {
+  font-size: 14.5px;
+  color: var(--ink-2);
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+.ct-info-card .micro {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+.ct-info-card .mono { font-family: var(--mono); font-size: 13px; color: var(--teal-700); }
+.ct-emergency {
+  border-left: 3px solid var(--gold-500);
+  background: var(--ivory);
+}
+section.s.alt .ct-emergency { background: var(--ivory); }
+.ct-emergency .big-num {
+  font-family: var(--serif-en);
+  font-size: 38px;
+  font-weight: 500;
+  color: var(--gold-600);
+  letter-spacing: 0.02em;
+  line-height: 1;
+  margin-right: 6px;
+  vertical-align: -3px;
+}
+@media (max-width: 760px) {
+  .ct-info-grid { grid-template-columns: 1fr; }
+  .ct-grid { grid-template-columns: 1fr; }
+  .ct-form { padding: 28px 22px; }
+}
+
+/* privacy list */
+.ct-privacy-list {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0;
+  counter-reset: pc;
+  border-top: 1px solid var(--rule);
+}
+.ct-privacy-list li {
+  padding: 22px 0 22px 56px;
+  border-bottom: 1px solid var(--rule);
+  position: relative;
+  counter-increment: pc;
+  color: var(--ink-2);
+  line-height: 1.75;
+  font-size: 15px;
+}
+.ct-privacy-list li::before {
+  content: "0" counter(pc);
+  position: absolute;
+  left: 0;
+  top: 22px;
+  font-family: var(--serif-en);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--gold-500);
+  letter-spacing: -0.01em;
+}
+.ct-privacy-list li strong { color: var(--teal-900); font-weight: 600; }
+
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="brand">
+      <span class="mark">Y</span>
+      <span>
+        <span class="lang-en">YuanU Medical Concierge</span>
+        <span class="lang-zh">远游 · 医疗协调</span>
+        <span class="brand-line2 lang-en">Beijing · Established 2006</span>
+        <span class="brand-line2 lang-zh">北京 · 始于 2006</span>
+      </span>
+    </a>
+    <nav class="nav">
+      <a href="index.html"><span class="lang-en">Home</span><span class="lang-zh">首页</span></a>
+      <a href="about.html"><span class="lang-en">About</span><span class="lang-zh">关于</span></a>
+      <a href="why-beijing.html"><span class="lang-en">Why Beijing</span><span class="lang-zh">为什么北京</span></a>
+      <a href="screening.html"><span class="lang-en">Health Screening</span><span class="lang-zh">健康体检</span></a>
+      <a href="endoscopy.html"><span class="lang-en">Endoscopy</span><span class="lang-zh">胃肠镜</span></a>
+      <a href="patient-support.html"><span class="lang-en">Patient Support</span><span class="lang-zh">患者支持</span></a>
+      <a href="faq.html"><span class="lang-en">FAQ</span><span class="lang-zh">问答</span></a>
+    </nav>
+    <div class="lang-toggle" role="group" aria-label="language switch">
+      <button data-set-lang="en" class="active">EN</button>
+      <button data-set-lang="zh">中文</button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero hero--inner">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">
+        <span class="lang-en">Contact · §9</span>
+        <span class="lang-zh">联系我们 · §9</span>
+      </div>
+      <h1 class="lang-en">Submit your inquiry — a YuanU coordinator will reply within one business day</h1>
+      <h1 class="lang-zh">提交您的咨询 — 1 个工作日内由远游协调员回复</h1>
+
+      <p class="lede lang-en">
+        Please fill in the language you prefer (English, Chinese, French, Japanese, Russian). A YuanU Patient Coordinator will provide a first reply within one Beijing working day (CST 9:00–18:00, Mon–Fri). The coordinator will then request your prior medical records and return a coordination plan within 2–5 working days.
+      </p>
+      <p class="lede lang-zh">
+        请用您方便的语言（英、中、法、日、俄）填写。远游协调员在北京工作时间（CST 9:00–18:00 周一至周五）1 个工作日内首次回复；后续会请您补充病历，并在 2–5 个工作日内给出协调方案。
+      </p>
+    </div>
+
+    <div class="hero-ornament" aria-hidden="true">
+      <svg viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- abstract envelope + arrow lines -->
+        <g stroke="#B89668" stroke-width="0.7" fill="none">
+          <!-- envelope outer -->
+          <rect x="48" y="52" width="104" height="68"/>
+          <!-- envelope flap -->
+          <path d="M 48 52 L 100 92 L 152 52"/>
+          <!-- envelope inner fold lines -->
+          <line x1="48" y1="120" x2="80" y2="92" stroke-width="0.5"/>
+          <line x1="152" y1="120" x2="120" y2="92" stroke-width="0.5"/>
+          <!-- inbound mail dots -->
+          <circle cx="36" cy="36" r="1.2" fill="#B89668" stroke="none"/>
+          <circle cx="44" cy="40" r="1.2" fill="#B89668" stroke="none"/>
+          <circle cx="32" cy="44" r="1.2" fill="#B89668" stroke="none"/>
+        </g>
+        <line x1="40" y1="138" x2="160" y2="138" stroke="#B89668" stroke-width="0.4"/>
+        <text x="100" y="151" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="10" fill="#6B7280" letter-spacing="0.06em">first reply within one Beijing working day</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §9.2 Inquiry form ============ -->
+<section class="s">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span class="lang-en">Inquiry form · §9.2</span>
+        <span class="lang-zh">咨询表单 · §9.2</span>
+      </div>
+      <h2 class="lang-en">Submit your checkup request</h2>
+      <h2 class="lang-zh">提交体检 / 就医咨询</h2>
+    </div>
+
+    <!-- ============ §9.1.5 Direct email (interim, before backend form service) ============ -->
+    <div class="email-direct" style="margin: 0 auto 32px; max-width: 720px; padding: 24px 28px; border: 1px solid #D9C9A3; background: #FAF6EC; border-radius: 4px; text-align: center;">
+      <div style="font-family: 'Cormorant Garamond', serif; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; color: #8B7355; margin-bottom: 10px;">
+        <span class="lang-en">Direct email · preferred</span>
+        <span class="lang-zh">邮件直联 · 推荐</span>
+      </div>
+      <a href="mailto:zhangjianping@yuanu.com" style="font-family: 'Cormorant Garamond', serif; font-size: 26px; color: #1A1A1A; text-decoration: none; border-bottom: 1px solid #B89668; padding-bottom: 2px; letter-spacing: 0.02em;">zhangjianping@yuanu.com</a>
+      <p style="margin: 14px 0 0; font-size: 13px; color: #555; line-height: 1.6;">
+        <span class="lang-en">For the fastest response, please write to us directly. First reply within one Beijing working day.</span>
+        <span class="lang-zh">如希望尽快得到回复，建议直接发送邮件给我们；北京工作时间内 1 个工作日内首次回复。</span>
+      </p>
+    </div>
+
+    <form class="ct-form" action="mailto:zhangjianping@yuanu.com" method="post" enctype="text/plain" novalidate>
+      <div class="ct-form-title">
+        <span class="lang-en">Tell us how to reach you and what you are considering</span>
+        <span class="lang-zh">请提供您的联络方式与初步意向</span>
+      </div>
+      <div class="ct-form-sub">
+        <span class="lang-en">Fields marked <span class="req-mark">*</span> are required. Please do not include detailed medical records here — your coordinator will request them through a secure channel.</span>
+        <span class="lang-zh">带 <span class="req-mark">*</span> 为必填项；请勿在此提供详细病历，协调员会通过安全渠道单独向您索取。</span>
+      </div>
+
+      <div class="ct-grid">
+
+        <div class="ct-field">
+          <label for="f-name">
+            <span class="lang-en">Name <span class="req">*</span><span class="hint">As shown on passport</span></span>
+            <span class="lang-zh">姓名 <span class="req">*</span><span class="hint">与护照一致</span></span>
+          </label>
+          <input type="text" id="f-name" name="name" autocomplete="name" required>
+        </div>
+
+        <div class="ct-field">
+          <label for="f-email">
+            <span class="lang-en">Email <span class="req">*</span><span class="hint">For coordinator's first reply</span></span>
+            <span class="lang-zh">邮箱 <span class="req">*</span><span class="hint">用于协调员首次回复</span></span>
+          </label>
+          <input type="email" id="f-email" name="email" autocomplete="email" required>
+        </div>
+
+        <div class="ct-field">
+          <label for="f-lang">
+            <span class="lang-en">Preferred Language <span class="req">*</span></span>
+            <span class="lang-zh">偏好语言 <span class="req">*</span></span>
+          </label>
+          <select id="f-lang" name="preferred_language" required>
+            <option value="">— Select —</option>
+            <option value="en">English</option>
+            <option value="zh">中文 / Chinese</option>
+            <option value="fr">Français / French</option>
+            <option value="ja">日本語 / Japanese</option>
+            <option value="ru">Русский / Russian</option>
+            <option value="other">Other (please specify in notes)</option>
+          </select>
+        </div>
+
+        <div class="ct-field">
+          <label for="f-country">
+            <span class="lang-en">Country / Region <span class="req">*</span><span class="hint">For time-zone and visa context</span></span>
+            <span class="lang-zh">国家 / 地区 <span class="req">*</span><span class="hint">用于了解时区与签证背景</span></span>
+          </label>
+          <input type="text" id="f-country" name="country" autocomplete="country-name" required placeholder="e.g. United States / Singapore / Russia">
+        </div>
+
+        <div class="ct-field ct-field--full">
+          <label>
+            <span class="lang-en">Service Interest <span class="req">*</span><span class="hint">Tick all that apply</span></span>
+            <span class="lang-zh">初步意向 <span class="req">*</span><span class="hint">可多选</span></span>
+          </label>
+          <div class="ct-checks">
+            <label><input type="checkbox" name="interest" value="screening"><span class="lang-en">Health screening</span><span class="lang-zh">健康体检</span></label>
+            <label><input type="checkbox" name="interest" value="endoscopy"><span class="lang-en">Endoscopy</span><span class="lang-zh">胃肠镜</span></label>
+            <label><input type="checkbox" name="interest" value="consult"><span class="lang-en">Senior-specialist consultation</span><span class="lang-zh">专家会诊</span></label>
+            <label><input type="checkbox" name="interest" value="unsure"><span class="lang-en">Not sure yet</span><span class="lang-zh">不确定</span></label>
+          </div>
+        </div>
+
+        <div class="ct-field">
+          <label for="f-window">
+            <span class="lang-en">Preferred Visit Window<span class="hint">Optional · month / quarter</span></span>
+            <span class="lang-zh">计划来京时间窗口<span class="hint">可选 · 月份 / 季度</span></span>
+          </label>
+          <input type="text" id="f-window" name="visit_window" placeholder="e.g. April – May 2026">
+        </div>
+
+        <div class="ct-field">
+          <label for="f-diag">
+            <span class="lang-en">Existing Diagnosis<span class="hint">Optional · yes / no &amp; brief</span></span>
+            <span class="lang-zh">是否已有具体诊断<span class="hint">可选 · 是 / 否 + 简述</span></span>
+          </label>
+          <input type="text" id="f-diag" name="diagnosis" placeholder="">
+        </div>
+
+        <div class="ct-field ct-field--full">
+          <label for="f-concern">
+            <span class="lang-en">Primary Medical Concern<span class="hint">Optional · max 500 characters · brief history or focus only — not detailed records</span></span>
+            <span class="lang-zh">您当前的主要医疗关注<span class="hint">可选 · ≤ 500 字 · 简述病史 / 关注点（不要在此处提供详细病历）</span></span>
+          </label>
+          <textarea id="f-concern" name="concern" maxlength="500"></textarea>
+          <div class="ct-char">
+            <span class="lang-en">Up to 500 characters</span>
+            <span class="lang-zh">不超过 500 字</span>
+          </div>
+        </div>
+
+        <div class="ct-field ct-field--full">
+          <label>
+            <span class="lang-en">How would you like us to reach you? <span class="req">*</span><span class="hint">If WhatsApp / WeChat, please add number / ID in notes</span></span>
+            <span class="lang-zh">您希望我们如何联系您 <span class="req">*</span><span class="hint">如选 WhatsApp / 微信，请在备注内留号 / ID</span></span>
+          </label>
+          <div class="ct-checks">
+            <label><input type="radio" name="contact_pref" value="email"><span class="lang-en">Email</span><span class="lang-zh">邮件</span></label>
+            <label><input type="radio" name="contact_pref" value="whatsapp"><span class="lang-en">WhatsApp</span><span class="lang-zh">WhatsApp</span></label>
+            <label><input type="radio" name="contact_pref" value="wechat"><span class="lang-en">WeChat</span><span class="lang-zh">微信</span></label>
+            <label><input type="radio" name="contact_pref" value="other"><span class="lang-en">Other</span><span class="lang-zh">其他</span></label>
+          </div>
+        </div>
+
+        <div class="ct-field ct-field--full">
+          <label for="f-notes">
+            <span class="lang-en">Additional Notes<span class="hint">Optional · max 500 characters</span></span>
+            <span class="lang-zh">备注<span class="hint">可选 · ≤ 500 字</span></span>
+          </label>
+          <textarea id="f-notes" name="notes" maxlength="500"></textarea>
+          <div class="ct-char">
+            <span class="lang-en">Up to 500 characters</span>
+            <span class="lang-zh">不超过 500 字</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ct-consent">
+        <span class="lang-en">By submitting this form, you agree that YuanU may collect the above information <strong>for the sole purpose of coordinating this inquiry</strong>. YuanU will not share your personal or medical information with any third party. See the <a href="#privacy">Privacy Notice</a> below.</span>
+        <span class="lang-zh">提交本表即表示您同意远游收集上述信息，<strong>仅用于本次咨询的内部协调用途</strong>；远游不会向任何第三方分享您的个人或医疗信息。详见下方 <a href="#privacy">隐私声明</a>。</span>
+      </div>
+
+      <div class="ct-submit-row">
+        <button type="submit" class="btn btn--primary">
+          <span class="lang-en">Send via email</span>
+          <span class="lang-zh">通过邮件发送</span>
+          <span class="arrow">→</span>
+        </button>
+        <div class="ct-submit-note">
+          <span class="lang-en">Clicking the button will open your default email client with the form contents prefilled. First reply within one Beijing working day. A backend form service (Formspree / Tally) will be connected once the production domain is live.</span>
+          <span class="lang-zh">点击按钮将打开您默认的邮件客户端并预填表单内容；北京工作时间内 1 个工作日内首次回复。正式域名上线后将接入第三方表单服务（Formspree / Tally）。</span>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ============ §9.3 Privacy Notice ============ -->
+<section class="s alt" id="privacy">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span class="lang-en">Privacy Notice · §9.3</span>
+        <span class="lang-zh">隐私声明 · §9.3</span>
+      </div>
+      <h2 class="lang-en">How we handle the information you submit</h2>
+      <h2 class="lang-zh">关于您提交信息的处理</h2>
+      <p class="lede lang-en" style="margin-top: 12px;">
+        YuanU follows the requirements of the Personal Information Protection Law of the People's Republic of China (PIPL) and applicable medical-information protection rules. All information you provide through this form or other channels is handled as follows.
+      </p>
+      <p class="lede lang-zh" style="margin-top: 12px;">
+        远游遵循中国《个人信息保护法》（PIPL）与医疗信息保护的相关要求。您通过本表单或其他渠道提供的所有信息，按以下方式处理。
+      </p>
+    </div>
+
+    <ol class="ct-privacy-list">
+      <li>
+        <span class="lang-en"><strong>Scope of use.</strong> Used only for internal coordination of this inquiry, for appointment alignment with BFH·IMD and partner hospitals, and for issuing the necessary appointment confirmation letter for visa support.</span>
+        <span class="lang-zh"><strong>使用范围。</strong>仅用于本次咨询的内部协调、与 BFH·IMD 等合作医院的预约对接、必要的签证支持函出具。</span>
+      </li>
+      <li>
+        <span class="lang-en"><strong>No sharing with third parties.</strong> YuanU will not share your personal or medical information with any third party unrelated to this inquiry (including but not limited to insurers, marketing channels, or other medical institutions).</span>
+        <span class="lang-zh"><strong>不向第三方分享。</strong>远游不会向任何与本次咨询无关的第三方（包括但不限于保险公司、市场推广方、其他医疗机构）分享您的个人或医疗信息。</span>
+      </li>
+      <li>
+        <span class="lang-en"><strong>Encrypted transfer.</strong> Medical materials are received via encrypted email or secure file transfer links.</span>
+        <span class="lang-zh"><strong>加密传输。</strong>医疗资料通过加密邮件 / 安全文件传输链接接收。</span>
+      </li>
+      <li>
+        <span class="lang-en"><strong>Retention period.</strong> Basic contact information is retained for 2 years for customer records; medical records are retained according to hospital policy; YuanU's internal working translations are destroyed within 30 days after delivery.</span>
+        <span class="lang-zh"><strong>保留期限。</strong>基础联系信息保留 2 年用于客户档案；医疗资料按 BFH 医院规定保留；远游内部翻译工作副本在交付后 30 天内销毁。</span>
+      </li>
+      <li>
+        <span class="lang-en"><strong>Your rights.</strong> You may, at any time, email us to: (a) request a copy of your information; (b) request corrections; (c) request deletion within reasonable limits (hospital-side reports are retained by the hospital under its own rules, and are not within YuanU's deletable scope).</span>
+        <span class="lang-zh"><strong>您的权利。</strong>您可以随时通过邮件要求远游：①查阅 / 复制您的信息 ②更正 ③在合理范围内删除（医院端报告由医院按规定保留，不在远游可删除范围内）。</span>
+      </li>
+      <li>
+        <span class="lang-en"><strong>Cross-border transfer.</strong> If you are a patient based outside mainland China, your information may be stored and processed within mainland China — this is required for the coordination work you have asked us to perform on your behalf.</span>
+        <span class="lang-zh"><strong>跨境传输。</strong>如您是中国大陆境外的患者，您的信息可能在中国境内存储和处理；这是基于您选择来中国就医的协调需要。</span>
+      </li>
+    </ol>
+
+    <div class="boundary-block" style="margin-top: 36px;">
+      <p class="lang-en"><strong>Note on PIPL vs HIPAA.</strong> China's PIPL and the United States' HIPAA are not equivalent frameworks. We follow PIPL as the governing law for handling your information; if your insurer or home-country physician requires HIPAA-style documentation, please tell your coordinator at the inquiry stage.</p>
+      <p class="lang-zh"><strong>关于 PIPL 与 HIPAA 的说明。</strong>中国《个人信息保护法》（PIPL）与美国 HIPAA 并非等价框架；远游按 PIPL 处理您的信息。如您本国保险公司或医师要求 HIPAA 形式的合规材料，请在咨询阶段告知您的协调员。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §9.4 Other channels ============ -->
+<section class="s">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span class="lang-en">Other channels · §9.4</span>
+        <span class="lang-zh">其他联系方式 · §9.4</span>
+      </div>
+      <h2 class="lang-en">Other ways to reach us</h2>
+      <h2 class="lang-zh">其他联系方式</h2>
+    </div>
+
+    <div class="ct-info-grid">
+
+      <div class="ct-info-card">
+        <h3 class="lang-en">General inquiries</h3>
+        <h3 class="lang-zh">常规咨询</h3>
+        <p class="lang-en">Submit via the inquiry form above, or write to your assigned coordinator.</p>
+        <p class="lang-zh">通过上方表单提交，或写信给您的专属协调员。</p>
+        <p class="lang-en">Reply window: within one Beijing working day (Mon–Fri, 9:00–18:00 CST).</p>
+        <p class="lang-zh">回复时间：北京工作时间 周一–周五 9:00–18:00 内 1 个工作日。</p>
+      </div>
+
+      <div class="ct-info-card">
+        <h3 class="lang-en">Administrative urgency · active clients</h3>
+        <h3 class="lang-zh">进行中客户的紧急行政事项</h3>
+        <p class="lang-en">Your dedicated coordinator's contact details are shared with you privately after you confirm your coordination plan. <strong>7×24 administrative response — not a medical emergency line.</strong></p>
+        <p class="lang-zh">您的专属协调员联系方式在您确认协调方案后单独发您。<strong>7×24 行政响应；不含医疗紧急响应。</strong></p>
+      </div>
+
+      <div class="ct-info-card ct-emergency">
+        <h3 class="lang-en">Medical emergencies</h3>
+        <h3 class="lang-zh">医疗紧急情况</h3>
+        <p class="lang-en"><span class="big-num">120</span> &nbsp; Beijing's medical emergency number.</p>
+        <p class="lang-zh">立即拨打 <span class="big-num">120</span>（北京急救）。</p>
+        <p class="lang-en">After placing the call, notify your YuanU coordinator. YuanU will provide administrative support immediately — accompanying you to the emergency department, bilingual interpretation, and family-contact coordination.</p>
+        <p class="lang-zh">拨打后通知您的远游协调员；远游会在第一时间提供行政支持（陪同至急诊、双语翻译、家属联系）。</p>
+      </div>
+
+      <div class="ct-info-card">
+        <h3 class="lang-en">Company information</h3>
+        <h3 class="lang-zh">公司信息</h3>
+        <p class="lang-en">
+          Beijing YuanU International Travel Co., Ltd.<br>
+          Travel agency operating license: <span class="mono">L-BJ-CJ00262</span><br>
+          Established: 2006<br>
+          Brand: YuanU Medical Concierge<br>
+          Registered in Beijing, People's Republic of China
+        </p>
+        <p class="lang-zh">
+          北京远游国际旅行社有限责任公司<br>
+          旅行社业务经营许可证：<span class="mono">L-BJ-CJ00262</span><br>
+          公司成立：2006 年<br>
+          品牌：YuanU Medical Concierge<br>
+          注册地：中华人民共和国北京市
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4><span class="lang-en">YuanU Medical Concierge</span><span class="lang-zh">YuanU Medical Concierge · 远游医疗</span></h4>
+        <p class="lang-en">A service of Beijing YuanU International Travel Co., Ltd., founded 2006.</p>
+        <p class="lang-zh">北京远游国际旅行社有限责任公司旗下品牌，公司成立于 2006 年。</p>
+        <p class="lang-en">YuanU is a <a href="about.html#boundary" class="boundary-link">licensed medical-coordination service company</a>, not a medical institution. All diagnoses, examinations and treatments are provided independently by licensed physicians at partnering hospitals. YuanU does not provide medical opinions or guarantee clinical outcomes.</p>
+        <p class="lang-zh">远游是经许可的<a href="about.html#boundary" class="boundary-link">医疗协调服务公司</a>，非医疗机构。所有诊断、检查与治疗均由合作医院的执业医师独立提供；远游不出具医学意见，不就医疗结果做承诺。</p>
+        <p class="micro lang-en">YuanU is an independent travel / concierge company; we do not provide clinical services and do not speak for any hospital.</p>
+        <p class="micro lang-zh">远游是独立的旅行服务/陪诊公司，不提供临床医疗服务，亦不代表任何医院发言。</p>
+      </div>
+
+      <div>
+        <h4><span class="lang-en">Navigate</span><span class="lang-zh">导航</span></h4>
+        <ul>
+          <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-zh">首页</span></a></li>
+          <li><a href="about.html"><span class="lang-en">About</span><span class="lang-zh">关于</span></a></li>
+          <li><a href="why-beijing.html"><span class="lang-en">Why Beijing</span><span class="lang-zh">为什么北京</span></a></li>
+          <li><a href="screening.html"><span class="lang-en">Health Screening</span><span class="lang-zh">健康体检</span></a></li>
+          <li><a href="endoscopy.html"><span class="lang-en">Endoscopy</span><span class="lang-zh">胃肠镜</span></a></li>
+          <li><a href="patient-support.html"><span class="lang-en">Patient Support</span><span class="lang-zh">患者支持</span></a></li>
+          <li><a href="faq.html"><span class="lang-en">FAQ</span><span class="lang-zh">问答</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4><span class="lang-en">Other</span><span class="lang-zh">其他</span></h4>
+        <ul>
+          <li><a href="other-services.html"><span class="lang-en">Other Services</span><span class="lang-zh">其它服务</span></a></li>
+          <li><a href="contact.html"><span class="lang-en">Contact Us</span><span class="lang-zh">联系我们</span></a></li>
+          <li><a href="contact.html#privacy"><span class="lang-en">Privacy Notice</span><span class="lang-zh">隐私声明</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4><span class="lang-en">Beijing Office</span><span class="lang-zh">北京办公</span></h4>
+        <p class="lang-en">Beijing YuanU International Travel Co., Ltd.</p>
+        <p class="lang-zh">北京远游国际旅行社有限责任公司</p>
+        <p class="lang-en">Beijing, China</p>
+        <p class="lang-zh">中国 · 北京</p>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <span class="license">
+        <span class="lang-en">Travel agency license · L-BJ-CJ00262</span>
+        <span class="lang-zh">旅行社经营许可证 · L-BJ-CJ00262</span>
+      </span>
+      <span>© 2026 Beijing YuanU International Travel Co., Ltd. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* === minimal lang-switch script === */
+(function () {
+  var body = document.body;
+  var buttons = document.querySelectorAll('.lang-toggle button');
+  function setLang(lang) {
+    body.setAttribute('data-lang', lang);
+    document.documentElement.setAttribute('lang', lang === 'zh' ? 'zh-CN' : 'en');
+    buttons.forEach(function (b) {
+      b.classList.toggle('active', b.getAttribute('data-set-lang') === lang);
+    });
+    try { localStorage.setItem('yuanu-lang', lang); } catch (e) {}
+  }
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () { setLang(b.getAttribute('data-set-lang')); });
+  });
+  // restore last choice
+  try {
+    var saved = localStorage.getItem('yuanu-lang');
+    if (saved === 'zh' || saved === 'en') setLang(saved);
+  } catch (e) {}
+})();
+</script>
+
+</body>
+</html>
