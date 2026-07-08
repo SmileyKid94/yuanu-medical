@@ -1,0 +1,175 @@
+{
+  "hospital": "Beijing Friendship Hospital · International Medical Department (BFH-IMD)",
+  "confirmed_direct_billing_count": 23,
+  "additional_via_tpa_upstream": "30+ international insurers",
+  "last_updated": "2026-07-08",
+  "partners": [
+    {
+      "id": 1,
+      "name_en": "AIA",
+      "name_zh": "友邦人寿",
+      "type": "Insurer",
+      "logo": "/assets/images/insurance/01-aia.jpg"
+    },
+    {
+      "id": 2,
+      "name_en": "Allianz Partners",
+      "name_zh": "安联",
+      "type": "Insurer/TPA",
+      "logo": "/assets/images/insurance/02-allianz.jpg"
+    },
+    {
+      "id": 3,
+      "name_en": "Bupa Global",
+      "name_zh": "保柏",
+      "type": "Insurer",
+      "logo": "/assets/images/insurance/03-bupa.jpg"
+    },
+    {
+      "id": 4,
+      "name_en": "Cigna & CMB Life",
+      "name_zh": "招商信诺",
+      "type": "Insurer",
+      "logo": "/assets/images/insurance/04-cigna-cmb.jpg"
+    },
+    {
+      "id": 5,
+      "name_en": "Ping An Health",
+      "name_zh": "平安健康",
+      "type": "Insurer",
+      "logo": "/assets/images/insurance/05-pingan.jpg"
+    },
+    {
+      "id": 6,
+      "name_en": "CPIC Allianz",
+      "name_zh": "太保安联",
+      "type": "Insurer",
+      "logo": "/assets/images/insurance/06-cpic.jpg"
+    },
+    {
+      "id": 7,
+      "name_en": "Fosun United Health",
+      "name_zh": "复星联合健康",
+      "type": "Insurer",
+      "logo": "/assets/images/insurance/07-fosun-health.jpg"
+    },
+    {
+      "id": 8,
+      "name_en": "Generali China Life",
+      "name_zh": "中意人寿",
+      "type": "Insurer",
+      "logo": "/assets/images/insurance/08-generali-china.jpg"
+    },
+    {
+      "id": 9,
+      "name_en": "CHC 商保通",
+      "name_zh": "商保通",
+      "type": "TPA",
+      "logo": "/assets/images/insurance/09-chc.jpg"
+    },
+    {
+      "id": 10,
+      "name_en": "JD Allianz",
+      "name_zh": "京东安联",
+      "type": "Insurer",
+      "logo": "/assets/images/insurance/10-jd-allianz.jpg"
+    },
+    {
+      "id": 11,
+      "name_en": "ICBC AXA Life",
+      "name_zh": "工银安盛",
+      "type": "Insurer",
+      "logo": "/assets/images/insurance/11-icbc-axa.jpg"
+    },
+    {
+      "id": 12,
+      "name_en": "Taikang",
+      "name_zh": "泰康",
+      "type": "Insurer",
+      "logo": "/assets/images/insurance/12-taikang.jpg"
+    },
+    {
+      "id": 13,
+      "name_en": "MediLink-Global",
+      "name_zh": "环球医疗集团",
+      "type": "TPA",
+      "logo": "/assets/images/insurance/13-medilink.jpg"
+    },
+    {
+      "id": 14,
+      "name_en": "Prosper Health",
+      "name_zh": "柏盛健康",
+      "type": "TPA",
+      "logo": "/assets/images/insurance/14-prosper-health.jpg"
+    },
+    {
+      "id": 15,
+      "name_en": "FESCO",
+      "name_zh": "外服健康",
+      "type": "TPA",
+      "logo": "/assets/images/insurance/15-fesco.jpg"
+    },
+    {
+      "id": 16,
+      "name_en": "KRAY Assistance",
+      "name_zh": "凯茉锐",
+      "type": "TPA",
+      "logo": "/assets/images/insurance/16-kray-assistance.jpg"
+    },
+    {
+      "id": 17,
+      "name_en": "MSH International",
+      "name_zh": "MSH International",
+      "type": "Insurer",
+      "logo": "/assets/images/insurance/17-msh-international.jpg"
+    },
+    {
+      "id": 18,
+      "name_en": "MSH China",
+      "name_zh": "万欣和",
+      "type": "TPA",
+      "logo": null,
+      "note": "Logo pending"
+    },
+    {
+      "id": 19,
+      "name_en": "Blue Pass",
+      "name_zh": "镁信健康",
+      "type": "TPA",
+      "logo": null,
+      "note": "Logo pending"
+    },
+    {
+      "id": 20,
+      "name_en": "Windstone Health",
+      "name_zh": "风石健康",
+      "type": "TPA",
+      "logo": null,
+      "note": "Logo pending"
+    },
+    {
+      "id": 21,
+      "name_en": "ERGO Assistance",
+      "name_zh": "ERGO",
+      "type": "TPA",
+      "logo": null,
+      "note": "Logo pending"
+    },
+    {
+      "id": 22,
+      "name_en": "Zhibao Health",
+      "name_zh": "致保健康",
+      "type": "TPA",
+      "logo": null,
+      "note": "Logo pending"
+    },
+    {
+      "id": 23,
+      "name_en": "D Health",
+      "name_zh": "D Health",
+      "type": "TPA",
+      "logo": null,
+      "note": "Logo pending"
+    }
+  ]
+}
