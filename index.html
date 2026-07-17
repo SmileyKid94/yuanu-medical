@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -266,30 +266,243 @@
     .hero p.lead { font-size: 15px; }
   }
 </style>
-</head>
-<body>
 
-<header class="site-header">
-  <div class="container header-inner">
+<!-- Google Fonts: v5 typography -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   YuanU · v5 Topbar + Footer Shim (for legacy v2 pages)
+   Only ships the tokens / topbar / footer / lang-switch CSS that
+   the v5 design system needs, WITHOUT overriding page-level
+   typography, spacing or global resets used by the v2 body.
+   Injected by 2026-07-14 unify-pass.
+   ============================================================ */
+:root {
+  /* v5 brand tokens */
+  --teal-900: #0F2733;
+  --teal-700: #16384A;
+  --teal-500: #2E5A6E;
+  --teal-100: #DCE6EA;
+  --gold-600: #9F7E4F;
+  --gold-500: #B89668;
+  --gold-200: #E8DCC4;
+  --ivory:    #FAF7F2;
+  --ivory-2:  #F3EEE3;
+  --rule:     #E0DAD0;
+  --rule-2:   #CFC7B7;
+  --muted:    #6B7280;
+  --v5-container: 1240px;
+  --v5-gutter: 24px;
+  --serif-en: "Cormorant Garamond", "Noto Serif SC", Georgia, serif;
+  --serif-zh: "Noto Serif SC", "Cormorant Garamond", serif;
+  --sans-en:  "Inter", "Noto Sans SC", -apple-system, BlinkMacSystemFont, sans-serif;
+  --sans-zh:  "Noto Sans SC", "Inter", -apple-system, sans-serif;
+  --mono:     "JetBrains Mono", ui-monospace, monospace;
+}
+
+/* --- bilingual switch (scoped to lang-en / lang-zh only) --- */
+body[data-lang="en"] .lang-zh,
+body[data-lang="zh"] .lang-en { display: none; }
+
+/* --- topbar --- */
+.topbar {
+  border-bottom: 1px solid var(--rule);
+  background: var(--ivory);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(6px);
+}
+.topbar .topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px var(--v5-gutter);
+  max-width: var(--v5-container);
+  margin: 0 auto;
+  gap: 24px;
+}
+.topbar .brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--serif-en);
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--teal-900);
+  letter-spacing: -0.005em;
+  text-decoration: none;
+}
+.topbar .brand .mark {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--teal-700);
+  color: var(--teal-700);
+  font-family: var(--serif-en);
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: -0.02em;
+}
+.topbar .brand .brand-line2 {
+  display: block;
+  font-family: var(--sans-en);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--gold-600);
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 2px;
+}
+body[data-lang="zh"] .topbar .brand .brand-line2 { font-family: var(--sans-zh); letter-spacing: 0.12em; }
+
+.topbar .nav { display: flex; align-items: center; gap: 28px; }
+.topbar .nav a {
+  font-family: var(--sans-en);
+  font-size: 13.5px;
+  font-weight: 500;
+  color: #3D4350;
+  position: relative;
+  padding: 6px 0;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+body[data-lang="zh"] .topbar .nav a { font-family: var(--sans-zh); font-size: 14px; }
+.topbar .nav a::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 0; height: 1px;
+  background: var(--teal-700);
+  transition: width 0.3s ease;
+}
+.topbar .nav a:hover { color: var(--teal-700); }
+.topbar .nav a:hover::after { width: 100%; }
+.topbar .nav a.active { color: var(--teal-700); }
+.topbar .nav a.active::after { width: 100%; }
+
+.topbar .lang-toggle {
+  display: flex;
+  border: 1px solid var(--rule-2);
+  font-family: var(--sans-en);
+  font-size: 12px;
+  font-weight: 500;
+  overflow: hidden;
+}
+.topbar .lang-toggle button {
+  background: transparent;
+  border: 0;
+  padding: 8px 14px;
+  cursor: pointer;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+  transition: background 0.2s, color 0.2s;
+}
+.topbar .lang-toggle button.active {
+  background: var(--teal-700);
+  color: var(--ivory);
+}
+
+/* --- site footer (v5 dark) --- */
+.site-foot {
+  background: var(--teal-900);
+  color: rgba(250,247,242,0.78);
+  padding: 80px 0 36px;
+  margin-top: 60px;
+}
+.site-foot .site-foot-container {
+  max-width: var(--v5-container);
+  margin: 0 auto;
+  padding: 0 var(--v5-gutter);
+}
+.site-foot .footer-grid {
+  display: grid;
+  grid-template-columns: 2.2fr 1fr 1fr 1fr;
+  gap: 56px;
+  margin-bottom: 56px;
+}
+.site-foot h4 {
+  font-family: var(--serif-en);
+  color: var(--ivory);
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+body[data-lang="zh"] .site-foot h4 { font-family: var(--serif-zh); font-weight: 600; }
+.site-foot p { font-size: 13.5px; line-height: 1.7; margin-bottom: 10px; color: rgba(250,247,242,0.7); }
+.site-foot .micro { font-size: 11.5px; color: rgba(250,247,242,0.5); margin-top: 10px; }
+.site-foot ul { list-style: none; padding: 0; margin: 0; }
+.site-foot ul li { margin-bottom: 10px; }
+.site-foot ul li a {
+  font-size: 13.5px;
+  color: rgba(250,247,242,0.78);
+  transition: color 0.2s;
+  text-decoration: none;
+  border-bottom: none;
+}
+.site-foot ul li a:hover { color: var(--gold-500); }
+.site-foot .footer-legal {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: rgba(250,247,242,0.5);
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.site-foot .footer-legal .license { font-family: var(--mono); }
+.site-foot a.boundary-link { color: var(--gold-500); border-bottom: 1px dotted rgba(184,150,104,0.5); }
+.site-foot a.boundary-link:hover { border-bottom-color: var(--gold-500); }
+
+/* --- responsive --- */
+@media (max-width: 1024px) {
+  .site-foot .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+}
+@media (max-width: 720px) {
+  .topbar .nav { display: none; }
+  .topbar .topbar-inner { padding: 14px var(--v5-gutter); }
+  .site-foot .footer-grid { grid-template-columns: 1fr; }
+}
+
+</style>
+</head>
+<body data-lang="en">
+
+<header class="topbar">
+  <div class="topbar-inner">
     <a class="brand" href="/">
-      <span class="brand-name">YuanU Medical Concierge</span>
-      <span class="brand-tagline">Beijing Healthcare Navigation</span>
+      <span class="mark">Y</span>
+      <span>
+        <span class="lang-en">YuanU Medical Concierge</span>
+        <span class="lang-zh">远游 · 医疗协调</span>
+        <span class="brand-line2 lang-en">Beijing · Established 2006</span>
+        <span class="brand-line2 lang-zh">北京 · 始于 2006</span>
+      </span>
     </a>
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="/">Home</a>
-      <a href="/#services">Services</a>
-      <a href="/#hospitals">Hospitals</a>
-      <a href="/insurance-direct-billing">Insurance</a>
-      <a href="/testimonials">Testimonials</a>
-      <a href="/#contact">Contact</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="/" class="active"><span class="lang-en">Home</span><span class="lang-zh">首页</span></a>
+      <a href="/about.html"><span class="lang-en">About</span><span class="lang-zh">关于</span></a>
+      <a href="/why-beijing.html"><span class="lang-en">Why Beijing</span><span class="lang-zh">为什么北京</span></a>
+      <a href="/screening.html"><span class="lang-en">Health Screening</span><span class="lang-zh">健康体检</span></a>
+      <a href="/endoscopy.html"><span class="lang-en">Endoscopy</span><span class="lang-zh">胃肠镜</span></a>
+      <a href="/patient-support.html"><span class="lang-en">Patient Support</span><span class="lang-zh">患者支持</span></a>
+      <a href="/faq.html"><span class="lang-en">FAQ</span><span class="lang-zh">问答</span></a>
     </nav>
-    <div class="lang-switch">
-      <a href="/" class="active">EN</a>
-      <span>/</span>
-      <a href="/zh/">中文</a>
+    <div class="lang-toggle" role="group" aria-label="language switch">
+      <button data-set-lang="en" class="active">EN</button>
+      <button data-set-lang="zh">中文</button>
     </div>
   </div>
 </header>
+
 
 <!-- ==========================================================  HERO  ========================================================== -->
 <section class="hero">
@@ -551,54 +764,87 @@
   </div>
 </section>
 
-<footer class="site-footer">
-  <div class="container footer-grid">
+<footer class="site-foot">
+  <div class="site-foot-container">
+    <div class="footer-grid">
+      <div>
+        <h4><span class="lang-en">YuanU Medical Concierge</span><span class="lang-zh">YuanU Medical Concierge · 远游医疗</span></h4>
+        <p class="lang-en">Independent care coordination in Beijing for international patients. A service of Beijing YuanU International Travel Co., Ltd., founded 2006.</p>
+        <p class="lang-zh">面向海外患者的北京独立医疗协调服务。北京远游国际旅行社有限责任公司旗下品牌，公司成立于 2006 年。</p>
+        <p class="lang-en">YuanU is a licensed medical-coordination service company, not a medical institution. All diagnoses, examinations and treatments are provided independently by licensed physicians at partnering hospitals. YuanU does not provide medical opinions or guarantee clinical outcomes.</p>
+        <p class="lang-zh">远游是经许可的医疗协调服务公司，非医疗机构。所有诊断、检查与治疗均由合作医院的执业医师独立提供；远游不出具医学意见，不就医疗结果做承诺。</p>
+        <p class="micro lang-en">YuanU is an independent travel / concierge company; we do not provide clinical services and do not speak for any hospital.</p>
+        <p class="micro lang-zh">远游是独立的旅行服务 / 陪诊公司，不提供临床医疗服务，亦不代表任何医院发言。</p>
+      </div>
 
-    <div class="footer-col">
-      <h4>YuanU Medical Concierge</h4>
-      <p>Independent care coordination in Beijing for international patients.
-         Non-clinical, non-diagnostic. We do not provide medical opinions.</p>
-      <p class="footer-legal">
-        Beijing YuanU International Travel Co., Ltd.<br>
-        Travel Agency License No. L-BJ-CJ00262
-      </p>
+      <div>
+        <h4><span class="lang-en">Navigate</span><span class="lang-zh">导航</span></h4>
+        <ul>
+          <li><a href="/"><span class="lang-en">Home</span><span class="lang-zh">首页</span></a></li>
+          <li><a href="/about.html"><span class="lang-en">About</span><span class="lang-zh">关于</span></a></li>
+          <li><a href="/why-beijing.html"><span class="lang-en">Why Beijing</span><span class="lang-zh">为什么北京</span></a></li>
+          <li><a href="/screening.html"><span class="lang-en">Health Screening</span><span class="lang-zh">健康体检</span></a></li>
+          <li><a href="/endoscopy.html"><span class="lang-en">Endoscopy</span><span class="lang-zh">胃肠镜</span></a></li>
+          <li><a href="/patient-support.html"><span class="lang-en">Patient Support</span><span class="lang-zh">患者支持</span></a></li>
+          <li><a href="/faq.html"><span class="lang-en">FAQ</span><span class="lang-zh">问答</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4><span class="lang-en">Resources</span><span class="lang-zh">资源</span></h4>
+        <ul>
+          <li><a href="/insurance-direct-billing.html"><span class="lang-en">Insurance Direct Billing</span><span class="lang-zh">保险直付</span></a></li>
+          <li><a href="/testimonials.html"><span class="lang-en">Client Testimonials</span><span class="lang-zh">客户见证</span></a></li>
+          <li><a href="/other-services.html"><span class="lang-en">Other Services</span><span class="lang-zh">其他服务</span></a></li>
+          <li><a href="/contact.html"><span class="lang-en">Contact Us</span><span class="lang-zh">联系我们</span></a></li>
+          <li><a href="/privacy-policy.html"><span class="lang-en">Privacy Policy</span><span class="lang-zh">隐私政策</span></a></li>
+          <li><a href="/terms-of-service.html"><span class="lang-en">Terms of Service</span><span class="lang-zh">服务条款</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4><span class="lang-en">Contact</span><span class="lang-zh">联系</span></h4>
+        <p><a href="mailto:contact@yuanu.com" style="color:inherit">contact@yuanu.com</a></p>
+        <p class="micro lang-en">Please CC zhangjianping@yuanu.com</p>
+        <p class="micro lang-zh">请抄送 zhangjianping@yuanu.com</p>
+        <p class="micro lang-en">Reply within 1 business day (Beijing, GMT+8)</p>
+        <p class="micro lang-zh">1 个工作日内回复（北京时间 GMT+8）</p>
+      </div>
     </div>
 
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="/insurance-direct-billing">Insurance Direct Billing</a></li>
-        <li><a href="/testimonials">Client Testimonials</a></li>
-        <li><a href="/#services">Services</a></li>
-        <li><a href="/#hospitals">Hospitals</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <p><a href="mailto:contact@yuanu.com">contact@yuanu.com</a></p>
-      <p class="footer-note">Please CC zhangjianping@yuanu.com</p>
-      <p class="footer-note">Reply within 1 business day (Beijing, GMT+8)</p>
-    </div>
-
-    <div class="footer-col">
-      <h4>Legal</h4>
-      <ul>
-        <li><a href="/privacy-policy">Privacy Policy</a></li>
-        <li><a href="/terms-of-service">Terms of Service</a></li>
-        <li><a href="/zh/privacy-policy">隐私政策（中文摘要）</a></li>
-        <li><a href="/zh/terms-of-service">服务条款（中文摘要）</a></li>
-      </ul>
-    </div>
-
-  </div>
-  <div class="footer-bottom">
-    <div class="container">
-      <p>&copy; 2026 Beijing YuanU International Travel Co., Ltd. All rights reserved.</p>
+    <div class="footer-legal">
+      <span class="license">
+        <span class="lang-en">Travel agency license · L-BJ-CJ00262</span>
+        <span class="lang-zh">旅行社经营许可证 · L-BJ-CJ00262</span>
+      </span>
+      <span>&copy; 2026 Beijing YuanU International Travel Co., Ltd. All rights reserved.</span>
     </div>
   </div>
 </footer>
 
 
+
+<script>
+/* === v5 minimal lang-switch script === */
+(function () {
+  var body = document.body;
+  var buttons = document.querySelectorAll('.lang-toggle button');
+  function setLang(lang) {
+    body.setAttribute('data-lang', lang);
+    document.documentElement.setAttribute('lang', lang === 'zh' ? 'zh-CN' : 'en');
+    buttons.forEach(function (b) {
+      b.classList.toggle('active', b.getAttribute('data-set-lang') === lang);
+    });
+    try { localStorage.setItem('yuanu-lang', lang); } catch (e) {}
+  }
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () { setLang(b.getAttribute('data-set-lang')); });
+  });
+  try {
+    var saved = localStorage.getItem('yuanu-lang');
+    if (saved === 'zh' || saved === 'en') setLang(saved);
+  } catch (e) {}
+})();
+</script>
 </body>
 </html>

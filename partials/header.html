@@ -1,21 +1,33 @@
-<header class="site-header">
-  <div class="container header-inner">
+<!--
+  YuanU · v5 topbar (reference partial).
+  This file is kept in sync with the inline <header class="topbar"> shipped
+  inside every page. It is only used as a reference — the current build has
+  no include engine, so live pages already carry the topbar inline.
+  If a build tool is later introduced, this file is drop-in ready.
+-->
+<header class="topbar">
+  <div class="topbar-inner">
     <a class="brand" href="/">
-      <span class="brand-name">YuanU Medical Concierge</span>
-      <span class="brand-tagline">Beijing Healthcare Navigation</span>
+      <span class="mark">Y</span>
+      <span>
+        <span class="lang-en">YuanU Medical Concierge</span>
+        <span class="lang-zh">远游 · 医疗协调</span>
+        <span class="brand-line2 lang-en">Beijing · Established 2006</span>
+        <span class="brand-line2 lang-zh">北京 · 始于 2006</span>
+      </span>
     </a>
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="/">Home</a>
-      <a href="/#services">Services</a>
-      <a href="/#hospitals">Hospitals</a>
-      <a href="/insurance-direct-billing">Insurance</a>
-      <a href="/testimonials">Testimonials</a>
-      <a href="/#contact">Contact</a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="/"><span class="lang-en">Home</span><span class="lang-zh">首页</span></a>
+      <a href="/about.html"><span class="lang-en">About</span><span class="lang-zh">关于</span></a>
+      <a href="/why-beijing.html"><span class="lang-en">Why Beijing</span><span class="lang-zh">为什么北京</span></a>
+      <a href="/screening.html"><span class="lang-en">Health Screening</span><span class="lang-zh">健康体检</span></a>
+      <a href="/endoscopy.html"><span class="lang-en">Endoscopy</span><span class="lang-zh">胃肠镜</span></a>
+      <a href="/patient-support.html"><span class="lang-en">Patient Support</span><span class="lang-zh">患者支持</span></a>
+      <a href="/faq.html"><span class="lang-en">FAQ</span><span class="lang-zh">问答</span></a>
     </nav>
-    <div class="lang-switch">
-      <a href="/" class="active">EN</a>
-      <span>/</span>
-      <a href="/zh/">中文</a>
+    <div class="lang-toggle" role="group" aria-label="language switch">
+      <button data-set-lang="en" class="active">EN</button>
+      <button data-set-lang="zh">中文</button>
     </div>
   </div>
 </header>
