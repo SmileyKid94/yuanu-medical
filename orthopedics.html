@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orthopedic Consultation in Beijing — Coordinated by YuanU | YuanU Medical Concierge</title>
+<meta name="description" content="Orthopedic consultation at top Beijing tertiary hospitals: joint replacement evaluation, spinal disorders, sports injuries, and fracture assessment. Coordinated by YuanU with bilingual support throughout.">
+<meta property="og:title" content="Orthopedic Consultation in Beijing — Coordinated by YuanU">
+<meta property="og:description" content="Orthopedic specialist consultation and surgical coordination at Beijing's leading hospitals with bilingual support.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600&family=Lobster&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --teal-900: #0F2733;
+  --teal-700: #16384A;
+  --teal-500: #2E5A6E;
+  --teal-100: #DCE6EA;
+  --gold-600: #9F7E4F;
+  --gold-500: #B89668;
+  --gold-200: #E8DCC4;
+  --ivory:    #FAF7F2;
+  --ivory-2:  #F3EEE3;
+  --rule:     #E0DAD0;
+  --rule-2:   #CFC7B7;
+  --ink:      #1B1F23;
+  --ink-2:    #3D4350;
+  --muted:    #6B7280;
+  --container: 1240px;
+  --gutter: 24px;
+  --section-y: 110px;
+  --section-y-tight: 80px;
+  --serif-en: "Cormorant Garamond", "Noto Serif SC", Georgia, serif;
+  --serif-zh: "Noto Serif SC", "Cormorant Garamond", serif;
+  --sans-en: "Inter", "Noto Sans SC", -apple-system, BlinkMacSystemFont, sans-serif;
+  --script:  "Lobster", "Cormorant Garamond", cursive;
+  --sans-zh: "Noto Sans SC", "Inter", -apple-system, sans-serif;
+  --mono:    "JetBrains Mono", ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--sans-en);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--ink);
+  background: var(--ivory);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body[data-lang="zh"] { font-family: var(--sans-zh); }
+body[data-lang="en"] .lang-zh,
+body[data-lang="zh"] .lang-en { display: none; }
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+.container { max-width: var(--container); margin: 0 auto; padding: 0 var(--gutter); }
+
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 12px;
+  font-family: var(--sans-en);
+  font-size: 11px; font-weight: 500; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--gold-600); margin-bottom: 22px;
+}
+body[data-lang="zh"] .eyebrow { font-family: var(--sans-zh); letter-spacing: 0.18em; }
+.eyebrow::before { content: ""; width: 28px; height: 1px; background: var(--gold-500); }
+
+h1, h2, h3, h4 {
+  font-family: var(--serif-en);
+  color: var(--teal-900);
+  font-weight: 500;
+  letter-spacing: -0.005em;
+}
+body[data-lang="zh"] h1, body[data-lang="zh"] h2, body[data-lang="zh"] h3, body[data-lang="zh"] h4
+  { font-family: var(--serif-zh); font-weight: 600; letter-spacing: 0.01em; }
+h1 { font-size: clamp(40px, 5vw, 60px); line-height: 1.12; }
+h2 { font-size: clamp(30px, 3.4vw, 42px); line-height: 1.2; margin-bottom: 24px; }
+h3 { font-size: 22px; line-height: 1.35; margin-bottom: 12px; }
+h4 { font-size: 17px; line-height: 1.4; }
+p { margin-bottom: 14px; }
+p.lede { font-size: 19px; line-height: 1.7; color: var(--ink-2); max-width: 780px; }
+.mono { font-family: var(--mono); font-size: 0.92em; letter-spacing: 0.02em; }
+
+ul, ol { padding-left: 22px; color: var(--ink-2); }
+ul li, ol li { margin-bottom: 8px; line-height: 1.7; }
+ul li strong, ol li strong { color: var(--teal-900); font-weight: 600; }
+
+/* ====== top bar ====== */
+.topbar { border-bottom: 1px solid var(--rule); background: var(--ivory); position: sticky; top: 0; z-index: 100; backdrop-filter: blur(6px); }
+.topbar-inner { display: flex; align-items: center; justify-content: space-between; padding: 16px var(--gutter); max-width: var(--container); margin: 0 auto; gap: 24px; }
+.brand { display: flex; align-items: center; gap: 12px; font-family: var(--serif-en); font-weight: 600; font-size: 20px; color: var(--teal-900); letter-spacing: -0.005em; }
+.brand .mark { width: 36px; height: 36px; display: grid; place-items: center; border: 1px solid var(--teal-700); color: var(--teal-700); font-family: var(--serif-en); font-weight: 600; font-size: 17px; letter-spacing: -0.02em; }
+.brand .brand-line2 { display: block; font-family: var(--sans-en); font-size: 10px; letter-spacing: 0.18em; color: var(--gold-600); text-transform: uppercase; font-weight: 500; margin-top: 2px; }
+body[data-lang="zh"] .brand .brand-line2 { font-family: var(--sans-zh); letter-spacing: 0.12em; }
+.nav { display: flex; align-items: center; gap: 28px; }
+.nav a { font-family: var(--sans-en); font-size: 13.5px; font-weight: 500; color: var(--ink-2); position: relative; padding: 6px 0; transition: color 0.2s; }
+body[data-lang="zh"] .nav a { font-family: var(--sans-zh); font-size: 14px; }
+.nav a::after { content: ""; position: absolute; left: 0; bottom: 0; width: 0; height: 1px; background: var(--teal-700); transition: width 0.3s ease; }
+.nav a:hover { color: var(--teal-700); }
+.nav a:hover::after, .nav a.active::after { width: 100%; }
+.nav a.active { color: var(--teal-900); }
+.lang-toggle { display: flex; border: 1px solid var(--rule-2); font-family: var(--sans-en); font-size: 12px; font-weight: 500; overflow: hidden; }
+.lang-toggle button { background: transparent; border: 0; padding: 8px 14px; cursor: pointer; color: var(--muted); letter-spacing: 0.05em; transition: background 0.2s, color 0.2s; }
+.lang-toggle button.active { background: var(--teal-700); color: var(--ivory); }
+
+/* ====== nav dropdown ====== */
+.nav-dropdown { position: relative; }
+.nav-dropdown-toggle { cursor: default; }
+.nav-dropdown-menu {
+  display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+  background: var(--ivory); border: 1px solid var(--rule); padding: 10px 0;
+  min-width: 240px; box-shadow: 0 8px 24px rgba(15,39,51,0.10); z-index: 200;
+  margin-top: 10px;
+}
+.nav-dropdown:hover .nav-dropdown-menu { display: block; }
+.nav-dropdown-menu a {
+  display: block; padding: 8px 20px; font-size: 13px; white-space: nowrap;
+}
+.nav-dropdown-menu a::after { display: none; }
+.nav-dropdown-menu a:hover { background: var(--ivory-2); color: var(--teal-900); }
+
+/* ====== hero ====== */
+.hero { padding: 100px 0 80px; border-bottom: 1px solid var(--rule); background: radial-gradient(ellipse at top right, rgba(184,150,104,0.06), transparent 50%), var(--ivory); }
+.hero-grid { display: grid; grid-template-columns: 1.55fr 1fr; gap: 80px; align-items: center; }
+.hero h1 { margin-bottom: 28px; color: var(--teal-900); }
+.hero .lede { margin-bottom: 36px; }
+.hero-cta { display: flex; gap: 18px; align-items: center; margin-top: 8px; flex-wrap: wrap; }
+.hero-meta { margin-top: 28px; font-family: var(--sans-en); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+body[data-lang="zh"] .hero-meta { font-family: var(--sans-zh); letter-spacing: 0.06em; text-transform: none; font-size: 13px; }
+
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px; font-family: var(--sans-en); font-size: 14px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; cursor: pointer; transition: all 0.25s ease; border: 1px solid var(--teal-700); }
+body[data-lang="zh"] .btn { font-family: var(--sans-zh); letter-spacing: 0.06em; text-transform: none; font-size: 14px; }
+.btn--primary { background: var(--teal-700); color: var(--ivory); }
+.btn--primary:hover { background: var(--teal-900); border-color: var(--teal-900); transform: translateY(-1px); }
+.btn--ghost { background: transparent; color: var(--teal-700); }
+.btn--ghost:hover { background: var(--teal-700); color: var(--ivory); }
+.btn .arrow { transition: transform 0.25s ease; }
+.btn:hover .arrow { transform: translateX(4px); }
+
+/* ====== section ====== */
+section.s { padding: var(--section-y) 0; border-bottom: 1px solid var(--rule); }
+section.s.alt { background: var(--ivory-2); }
+section.s.tight { padding: var(--section-y-tight) 0; }
+.section-head { max-width: 820px; margin-bottom: 56px; }
+
+/* ====== boundary block ====== */
+.boundary-block { padding: 32px 40px; border-left: 3px solid var(--gold-500); background: var(--ivory); margin: 28px 0; }
+section.s.alt .boundary-block { background: var(--ivory); }
+.boundary-block h4 { color: var(--teal-900); margin-bottom: 10px; font-size: 17px; }
+.boundary-block p, .boundary-block ul, .boundary-block ol { color: var(--ink-2); font-size: 15px; line-height: 1.75; margin-bottom: 10px; }
+.boundary-block p:last-child, .boundary-block ul:last-child, .boundary-block ol:last-child { margin-bottom: 0; }
+.boundary-block a { color: var(--teal-700); border-bottom: 1px solid var(--gold-500); }
+.boundary-block a:hover { background: var(--gold-200); }
+.boundary-block.warn { border-left-color: var(--teal-700); background: rgba(184,150,104,0.08); }
+section.s.alt .boundary-block.warn { background: rgba(184,150,104,0.10); }
+
+/* ====== footer ====== */
+footer { background: var(--teal-900); color: rgba(250,247,242,0.78); padding: 80px 0 36px; }
+footer .container { max-width: var(--container); }
+.footer-grid { display: grid; grid-template-columns: 2.2fr 1fr 1fr 1fr; gap: 56px; margin-bottom: 56px; }
+footer h4 { font-family: var(--serif-en); color: var(--ivory); font-size: 18px; font-weight: 500; margin-bottom: 16px; }
+body[data-lang="zh"] footer h4 { font-family: var(--serif-zh); font-weight: 600; }
+footer p { font-size: 13.5px; line-height: 1.7; margin-bottom: 10px; color: rgba(250,247,242,0.7); }
+footer .micro { font-size: 11.5px; color: rgba(250,247,242,0.5); margin-top: 10px; }
+footer ul { list-style: none; padding: 0; color: rgba(250,247,242,0.78); }
+footer ul li { margin-bottom: 10px; }
+footer ul li a { font-size: 13.5px; color: rgba(250,247,242,0.78); transition: color 0.2s; }
+footer ul li a:hover { color: var(--gold-500); }
+footer .footer-legal { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 28px; display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: rgba(250,247,242,0.5); flex-wrap: wrap; gap: 16px; }
+footer .footer-legal .license { font-family: var(--mono); }
+footer a.boundary-link { color: var(--gold-500); border-bottom: 1px dotted rgba(184,150,104,0.5); }
+footer a.boundary-link:hover { border-bottom-color: var(--gold-500); }
+
+/* ====== table ====== */
+.tbl { width: 100%; border-collapse: collapse; margin: 24px 0; background: var(--ivory); border: 1px solid var(--rule); }
+.tbl thead th {
+  background: var(--teal-700); color: var(--ivory);
+  text-align: left; padding: 14px 18px;
+  font-family: var(--sans-en); font-weight: 500;
+  font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+  vertical-align: bottom; border-right: 1px solid rgba(255,255,255,0.10);
+}
+.tbl thead th:last-child { border-right: 0; }
+body[data-lang="zh"] .tbl thead th { font-family: var(--sans-zh); letter-spacing: 0.08em; font-weight: 600; font-size: 12.5px; text-transform: none; }
+.tbl tbody td {
+  padding: 14px 18px; font-size: 14px; color: var(--ink-2);
+  border-top: 1px solid var(--rule); vertical-align: top; line-height: 1.65;
+}
+.tbl tbody tr:nth-child(even) td { background: var(--ivory-2); }
+.tbl tbody td.col-key { font-weight: 600; color: var(--teal-900); }
+.tbl tbody td.col-price { font-family: var(--mono); color: var(--teal-900); font-size: 13.5px; letter-spacing: 0.01em; }
+.tbl tbody tr.row-emph td { background: rgba(184,150,104,0.10); }
+
+/* ====== responsive ====== */
+@media (max-width: 1024px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+}
+@media (max-width: 720px) {
+  :root { --section-y: 70px; --section-y-tight: 50px; }
+  .nav { display: none; }
+  .topbar-inner { padding: 14px var(--gutter); }
+  .hero { padding: 60px 0 50px; }
+  .footer-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="brand">
+      <span class="mark">Y</span>
+      <span>
+        <span class="lang-en">YuanU Medical Concierge</span>
+        <span class="lang-zh">远游 · 医疗协调</span>
+        <span class="brand-line2 lang-en">Beijing · Established 2006</span>
+        <span class="brand-line2 lang-zh">北京 · 始于 2006</span>
+      </span>
+    </a>
+    <nav class="nav">
+      <a href="index.html"><span class="lang-en">Home</span><span class="lang-zh">首页</span></a>
+      <a href="about.html"><span class="lang-en">About</span><span class="lang-zh">关于</span></a>
+      <a href="why-beijing.html"><span class="lang-en">Why Beijing</span><span class="lang-zh">为什么北京</span></a>
+      <div class="nav-dropdown">
+        <a href="#" class="nav-dropdown-toggle active"><span class="lang-en">Services ▾</span><span class="lang-zh">服务项目 ▾</span></a>
+        <div class="nav-dropdown-menu">
+          <a href="screening.html"><span class="lang-en">Health Screening</span><span class="lang-zh">健康体检</span></a>
+          <a href="endoscopy.html"><span class="lang-en">Endoscopy</span><span class="lang-zh">胃肠镜</span></a>
+          <a href="specialist-consultation.html"><span class="lang-en">Specialist Consultation</span><span class="lang-zh">专科会诊</span></a>
+          <a href="complex-care.html"><span class="lang-en">Complex Care</span><span class="lang-zh">复杂专科</span></a>
+          <a href="cardiology.html"><span class="lang-en">Cardiology</span><span class="lang-zh">心血管内科</span></a>
+          <a href="oncology.html"><span class="lang-en">Oncology</span><span class="lang-zh">肿瘤科</span></a>
+          <a href="orthopedics.html" class="active"><span class="lang-en">Orthopedics</span><span class="lang-zh">骨科</span></a>
+          <a href="ophthalmology.html"><span class="lang-en">Ophthalmology</span><span class="lang-zh">眼科</span></a>
+          <a href="gynecology-womens-health.html"><span class="lang-en">Gynecology &amp; Women's Health</span><span class="lang-zh">妇科与女性健康</span></a>
+          <a href="dermatology.html"><span class="lang-en">Dermatology</span><span class="lang-zh">皮肤科</span></a>
+          <a href="sleep-medicine.html"><span class="lang-en">Sleep Medicine</span><span class="lang-zh">睡眠医学</span></a>
+          <a href="pediatrics.html"><span class="lang-en">Pediatrics</span><span class="lang-zh">儿童健康</span></a>
+          <a href="urology.html"><span class="lang-en">Urology</span><span class="lang-zh">泌尿外科</span></a>
+          <a href="mens-health.html"><span class="lang-en">Men's Health</span><span class="lang-zh">男性健康</span></a>
+          <a href="other-services.html"><span class="lang-en">Other Services</span><span class="lang-zh">其它服务</span></a>
+        </div>
+      </div>
+      <a href="hospitals.html"><span class="lang-en">Hospitals</span><span class="lang-zh">合作医院</span></a>
+      <a href="patient-support.html"><span class="lang-en">Patient Support</span><span class="lang-zh">患者支持</span></a>
+      <a href="faq.html"><span class="lang-en">FAQ</span><span class="lang-zh">问答</span></a>
+      <a href="contact.html"><span class="lang-en">Contact</span><span class="lang-zh">联系</span></a>
+    </nav>
+    <div class="lang-toggle" role="group" aria-label="language switch">
+      <button data-set-lang="en" class="active">EN</button>
+      <button data-set-lang="zh">中文</button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">
+        <span class="lang-en">Specialty Page · Orthopedics</span>
+        <span class="lang-zh">专题页 · 骨科</span>
+      </div>
+      <h1 class="lang-en">Orthopedic Consultation in Beijing — coordinated by YuanU</h1>
+      <h1 class="lang-zh">骨科就医协调 — 远游医疗协调</h1>
+
+      <p class="lede lang-en">Coordinating orthopedic consultation at Beijing's leading tertiary hospitals for international patients — covering joint replacement evaluation, spinal disorders, sports injuries, fracture assessment, and arthroscopic procedures. Bilingual support throughout your visit.</p>
+      <p class="lede lang-zh">在北京顶级三甲医院为国际患者协调骨科就医 — 涵盖关节置换评估、脊柱疾病、运动损伤、骨折评估及关节镜手术评估，全程提供双语支持。</p>
+
+      <div class="hero-cta">
+        <a href="contact.html" class="btn btn--primary">
+          <span class="lang-en">Submit your orthopedic inquiry</span>
+          <span class="lang-zh">提交骨科咨询</span>
+          <span class="arrow">→</span>
+        </a>
+        <a href="contact.html" class="btn btn--ghost">
+          <span class="lang-en">Speak with a coordinator</span>
+          <span class="lang-zh">与协调员联系</span>
+        </a>
+      </div>
+
+      <div class="hero-meta">
+        <span class="lang-en">Clinical work: Beijing tertiary hospitals · Coordination: YuanU · Bilingual throughout</span>
+        <span class="lang-zh">临床工作：北京三甲医院 · 协调与陪诊：远游 · 全程双语</span>
+      </div>
+    </div>
+
+    <!-- hero side ornament -->
+    <div aria-hidden="true" style="position: relative; aspect-ratio: 4/5; background: linear-gradient(180deg, var(--ivory-2) 0%, var(--ivory) 100%); border: 1px solid var(--rule); display: grid; place-items: center; overflow: hidden;">
+      <svg viewBox="0 0 200 250" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 80%; height: auto; opacity: 0.95;">
+        <!-- title -->
+        <text x="100" y="22" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" font-weight="500" letter-spacing="3" fill="#9F7E4F">ORTHOPEDICS</text>
+        <!-- spine silhouette -->
+        <g stroke="#B89668" stroke-width="0.8" fill="none">
+          <rect x="88" y="35" width="24" height="10" rx="3"/>
+          <rect x="86" y="50" width="28" height="10" rx="3"/>
+          <rect x="85" y="65" width="30" height="10" rx="3"/>
+          <rect x="84" y="80" width="32" height="10" rx="3"/>
+          <rect x="85" y="95" width="30" height="10" rx="3"/>
+          <rect x="86" y="110" width="28" height="10" rx="3"/>
+          <rect x="88" y="125" width="24" height="10" rx="3"/>
+        </g>
+        <!-- knee joint -->
+        <g stroke="#B89668" stroke-width="0.7" fill="none">
+          <ellipse cx="100" cy="165" rx="28" ry="16"/>
+          <line x1="100" y1="148" x2="100" y2="149" stroke="#16384A" stroke-width="0.8"/>
+          <path d="M 72 165 Q 80 175 100 178 Q 120 175 128 165" stroke-dasharray="2,2" stroke="#16384A" stroke-width="0.7"/>
+        </g>
+        <!-- femur / tibia simplified -->
+        <g stroke="#B89668" stroke-width="0.7" fill="none">
+          <line x1="100" y1="149" x2="100" y2="138"/>
+          <line x1="100" y1="181" x2="100" y2="195"/>
+        </g>
+        <!-- label -->
+        <text x="100" y="218" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="9" fill="#6B7280">joint &amp; spine</text>
+        <!-- dashed connecting path -->
+        <path d="M 100 35 L 100 135" stroke="#16384A" stroke-width="0.5" fill="none" stroke-dasharray="3,3"/>
+        <text x="100" y="240" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" font-weight="500" letter-spacing="3" fill="#9F7E4F">BEIJING</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §1 · Overview ============ -->
+<section class="s">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span class="lang-en">§ 1 · Overview</span>
+        <span class="lang-zh">§ 1 · 概述</span>
+      </div>
+      <h2 class="lang-en">1. Common orthopedic consultation scenarios</h2>
+      <h2 class="lang-zh">1. 骨科常见就诊场景</h2>
+      <p class="lede lang-en">International patients may seek orthopedic consultation in Beijing for a variety of musculoskeletal concerns. The following are common scenarios where YuanU can assist with coordination.</p>
+      <p class="lede lang-zh">国际患者可能因各类骨骼肌肉问题来京寻求骨科就诊。以下是远游可协助协调的常见就诊场景。</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start;">
+      <div>
+        <h3 class="lang-en">Joint &amp; Spine</h3>
+        <h3 class="lang-zh">关节与脊柱</h3>
+        <ul style="margin-top: 14px; padding-left: 22px;">
+          <li class="lang-en"><strong>Joint replacement evaluation:</strong> pre-surgical assessment for hip, knee, or shoulder replacement; second-opinion coordination.</li>
+          <li class="lang-zh"><strong>关节置换评估：</strong>髋关节、膝关节、肩关节置换术前评估；第二意见协调。</li>
+          <li class="lang-en"><strong>Spinal disorders:</strong> evaluation of lumbar disc herniation, spinal stenosis, scoliosis, and degenerative spinal conditions.</li>
+          <li class="lang-zh"><strong>脊柱疾病：</strong>腰椎间盘突出、椎管狭窄、脊柱侧弯及退行性脊柱疾病的评估。</li>
+          <li class="lang-en"><strong>Osteoporosis:</strong> bone density assessment and fracture risk evaluation for patients with recurrent fractures or long-term bone health concerns.</li>
+          <li class="lang-zh"><strong>骨质疏松：</strong>骨密度评估及反复骨折或长期骨骼健康关注患者的骨折风险评估。</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="lang-en">Sports &amp; Trauma</h3>
+        <h3 class="lang-zh">运动与创伤</h3>
+        <ul style="margin-top: 14px; padding-left: 22px;">
+          <li class="lang-en"><strong>Sports injuries:</strong> evaluation of ligament tears (ACL, PCL), meniscal injuries, rotator cuff damage, and tendon disorders.</li>
+          <li class="lang-zh"><strong>运动损伤：</strong>韧带撕裂（ACL、PCL）、半月板损伤、肩袖损伤及肌腱疾病的评估。</li>
+          <li class="lang-en"><strong>Fracture assessment:</strong> evaluation of acute or malunited fractures, including complex or periarticular fractures requiring specialist input.</li>
+          <li class="lang-zh"><strong>骨折评估：</strong>急性骨折或畸形愈合骨折的评估，包括需要专科意见的复杂骨折或关节周围骨折。</li>
+          <li class="lang-en"><strong>Arthroscopy:</strong> evaluation for arthroscopic procedures including diagnostic arthroscopy and arthroscopic surgery of knee, shoulder, ankle, or other joints.</li>
+          <li class="lang-zh"><strong>关节镜手术：</strong>关节镜手术的评估，包括诊断性关节镜及膝、肩、踝等关节的关节镜手术。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §2 · Why Beijing ============ -->
+<section class="s alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span class="lang-en">§ 2 · Why Beijing</span>
+        <span class="lang-zh">§ 2 · 为什么选北京</span>
+      </div>
+      <h2 class="lang-en">2. Beijing's orthopedic resources</h2>
+      <h2 class="lang-zh">2. 北京骨科资源优势</h2>
+      <p class="lede lang-en">Beijing concentrates some of mainland China's highest-density orthopedic resources, with nationally ranked departments at multiple tertiary hospitals.</p>
+      <p class="lede lang-zh">北京汇聚了中国大陆密度最高的骨科资源之一，多所三甲医院拥有全国领先的骨科科室。</p>
+    </div>
+
+    <table class="tbl">
+      <thead>
+        <tr>
+          <th style="width: 30%;"><span class="lang-en">Hospital</span><span class="lang-zh">医院</span></th>
+          <th style="width: 35%;"><span class="lang-en">Orthopedic Strength</span><span class="lang-zh">骨科优势</span></th>
+          <th style="width: 35%;"><span class="lang-en">Notes for International Patients</span><span class="lang-zh">国际患者参考</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col-key"><span class="lang-en">PKUPH (Peking University People's Hospital)</span><span class="lang-zh">北京大学人民医院（北大人民）</span></td>
+          <td>
+            <span class="lang-en">Nationally top-ranked orthopedic department; strengths in joint surgery, spinal surgery, and trauma.</span>
+            <span class="lang-zh">骨科全国顶尖；关节外科、脊柱外科、创伤骨科实力突出。</span>
+          </td>
+          <td>
+            <span class="lang-en">High-volume center; may require advance scheduling for senior specialists.</span>
+            <span class="lang-zh">门诊量大；资深专家需提前预约。</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col-key"><span class="lang-en">Jishuitan Hospital</span><span class="lang-zh">北京积水潭医院</span></td>
+          <td>
+            <span class="lang-en">Nationally leading in orthopedics and trauma surgery; renowned for complex fracture and hand surgery.</span>
+            <span class="lang-zh">骨科与创伤外科全国领先；以复杂骨折、手外科闻名。</span>
+          </td>
+          <td>
+            <span class="lang-en">Particularly strong in trauma and complex bone reconstruction.</span>
+            <span class="lang-zh">创伤骨科与复杂骨重建方面尤为突出。</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col-key"><span class="lang-en">PUMCH (Peking Union Medical College Hospital)</span><span class="lang-zh">北京协和医院</span></td>
+          <td>
+            <span class="lang-en">Comprehensive orthopedic department; strengths in spinal deformity, joint replacement, and sports medicine.</span>
+            <span class="lang-zh">综合性骨科强科；脊柱畸形、关节置换、运动医学方面实力突出。</span>
+          </td>
+          <td>
+            <span class="lang-en">Well-established international patient services; bilingual report support available.</span>
+            <span class="lang-zh">国际患者服务体系完善；可提供双语报告支持。</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col-key"><span class="lang-en">BFH-IMD (Beijing Friendship Hospital, International Medical Dept.)</span><span class="lang-zh">北京友谊医院国际医疗部（BFH-IMD）</span></td>
+          <td>
+            <span class="lang-en">Orthopedic department with international patient workflow; coordinated scheduling and bilingual environment.</span>
+            <span class="lang-zh">骨科设有国际患者就诊流程；协调预约与双语环境。</span>
+          </td>
+          <td>
+            <span class="lang-en">Streamlined for non-Chinese-speaking patients; shorter wait times.</span>
+            <span class="lang-zh">面向非中文患者优化流程；等候时间较短。</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ §3 · What We Coordinate ============ -->
+<section class="s">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span class="lang-en">§ 3 · What We Coordinate</span>
+        <span class="lang-zh">§ 3 · 协调服务内容</span>
+      </div>
+      <h2 class="lang-en">3. What YuanU coordinates</h2>
+      <h2 class="lang-zh">3. 远游协调内容</h2>
+      <p class="lede lang-en">YuanU handles the administrative and logistical coordination so you can focus on your consultation. We do not provide clinical services.</p>
+      <p class="lede lang-zh">远游负责行政与后勤协调，让您专注于就诊本身。我们不提供任何临床服务。</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 36px;">
+      <div class="boundary-block" style="margin-top: 0;">
+        <h4 class="lang-en">Appointment &amp; Imaging</h4>
+        <h4 class="lang-zh">预约与影像</h4>
+        <ul style="padding-left: 18px; margin-top: 10px;">
+          <li class="lang-en">Specialist appointment scheduling at selected hospitals</li>
+          <li class="lang-zh">目标医院专家预约</li>
+          <li class="lang-en">Imaging exam coordination (X-ray, MRI, CT)</li>
+          <li class="lang-zh">影像学检查协调（X 光、MRI、CT）</li>
+          <li class="lang-en">Pre-visit document preparation checklist</li>
+          <li class="lang-zh">就诊前材料准备清单</li>
+        </ul>
+      </div>
+      <div class="boundary-block" style="margin-top: 0;">
+        <h4 class="lang-en">On-Site Support</h4>
+        <h4 class="lang-zh">现场支持</h4>
+        <ul style="padding-left: 18px; margin-top: 10px;">
+          <li class="lang-en">Bilingual interpreter accompaniment during consultation</li>
+          <li class="lang-zh">就诊全程双语口译陪同</li>
+          <li class="lang-en">Report translation (Chinese → English summary)</li>
+          <li class="lang-zh">报告翻译（中文→英文摘要）</li>
+          <li class="lang-en">Airport / hotel pickup and drop-off coordination</li>
+          <li class="lang-zh">机场/酒店接送协调</li>
+        </ul>
+      </div>
+      <div class="boundary-block" style="margin-top: 0;">
+        <h4 class="lang-en">Recovery &amp; Follow-Up</h4>
+        <h4 class="lang-zh">康复与复诊</h4>
+        <ul style="padding-left: 18px; margin-top: 10px;">
+          <li class="lang-en">Post-surgical recovery accommodation arrangement</li>
+          <li class="lang-zh">术后康复住宿安排</li>
+          <li class="lang-en">Follow-up visit coordination</li>
+          <li class="lang-zh">复诊协调</li>
+          <li class="lang-en">Physical therapy referral coordination</li>
+          <li class="lang-zh">物理治疗转介协调</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §4 · Process ============ -->
+<section class="s alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span class="lang-en">§ 4 · Process</span>
+        <span class="lang-zh">§ 4 · 流程</span>
+      </div>
+      <h2 class="lang-en">4. From inquiry to consultation &amp; surgery</h2>
+      <h2 class="lang-zh">4. 从咨询到就诊与手术</h2>
+    </div>
+
+    <table class="tbl">
+      <thead>
+        <tr>
+          <th style="width: 8%;"><span class="lang-en">Step</span><span class="lang-zh">步骤</span></th>
+          <th style="width: 22%;"><span class="lang-en">Stage</span><span class="lang-zh">阶段</span></th>
+          <th style="width: 35%;"><span class="lang-en">YuanU's Role</span><span class="lang-zh">远游的工作</span></th>
+          <th style="width: 35%;"><span class="lang-en">Typical Timeline</span><span class="lang-zh">大致时间</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col-key">1</td>
+          <td>
+            <span class="lang-en">Initial inquiry</span>
+            <span class="lang-zh">初始咨询</span>
+          </td>
+          <td>
+            <span class="lang-en">Collect your medical summary, imaging reports (if any), and preferred hospital/specialist.</span>
+            <span class="lang-zh">收集您的病情摘要、影像报告（如有）及意向医院/专家。</span>
+          </td>
+          <td>
+            <span class="lang-en">Day 1</span>
+            <span class="lang-zh">第 1 天</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col-key">2</td>
+          <td>
+            <span class="lang-en">Feasibility &amp; hospital matching</span>
+            <span class="lang-zh">可行性评估与医院匹配</span>
+          </td>
+          <td>
+            <span class="lang-en">Assess whether the scenario fits our coordination scope; recommend suitable hospital and department.</span>
+            <span class="lang-zh">评估是否在协调服务范围内；推荐合适医院及科室。</span>
+          </td>
+          <td>
+            <span class="lang-en">1–2 business days</span>
+            <span class="lang-zh">1–2 个工作日</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col-key">3</td>
+          <td>
+            <span class="lang-en">Scheduling</span>
+            <span class="lang-zh">预约排期</span>
+          </td>
+          <td>
+            <span class="lang-en">Coordinate specialist appointment; arrange imaging if needed; send pre-visit checklist.</span>
+            <span class="lang-zh">协调专家预约；必要时安排影像检查；发送就诊前准备清单。</span>
+          </td>
+          <td>
+            <span class="lang-en">3–7 business days (varies by specialist)</span>
+            <span class="lang-zh">3–7 个工作日（视专家排期而定）</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col-key">4</td>
+          <td>
+            <span class="lang-en">On-site visit</span>
+            <span class="lang-zh">现场就诊</span>
+          </td>
+          <td>
+            <span class="lang-en">Bilingual accompaniment; imaging exam coordination; real-time translation during consultation.</span>
+            <span class="lang-zh">双语陪同就诊；影像检查协调；问诊过程实时翻译。</span>
+          </td>
+          <td>
+            <span class="lang-en">Visit day</span>
+            <span class="lang-zh">就诊当日</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col-key">5</td>
+          <td>
+            <span class="lang-en">Post-visit coordination</span>
+            <span class="lang-zh">诊后协调</span>
+          </td>
+          <td>
+            <span class="lang-en">Report translation; follow-up scheduling; physical therapy referral; recovery accommodation if surgery is planned.</span>
+            <span class="lang-zh">报告翻译；复诊安排；物理治疗转介；如有手术计划则安排康复住宿。</span>
+          </td>
+          <td>
+            <span class="lang-en">1–3 days post-visit</span>
+            <span class="lang-zh">诊后 1–3 天</span>
+          </td>
+        </tr>
+        <tr class="row-emph">
+          <td class="col-key">6</td>
+          <td>
+            <span class="lang-en">Surgical coordination (if applicable)</span>
+            <span class="lang-zh">手术协调（如适用）</span>
+          </td>
+          <td>
+            <span class="lang-en">Pre-surgical assessment scheduling; hospital admission coordination; post-surgical recovery accommodation; follow-up visits.</span>
+            <span class="lang-zh">术前评估预约；住院协调；术后康复住宿安排；复诊跟进。</span>
+          </td>
+          <td>
+            <span class="lang-en">Per hospital surgical schedule</span>
+            <span class="lang-zh">按医院手术排期</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ §5 · Pricing ============ -->
+<section class="s">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span class="lang-en">§ 5 · Pricing</span>
+        <span class="lang-zh">§ 5 · 费用</span>
+      </div>
+      <h2 class="lang-en">5. YuanU coordination fees</h2>
+      <h2 class="lang-zh">5. 远游协调服务费</h2>
+      <p class="lede lang-en">The following are YuanU's coordination fees only. Hospital medical fees are separate and paid directly to the hospital.</p>
+      <p class="lede lang-zh">以下为远游协调服务费。医院端医疗费用另行计算，直接支付给医院。</p>
+    </div>
+
+    <table class="tbl">
+      <thead>
+        <tr>
+          <th style="width: 35%;"><span class="lang-en">Service Item</span><span class="lang-zh">服务项目</span></th>
+          <th style="width: 30%;"><span class="lang-en">YuanU Coordination Fee</span><span class="lang-zh">远游协调费</span></th>
+          <th style="width: 35%;"><span class="lang-en">Notes</span><span class="lang-zh">说明</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col-key"><span class="lang-en">Outpatient coordination (per visit)</span><span class="lang-zh">门诊协调（每次）</span></td>
+          <td class="col-price">¥500 – ¥800</td>
+          <td>
+            <span class="lang-en">Includes appointment scheduling, bilingual accompaniment, and report translation.</span>
+            <span class="lang-zh">含预约、双语陪同就诊、报告翻译。</span>
+          </td>
+        </tr>
+        <tr class="row-emph">
+          <td class="col-key"><span class="lang-en">Surgical coordination</span><span class="lang-zh">手术协调</span></td>
+          <td class="col-price"><span class="lang-en">15%–25% of hospital fee</span><span class="lang-zh">医院费用的 15%–25%</span></td>
+          <td>
+            <span class="lang-en">Varies with procedure complexity and coordination duration. Final quote provided before surgery.</span>
+            <span class="lang-zh">根据手术复杂度与协调时长浮动，术前提供最终报价。</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col-key"><span class="lang-en">Recovery accommodation arrangement</span><span class="lang-zh">康复住宿安排</span></td>
+          <td class="col-price"><span class="lang-en">Quoted separately</span><span class="lang-zh">另行报价</span></td>
+          <td>
+            <span class="lang-en">Based on actual accommodation costs; coordination service included.</span>
+            <span class="lang-zh">按实际住宿费用计算；含协调服务。</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="boundary-block">
+      <h4 class="lang-en">What is NOT included</h4>
+      <h4 class="lang-zh">不含在内</h4>
+      <ul style="padding-left: 18px; margin: 0;">
+        <li class="lang-en">Hospital medical fees (paid directly to the hospital)</li>
+        <li class="lang-zh">医院端医疗费用（直接支付给医院）</li>
+        <li class="lang-en">Flights, hotels, personal expenses</li>
+        <li class="lang-zh">机票、酒店、个人消费</li>
+        <li class="lang-en">Third-language interpretation beyond English/Chinese (quoted separately)</li>
+        <li class="lang-zh">中英以外的第三语种翻译（另行报价）</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §6 · Post-Surgical Recovery ============ -->
+<section class="s alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span class="lang-en">§ 6 · Post-Surgical Recovery</span>
+        <span class="lang-zh">§ 6 · 术后康复支持</span>
+      </div>
+      <h2 class="lang-en">6. Post-surgical recovery support</h2>
+      <h2 class="lang-zh">6. 术后康复支持</h2>
+      <p class="lede lang-en">For international patients undergoing orthopedic surgery in Beijing, YuanU can coordinate post-surgical recovery logistics.</p>
+      <p class="lede lang-zh">对于在北京进行骨科手术的国际患者，远游可协调术后康复后勤支持。</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px;">
+      <div>
+        <h3 class="lang-en">Accommodation &amp; Logistics</h3>
+        <h3 class="lang-zh">住宿与后勤</h3>
+        <ul style="margin-top: 14px; padding-left: 22px;">
+          <li class="lang-en">Recovery-friendly accommodation near the hospital, selected based on accessibility needs (elevator, ground floor, wheelchair access if needed).</li>
+          <li class="lang-zh">医院附近康复型住宿，根据行动需求选择（电梯、一楼、如需轮椅通道）。</li>
+          <li class="lang-en">Daily check-in coordination during early recovery period.</li>
+          <li class="lang-zh">术后早期恢复期间的每日签到协调。</li>
+          <li class="lang-en">Transportation to follow-up appointments.</li>
+          <li class="lang-zh">复诊交通安排。</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="lang-en">Follow-Up &amp; Physical Therapy</h3>
+        <h3 class="lang-zh">复诊与物理治疗</h3>
+        <ul style="margin-top: 14px; padding-left: 22px;">
+          <li class="lang-en">Follow-up visit scheduling with the operating surgeon.</li>
+          <li class="lang-zh">与主刀医师的复诊预约。</li>
+          <li class="lang-en">Physical therapy referral to qualified rehabilitation facilities.</li>
+          <li class="lang-zh">物理治疗转介至合格的康复机构。</li>
+          <li class="lang-en">Report translation for follow-up results before your departure.</li>
+          <li class="lang-zh">离境前复诊结果的报告翻译。</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="boundary-block warn" style="margin-top: 36px;">
+      <p class="lang-en"><strong>Note:</strong> YuanU coordinates the logistics of recovery — accommodation, transportation, follow-up scheduling, and therapy referrals. We do not provide nursing care, physical therapy, or any clinical services. All clinical decisions are made independently by the treating hospital.</p>
+      <p class="lang-zh"><strong>说明：</strong>远游协调康复后勤——住宿、交通、复诊安排及治疗转介。我们不提供护理、物理治疗或任何临床服务。所有临床决策由就诊医院独立做出。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §7 · Service Boundary ============ -->
+<section class="s">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span class="lang-en">§ 7 · Service Boundary</span>
+        <span class="lang-zh">§ 7 · 服务边界</span>
+      </div>
+      <h2 class="lang-en">7. Service Boundary &amp; disclaimer</h2>
+      <h2 class="lang-zh">7. 服务边界与免责</h2>
+    </div>
+
+    <div class="boundary-block warn">
+      <h4 class="lang-en">YuanU is a coordination service — not a medical institution</h4>
+      <h4 class="lang-zh">远游是协调服务——非医疗机构</h4>
+      <p class="lang-en">YuanU's role is limited to administrative coordination, bilingual interpretation, and logistical support. We do not:</p>
+      <p class="lang-zh">远游的角色限于行政协调、双语翻译与后勤支持。我们不会：</p>
+      <ul style="padding-left: 18px; margin-top: 8px;">
+        <li class="lang-en">Provide medical opinions, diagnoses, or treatment recommendations</li>
+        <li class="lang-zh">提供医学意见、诊断或治疗建议</li>
+        <li class="lang-en">Interpret imaging, lab, or pathology results in a clinical capacity</li>
+        <li class="lang-zh">以临床身份解读影像、化验或病理结果</li>
+        <li class="lang-en">Guarantee surgical outcomes or clinical results</li>
+        <li class="lang-zh">对手术结果或临床结果做承诺</li>
+        <li class="lang-en">Replace the judgment of licensed physicians at partner hospitals</li>
+        <li class="lang-zh">替代合作医院执业医师的专业判断</li>
+      </ul>
+    </div>
+
+    <div class="boundary-block">
+      <h4 class="lang-en">Clinical independence</h4>
+      <h4 class="lang-zh">临床独立性</h4>
+      <p class="lang-en">All orthopedic consultations, examinations, and surgical procedures are performed independently by licensed physicians at the respective hospitals. YuanU coordinators facilitate communication but do not participate in clinical decision-making. For the full service boundary, please see the <a href="about.html#boundary">About page</a>.</p>
+      <p class="lang-zh">所有骨科就诊、检查与手术均由各医院执业医师独立完成。远游协调员协助沟通但不参与临床决策。完整服务边界请参阅 <a href="about.html#boundary">关于页面</a>。</p>
+    </div>
+
+    <!-- CTA -->
+    <div class="hero-cta" style="margin-top: 48px; justify-content: center;">
+      <a href="contact.html" class="btn btn--primary">
+        <span class="lang-en">Submit your orthopedic inquiry</span>
+        <span class="lang-zh">提交骨科咨询</span>
+        <span class="arrow">→</span>
+      </a>
+      <a href="specialist-consultation.html" class="btn btn--ghost">
+        <span class="lang-en">See all specialist services</span>
+        <span class="lang-zh">查看全部专科服务</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4><span class="lang-en">YuanU Medical Concierge</span><span class="lang-zh">YuanU Medical Concierge · 远游医疗</span></h4>
+        <p class="lang-en">A service of Beijing YuanU International Travel Co., Ltd., founded 2006.</p>
+        <p class="lang-zh">北京远游国际旅行社有限责任公司旗下品牌，公司成立于 2006 年。</p>
+        <p class="lang-en">YuanU is a <a href="about.html#boundary" class="boundary-link">licensed medical-coordination service company</a>, not a medical institution. All diagnoses, examinations and treatments are provided independently by licensed physicians at partnering hospitals. YuanU does not provide medical opinions or guarantee clinical outcomes.</p>
+        <p class="lang-zh">远游是经许可的<a href="about.html#boundary" class="boundary-link">医疗协调服务公司</a>，非医疗机构。所有诊断、检查与治疗均由合作医院的执业医师独立提供；远游不出具医学意见，不就医疗结果做承诺。</p>
+        <p class="micro lang-en">YuanU is an independent travel / concierge company; we do not provide clinical services and do not speak for any hospital.</p>
+        <p class="micro lang-zh">远游是独立的旅行服务/陪诊公司，不提供临床医疗服务，亦不代表任何医院发言。</p>
+      </div>
+
+      <div>
+        <h4><span class="lang-en">Navigate</span><span class="lang-zh">导航</span></h4>
+        <ul>
+          <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-zh">首页</span></a></li>
+          <li><a href="about.html"><span class="lang-en">About</span><span class="lang-zh">关于</span></a></li>
+          <li><a href="why-beijing.html"><span class="lang-en">Why Beijing</span><span class="lang-zh">为什么北京</span></a></li>
+          <li><a href="screening.html"><span class="lang-en">Health Screening</span><span class="lang-zh">健康体检</span></a></li>
+          <li><a href="endoscopy.html"><span class="lang-en">Endoscopy</span><span class="lang-zh">胃肠镜</span></a></li>
+          <li><a href="patient-support.html"><span class="lang-en">Patient Support</span><span class="lang-zh">患者支持</span></a></li>
+          <li><a href="faq.html"><span class="lang-en">FAQ</span><span class="lang-zh">问答</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4><span class="lang-en">Other</span><span class="lang-zh">其他</span></h4>
+        <ul>
+          <li><a href="other-services.html"><span class="lang-en">Other Services</span><span class="lang-zh">其它服务</span></a></li>
+          <li><a href="contact.html"><span class="lang-en">Contact Us</span><span class="lang-zh">联系我们</span></a></li>
+          <li><a href="contact.html#privacy"><span class="lang-en">Privacy Notice</span><span class="lang-zh">隐私声明</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4><span class="lang-en">Beijing Office</span><span class="lang-zh">北京办公</span></h4>
+        <p class="lang-en">Beijing YuanU International Travel Co., Ltd.</p>
+        <p class="lang-zh">北京远游国际旅行社有限责任公司</p>
+        <p class="lang-en">Beijing, China</p>
+        <p class="lang-zh">中国 · 北京</p>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <span class="license">
+        <span class="lang-en">Travel agency license · L-BJ-CJ00262</span>
+        <span class="lang-zh">旅行社经营许可证 · L-BJ-CJ00262</span>
+      </span>
+      <span>© 2026 Beijing YuanU International Travel Co., Ltd. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var body = document.body;
+  var buttons = document.querySelectorAll('.lang-toggle button');
+  function setLang(lang) {
+    body.setAttribute('data-lang', lang);
+    document.documentElement.setAttribute('lang', lang === 'zh' ? 'zh-CN' : 'en');
+    buttons.forEach(function (b) {
+      b.classList.toggle('active', b.getAttribute('data-set-lang') === lang);
+    });
+    try { localStorage.setItem('yuanu-lang', lang); } catch (e) {}
+  }
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () { setLang(b.getAttribute('data-set-lang')); });
+  });
+  try {
+    var saved = localStorage.getItem('yuanu-lang');
+    if (saved === 'zh' || saved === 'en') setLang(saved);
+  } catch (e) {}
+})();
+</script>
+
+</body>
+</html>

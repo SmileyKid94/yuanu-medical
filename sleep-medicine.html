@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sleep Medicine Consultation in Beijing — Coordinated by YuanU | YuanU Medical Concierge</title>
+<meta name="description" content="Sleep disorder consultation at Beijing tertiary hospitals, coordinated by YuanU: insomnia, sleep apnea, narcolepsy, restless legs syndrome, circadian rhythm disorders. Bilingual coordination throughout.">
+<meta property="og:title" content="Sleep Medicine Consultation in Beijing — Coordinated by YuanU">
+<meta property="og:description" content="Sleep disorder consultation at Beijing tertiary hospitals with bilingual coordination throughout. Pricing and service boundary explained.">
+<meta property="og:type" content="website">
+
+<!-- Google Fonts: serif headings + sans body + mono numbers -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600&family=Lobster&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   YuanU Medical Concierge — v5 Design System
+   ============================================================ */
+:root {
+  --teal-900: #0F2733;
+  --teal-700: #16384A;
+  --teal-500: #2E5A6E;
+  --teal-100: #DCE6EA;
+  --gold-600: #9F7E4F;
+  --gold-500: #B89668;
+  --gold-200: #E8DCC4;
+  --ivory:    #FAF7F2;
+  --ivory-2:  #F3EEE3;
+  --rule:     #E0DAD0;
+  --rule-2:   #CFC7B7;
+  --ink:      #1B1F23;
+  --ink-2:    #3D4350;
+  --muted:    #6B7280;
+  --container: 1240px;
+  --gutter: 24px;
+  --section-y: 110px;
+  --section-y-tight: 80px;
+  --serif-en: "Cormorant Garamond", "Noto Serif SC", Georgia, serif;
+  --serif-zh: "Noto Serif SC", "Cormorant Garamond", serif;
+  --sans-en: "Inter", "Noto Sans SC", -apple-system, BlinkMacSystemFont, sans-serif;
+  --script:  "Lobster", "Cormorant Garamond", cursive;
+  --sans-zh: "Noto Sans SC", "Inter", -apple-system, sans-serif;
+  --mono:    "JetBrains Mono", ui-monospace, monospace;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--sans-en);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--ink);
+  background: var(--ivory);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body[data-lang="zh"] { font-family: var(--sans-zh); }
+body[data-lang="en"] .lang-zh,
+body[data-lang="zh"] .lang-en { display: none; }
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+.container { max-width: var(--container); margin: 0 auto; padding: 0 var(--gutter); }
+
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 12px;
+  font-family: var(--sans-en);
+  font-size: 11px; font-weight: 500; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--gold-600); margin-bottom: 22px;
+}
+body[data-lang="zh"] .eyebrow { font-family: var(--sans-zh); letter-spacing: 0.18em; }
+.eyebrow::before { content: ""; width: 28px; height: 1px; background: var(--gold-500); }
+
+h1, h2, h3, h4 {
+  font-family: var(--serif-en);
+  color: var(--teal-900);
+  font-weight: 500;
+  letter-spacing: -0.005em;
+}
+body[data-lang="zh"] h1, body[data-lang="zh"] h2, body[data-lang="zh"] h3, body[data-lang="zh"] h4
+  { font-family: var(--serif-zh); font-weight: 600; letter-spacing: 0.01em; }
+h1 { font-size: clamp(40px, 5vw, 60px); line-height: 1.12; }
+h2 { font-size: clamp(30px, 3.4vw, 42px); line-height: 1.2; margin-bottom: 24px; }
+h3 { font-size: 22px; line-height: 1.35; margin-bottom: 12px; }
+h4 { font-size: 17px; line-height: 1.4; }
+p { margin-bottom: 14px; }
+p.lede { font-size: 19px; line-height: 1.7; color: var(--ink-2); max-width: 780px; }
+.mono { font-family: var(--mono); font-size: 0.92em; letter-spacing: 0.02em; }
+
+ul, ol { padding-left: 22px; color: var(--ink-2); }
+ul li, ol li { margin-bottom: 8px; line-height: 1.7; }
+ul li strong, ol li strong { color: var(--teal-900); font-weight: 600; }
+
+/* ====== top bar ====== */
+.topbar { border-bottom: 1px solid var(--rule); background: var(--ivory); position: sticky; top: 0; z-index: 100; backdrop-filter: blur(6px); }
+.topbar-inner { display: flex; align-items: center; justify-content: space-between; padding: 16px var(--gutter); max-width: var(--container); margin: 0 auto; gap: 24px; }
+.brand { display: flex; align-items: center; gap: 12px; font-family: var(--serif-en); font-weight: 600; font-size: 20px; color: var(--teal-900); letter-spacing: -0.005em; }
+.brand .mark { width: 36px; height: 36px; display: grid; place-items: center; border: 1px solid var(--teal-700); color: var(--teal-700); font-family: var(--serif-en); font-weight: 600; font-size: 17px; letter-spacing: -0.02em; }
+.brand .brand-line2 { display: block; font-family: var(--sans-en); font-size: 10px; letter-spacing: 0.18em; color: var(--gold-600); text-transform: uppercase; font-weight: 500; margin-top: 2px; }
+body[data-lang="zh"] .brand .brand-line2 { font-family: var(--sans-zh); letter-spacing: 0.12em; }
+.nav { display: flex; align-items: center; gap: 28px; }
+.nav a { font-family: var(--sans-en); font-size: 13.5px; font-weight: 500; color: var(--ink-2); position: relative; padding: 6px 0; transition: color 0.2s; }
+body[data-lang="zh"] .nav a { font-family: var(--sans-zh); font-size: 14px; }
+.nav a::after { content: ""; position: absolute; left: 0; bottom: 0; width: 0; height: 1px; background: var(--teal-700); transition: width 0.3s ease; }
+.nav a:hover { color: var(--teal-700); }
+.nav a:hover::after, .nav a.active::after { width: 100%; }
+.nav a.active { color: var(--teal-900); }
+
+/* ====== nav dropdown ====== */
+.nav-dropdown { position: relative; }
+.nav-dropdown-toggle { cursor: default; }
+.nav-dropdown-menu {
+  display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+  background: var(--ivory); border: 1px solid var(--rule); padding: 10px 0;
+  min-width: 240px; box-shadow: 0 8px 24px rgba(15,39,51,0.10); z-index: 200;
+  margin-top: 10px;
+}
+.nav-dropdown:hover .nav-dropdown-menu { display: block; }
+.nav-dropdown-menu a {
+  display: block; padding: 8px 20px; font-size: 13px; white-space: nowrap;
+}
+.nav-dropdown-menu a::after { display: none; }
+.nav-dropdown-menu a:hover { background: var(--ivory-2); color: var(--teal-900); }
+
+.lang-toggle { display: flex; border: 1px solid var(--rule-2); font-family: var(--sans-en); font-size: 12px; font-weight: 500; overflow: hidden; }
+.lang-toggle button { background: transparent; border: 0; padding: 8px 14px; cursor: pointer; color: var(--muted); letter-spacing: 0.05em; transition: background 0.2s, color 0.2s; }
+.lang-toggle button.active { background: var(--teal-700); color: var(--ivory); }
+
+/* ====== hero ====== */
+.hero { padding: 100px 0 80px; border-bottom: 1px solid var(--rule); background: radial-gradient(ellipse at top right, rgba(184,150,104,0.06), transparent 50%), var(--ivory); }
+.hero-grid { display: grid; grid-template-columns: 1.55fr 1fr; gap: 80px; align-items: center; }
+.hero h1 { margin-bottom: 28px; color: var(--teal-900); }
+.hero .lede { margin-bottom: 36px; }
+.hero-cta { display: flex; gap: 18px; align-items: center; margin-top: 8px; flex-wrap: wrap; }
+.hero-meta { margin-top: 28px; font-family: var(--sans-en); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+body[data-lang="zh"] .hero-meta { font-family: var(--sans-zh); letter-spacing: 0.06em; text-transform: none; font-size: 13px; }
+
+.btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px; font-family: var(--sans-en); font-size: 14px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; cursor: pointer; transition: all 0.25s ease; border: 1px solid var(--teal-700); }
+body[data-lang="zh"] .btn { font-family: var(--sans-zh); letter-spacing: 0.06em; text-transform: none; font-size: 14px; }
+.btn--primary { background: var(--teal-700); color: var(--ivory); }
+.btn--primary:hover { background: var(--teal-900); border-color: var(--teal-900); transform: translateY(-1px); }
+.btn--ghost { background: transparent; color: var(--teal-700); }
+.btn--ghost:hover { background: var(--teal-700); color: var(--ivory); }
+.btn .arrow { transition: transform 0.25s ease; }
+.btn:hover .arrow { transform: translateX(4px); }
+
+/* ====== section ====== */
+section.s { padding: var(--section-y) 0; border-bottom: 1px solid var(--rule); }
+section.s.alt { background: var(--ivory-2); }
+section.s.tight { padding: var(--section-y-tight) 0; }
+.section-head { max-width: 820px; margin-bottom: 56px; }
+
+/* ====== boundary block ====== */
+.boundary-block { padding: 32px 40px; border-left: 3px solid var(--gold-500); background: var(--ivory); margin: 28px 0; }
+section.s.alt .boundary-block { background: var(--ivory); }
+.boundary-block h4 { color: var(--teal-900); margin-bottom: 10px; font-size: 17px; }
+.boundary-block p, .boundary-block ul, .boundary-block ol { color: var(--ink-2); font-size: 15px; line-height: 1.75; margin-bottom: 10px; }
+.boundary-block p:last-child, .boundary-block ul:last-child, .boundary-block ol:last-child { margin-bottom: 0; }
+.boundary-block a { color: var(--teal-700); border-bottom: 1px solid var(--gold-500); }
+.boundary-block a:hover { background: var(--gold-200); }
+.boundary-block.warn { border-left-color: var(--teal-700); background: rgba(184,150,104,0.08); }
+section.s.alt .boundary-block.warn { background: rgba(184,150,104,0.10); }
+
+/* ====== table ====== */
+.tbl { width: 100%; border-collapse: collapse; margin: 24px 0; background: var(--ivory); border: 1px solid var(--rule); }
+.tbl thead th {
+  background: var(--teal-700); color: var(--ivory);
+  text-align: left; padding: 14px 18px;
+  font-family: var(--sans-en); font-weight: 500;
+  font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+  vertical-align: bottom; border-right: 1px solid rgba(255,255,255,0.10);
+}
+.tbl thead th:last-child { border-right: 0; }
+body[data-lang="zh"] .tbl thead th { font-family: var(--sans-zh); letter-spacing: 0.08em; font-weight: 600; font-size: 12.5px; text-transform: none; }
+.tbl tbody td {
+  padding: 14px 18px; font-size: 14px; color: var(--ink-2);
+  border-top: 1px solid var(--rule); vertical-align: top; line-height: 1.65;
+}
+.tbl tbody tr:nth-child(even) td { background: var(--ivory-2); }
+.tbl tbody td.col-key { font-weight: 600; color: var(--teal-900); }
+.tbl tbody td.col-price { font-family: var(--mono); color: var(--teal-900); font-size: 13.5px; letter-spacing: 0.01em; }
+.tbl tbody tr.row-emph td { background: rgba(184,150,104,0.10); }
+.tbl tbody tr.row-emph td.col-key { color: var(--teal-900); }
+
+/* ====== footer ====== */
+footer { background: var(--teal-900); color: rgba(250,247,242,0.78); padding: 80px 0 36px; }
+footer .container { max-width: var(--container); }
+.footer-grid { display: grid; grid-template-columns: 2.2fr 1fr 1fr 1fr; gap: 56px; margin-bottom: 56px; }
+footer h4 { font-family: var(--serif-en); color: var(--ivory); font-size: 18px; font-weight: 500; margin-bottom: 16px; }
+body[data-lang="zh"] footer h4 { font-family: var(--serif-zh); font-weight: 600; }
+footer p { font-size: 13.5px; line-height: 1.7; margin-bottom: 10px; color: rgba(250,247,242,0.7); }
+footer .micro { font-size: 11.5px; color: rgba(250,247,242,0.5); margin-top: 10px; }
+footer ul { list-style: none; padding: 0; color: rgba(250,247,242,0.78); }
+footer ul li { margin-bottom: 10px; }
+footer ul li a { font-size: 13.5px; color: rgba(250,247,242,0.78); transition: color 0.2s; }
+footer ul li a:hover { color: var(--gold-500); }
+footer .footer-legal { border-top: 1px solid rgba(255,255,255,0.1); padding-top: 28px; display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: rgba(250,247,242,0.5); flex-wrap: wrap; gap: 16px; }
+footer .footer-legal .license { font-family: var(--mono); }
+footer a.boundary-link { color: var(--gold-500); border-bottom: 1px dotted rgba(184,150,104,0.5); }
+footer a.boundary-link:hover { border-bottom-color: var(--gold-500); }
+
+/* ====== responsive ====== */
+@media (max-width: 1024px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+}
+@media (max-width: 720px) {
+  :root { --section-y: 70px; --section-y-tight: 50px; }
+  .nav { display: none; }
+  .topbar-inner { padding: 14px var(--gutter); }
+  .hero { padding: 60px 0 50px; }
+  .footer-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============ TOP BAR ============ -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="brand">
+      <span class="mark">Y</span>
+      <span>
+        <span class="lang-en">YuanU Medical Concierge</span>
+        <span class="lang-zh">远游 · 医疗协调</span>
+        <span class="brand-line2 lang-en">Beijing · Established 2006</span>
+        <span class="brand-line2 lang-zh">北京 · 始于 2006</span>
+      </span>
+    </a>
+    <nav class="nav">
+      <a href="index.html"><span class="lang-en">Home</span><span class="lang-zh">首页</span></a>
+      <a href="about.html"><span class="lang-en">About</span><span class="lang-zh">关于</span></a>
+      <a href="why-beijing.html"><span class="lang-en">Why Beijing</span><span class="lang-zh">为什么北京</span></a>
+      <div class="nav-dropdown">
+        <a href="#" class="nav-dropdown-toggle active"><span class="lang-en">Services ▾</span><span class="lang-zh">服务项目 ▾</span></a>
+        <div class="nav-dropdown-menu">
+          <a href="screening.html"><span class="lang-en">Health Screening</span><span class="lang-zh">健康体检</span></a>
+          <a href="endoscopy.html"><span class="lang-en">Endoscopy</span><span class="lang-zh">胃肠镜</span></a>
+          <a href="specialist-consultation.html"><span class="lang-en">Specialist Consultation</span><span class="lang-zh">专科会诊</span></a>
+          <a href="complex-care.html"><span class="lang-en">Complex Care</span><span class="lang-zh">复杂专科</span></a>
+          <a href="cardiology.html"><span class="lang-en">Cardiology</span><span class="lang-zh">心血管内科</span></a>
+          <a href="oncology.html"><span class="lang-en">Oncology</span><span class="lang-zh">肿瘤科</span></a>
+          <a href="orthopedics.html"><span class="lang-en">Orthopedics</span><span class="lang-zh">骨科</span></a>
+          <a href="ophthalmology.html"><span class="lang-en">Ophthalmology</span><span class="lang-zh">眼科</span></a>
+          <a href="gynecology-womens-health.html"><span class="lang-en">Gynecology &amp; Women's Health</span><span class="lang-zh">妇科与女性健康</span></a>
+          <a href="dermatology.html"><span class="lang-en">Dermatology</span><span class="lang-zh">皮肤科</span></a>
+          <a href="sleep-medicine.html"><span class="lang-en">Sleep Medicine</span><span class="lang-zh">睡眠医学</span></a>
+          <a href="pediatrics.html"><span class="lang-en">Pediatrics</span><span class="lang-zh">儿童健康</span></a>
+          <a href="urology.html"><span class="lang-en">Urology</span><span class="lang-zh">泌尿外科</span></a>
+          <a href="mens-health.html"><span class="lang-en">Men's Health</span><span class="lang-zh">男性健康</span></a>
+          <a href="other-services.html"><span class="lang-en">Other Services</span><span class="lang-zh">其它服务</span></a>
+        </div>
+      </div>
+      <a href="hospitals.html"><span class="lang-en">Hospitals</span><span class="lang-zh">合作医院</span></a>
+      <a href="patient-support.html"><span class="lang-en">Patient Support</span><span class="lang-zh">患者支持</span></a>
+      <a href="faq.html"><span class="lang-en">FAQ</span><span class="lang-zh">问答</span></a>
+      <a href="contact.html"><span class="lang-en">Contact</span><span class="lang-zh">联系</span></a>
+    </nav>
+    <div class="lang-toggle" role="group" aria-label="language switch">
+      <button data-set-lang="en" class="active">EN</button>
+      <button data-set-lang="zh">中文</button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">
+        <span class="lang-en">Specialty Page · Sleep Medicine</span>
+        <span class="lang-zh">专题页 · 睡眠医学</span>
+      </div>
+      <h1 class="lang-en">Sleep Medicine Consultation in Beijing — coordinated by YuanU</h1>
+      <h1 class="lang-zh">睡眠医学就诊协调 — 远游医疗协调</h1>
+
+      <p class="lede lang-en">YuanU coordinates sleep disorder consultations at Beijing tertiary hospitals for international patients. We assist with appointment scheduling, bilingual interpretation during visits, sleep study coordination, report translation, and CPAP equipment consultation — all while staying strictly within our role as a coordination service.</p>
+      <p class="lede lang-zh">远游为国际患者在北京三甲医院协调睡眠障碍就诊服务。我们协助预约、提供就诊双语口译陪同、协调睡眠监测、报告翻译以及 CPAP 设备咨询——全程严守协调服务的角色边界。</p>
+
+      <div class="hero-cta">
+        <a href="contact.html" class="btn btn--primary">
+          <span class="lang-en">Submit your sleep inquiry</span>
+          <span class="lang-zh">提交睡眠咨询</span>
+          <span class="arrow">→</span>
+        </a>
+        <a href="contact.html" class="btn btn--ghost">
+          <span class="lang-en">Speak with a coordinator</span>
+          <span class="lang-zh">与协调员联系</span>
+        </a>
+      </div>
+
+      <div class="hero-meta">
+        <span class="lang-en">Clinical work: Beijing tertiary hospitals · Coordination: YuanU · Bilingual throughout</span>
+        <span class="lang-zh">临床工作：北京三甲医院 · 协调与陪诊：远游 · 全程双语</span>
+      </div>
+    </div>
+
+    <!-- hero side ornament -->
+    <div aria-hidden="true" style="position: relative; aspect-ratio: 4/5; background: linear-gradient(180deg, var(--ivory-2) 0%, var(--ivory) 100%); border: 1px solid var(--rule); display: grid; place-items: center; overflow: hidden;">
+      <svg viewBox="0 0 200 250" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 80%; height: auto; opacity: 0.95;">
+        <!-- moon -->
+        <circle cx="100" cy="60" r="30" stroke="#B89668" stroke-width="0.8" fill="none"/>
+        <path d="M 110 35 Q 95 60 110 85" stroke="#B89668" stroke-width="0.6" fill="none"/>
+        <!-- Z's for sleep -->
+        <text x="145" y="45" font-family="Cormorant Garamond, serif" font-style="italic" font-size="18" fill="#16384A" opacity="0.5">z</text>
+        <text x="155" y="35" font-family="Cormorant Garamond, serif" font-style="italic" font-size="14" fill="#16384A" opacity="0.35">z</text>
+        <text x="162" y="28" font-family="Cormorant Garamond, serif" font-style="italic" font-size="10" fill="#16384A" opacity="0.2">z</text>
+        <!-- brain wave / EEG line -->
+        <text x="100" y="110" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.5" font-weight="500" letter-spacing="3" fill="#9F7E4F">POLYSOMNOGRAPHY</text>
+        <path d="M 30 140 L 50 140 L 55 125 L 65 155 L 75 130 L 85 150 L 95 135 L 105 145 L 115 120 L 125 160 L 135 130 L 145 140 L 170 140" stroke="#16384A" stroke-width="0.8" fill="none"/>
+        <!-- dashed baseline -->
+        <line x1="30" y1="140" x2="170" y2="140" stroke="#B89668" stroke-width="0.3" stroke-dasharray="3,3"/>
+        <!-- sleep stages label -->
+        <text x="100" y="175" text-anchor="middle" font-family="Inter, sans-serif" font-size="6" font-weight="400" letter-spacing="2" fill="#6B7280">REM · N1 · N2 · N3</text>
+        <!-- pillow icon -->
+        <ellipse cx="100" cy="210" rx="40" ry="14" stroke="#B89668" stroke-width="0.6" fill="none"/>
+        <ellipse cx="100" cy="208" rx="36" ry="10" stroke="#B89668" stroke-width="0.4" fill="rgba(184,150,104,0.06)"/>
+        <text x="100" y="240" text-anchor="middle" font-family="Cormorant Garamond, serif" font-style="italic" font-size="9" fill="#6B7280">restful sleep</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §1 · Overview ============ -->
+<section class="s">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span class="lang-en">§ 1 · Overview</span>
+        <span class="lang-zh">§ 1 · 概述</span>
+      </div>
+      <h2 class="lang-en">1. Common sleep disorders</h2>
+      <h2 class="lang-zh">1. 睡眠障碍常见类型</h2>
+      <p class="lede lang-en" style="font-size:16px;">Sleep disorders encompass a wide range of conditions. The descriptions below are for general reference only and are not a substitute for professional evaluation by a licensed physician.</p>
+      <p class="lede lang-zh" style="font-size:16px;">睡眠障碍涵盖多种类型。以下描述仅供一般性参考，不能替代执业医师的专业评估。</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start;">
+      <div>
+        <h3 class="lang-en">Common categories</h3>
+        <h3 class="lang-zh">常见类别</h3>
+        <ul style="margin-top: 14px;">
+          <li class="lang-en"><strong>Insomnia:</strong> difficulty falling asleep, staying asleep, or waking too early; can be short-term or chronic.</li>
+          <li class="lang-zh"><strong>失眠（Insomnia）：</strong>入睡困难、维持睡眠困难或过早醒来；可分为短期失眠与慢性失眠。</li>
+          <li class="lang-en"><strong>Obstructive Sleep Apnea (OSA):</strong> repeated upper airway obstruction during sleep, often accompanied by snoring and daytime sleepiness.</li>
+          <li class="lang-zh"><strong>阻塞性睡眠呼吸暂停（OSA）：</strong>睡眠中反复出现上气道阻塞，常伴有打鼾和日间嗜睡。</li>
+          <li class="lang-en"><strong>Narcolepsy:</strong> excessive daytime sleepiness, cataplexy, sleep paralysis, and disrupted nighttime sleep.</li>
+          <li class="lang-zh"><strong>发作性睡病（Narcolepsy）：</strong>日间过度嗜睡、猝倒发作、睡眠瘫痪以及夜间睡眠片段化。</li>
+          <li class="lang-en"><strong>Restless Legs Syndrome (RLS):</strong> uncomfortable sensations in the legs with an urge to move, typically worsening in the evening.</li>
+          <li class="lang-zh"><strong>不宁腿综合征（RLS）：</strong>腿部不适感伴强烈活动欲望，通常在傍晚或夜间加重。</li>
+          <li class="lang-en"><strong>Circadian Rhythm Disorders:</strong> misalignment between the internal body clock and the external environment, including delayed sleep-wake phase disorder and shift-work disorder.</li>
+          <li class="lang-zh"><strong>昼夜节律紊乱（Circadian Rhythm Disorders）：</strong>体内生物钟与外部环境失同步，包括睡眠-觉醒时相延迟障碍和轮班工作障碍。</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="lang-en">Polysomnography (sleep study)</h3>
+        <h3 class="lang-zh">睡眠监测（Polysomnography）</h3>
+        <p class="lang-en">Polysomnography is a comprehensive overnight recording conducted in a sleep laboratory. It simultaneously monitors brain waves (EEG), oxygen saturation, heart rate, breathing patterns, eye movements, and limb movements. The results help physicians understand the nature and severity of a sleep disorder.</p>
+        <p class="lang-zh">多导睡眠监测（PSG）是在睡眠实验室进行的整夜综合记录，同步监测脑电波（EEG）、血氧饱和度、心率、呼吸模式、眼球运动和肢体运动。监测结果有助于医师了解睡眠障碍的性质与程度。</p>
+        <div class="boundary-block" style="margin-top: 20px;">
+          <p class="lang-en"><strong>Note:</strong> YuanU does not interpret sleep study results. All clinical interpretation is provided independently by the attending physician at the hospital.</p>
+          <p class="lang-zh"><strong>说明：</strong>远游不解读睡眠监测结果。所有临床解读均由医院主诊医师独立完成。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §2 · Why Beijing ============ -->
+<section class="s alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span class="lang-en">§ 2 · Why Beijing</span>
+        <span class="lang-zh">§ 2 · 为何选择北京</span>
+      </div>
+      <h2 class="lang-en">2. Beijing's strengths in sleep medicine</h2>
+      <h2 class="lang-zh">2. 北京在睡眠医学领域的优势</h2>
+    </div>
+
+    <p class="lang-en">Beijing is home to some of China's most established sleep medicine centers, drawing on the depth of its tertiary hospital system. International patients seeking evaluation of sleep disorders can access the following institutions through YuanU coordination:</p>
+    <p class="lang-zh">北京拥有国内最成熟的睡眠医学中心集群，依托三甲医院体系的深厚资源。国际患者可通过远游协调，就诊于以下机构：</p>
+
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 36px; margin-top: 36px;">
+      <div class="boundary-block" style="margin: 0;">
+        <h4 class="lang-en">PKUPH Sleep Center</h4>
+        <h4 class="lang-zh">PKUPH 睡眠中心</h4>
+        <p class="lang-en">Peking University People's Hospital operates one of Beijing's well-known sleep centers, with expertise in polysomnography and comprehensive sleep disorder evaluation.</p>
+        <p class="lang-zh">北京大学人民医院设有北京知名的睡眠中心，在多导睡眠监测与睡眠障碍综合评估方面经验丰富。</p>
+      </div>
+      <div class="boundary-block" style="margin: 0;">
+        <h4 class="lang-en">Chaoyang Hospital Sleep Respiratory Center</h4>
+        <h4 class="lang-zh">朝阳医院睡眠呼吸中心</h4>
+        <p class="lang-en">Beijing Chaoyang Hospital's Sleep and Respiratory Center is recognized for its focus on sleep-related breathing disorders, including obstructive sleep apnea.</p>
+        <p class="lang-zh">北京朝阳医院睡眠呼吸中心在睡眠相关呼吸障碍（包括阻塞性睡眠呼吸暂停）领域享有声誉。</p>
+      </div>
+      <div class="boundary-block" style="margin: 0;">
+        <h4 class="lang-en">BFH Neurology Sleep Clinic</h4>
+        <h4 class="lang-zh">BFH 神经内科睡眠门诊</h4>
+        <p class="lang-en">BFH-IMD (Beijing Friendship Hospital International Medical Department) offers neurology-led sleep outpatient services for insomnia, RLS, narcolepsy, and circadian rhythm disorders.</p>
+        <p class="lang-zh">BFH-IMD（北京友谊医院国际医疗部）提供神经内科主导的睡眠门诊，覆盖失眠、不宁腿综合征、发作性睡病及昼夜节律紊乱等。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §3 · What We Coordinate ============ -->
+<section class="s">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span class="lang-en">§ 3 · Our role</span>
+        <span class="lang-zh">§ 3 · 我们的角色</span>
+      </div>
+      <h2 class="lang-en">3. What we coordinate</h2>
+      <h2 class="lang-zh">3. 我们协调的服务内容</h2>
+    </div>
+
+    <table class="tbl">
+      <thead>
+        <tr>
+          <th style="width: 30%;"><span class="lang-en">Service item</span><span class="lang-zh">服务项目</span></th>
+          <th><span class="lang-en">Description</span><span class="lang-zh">说明</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col-key"><span class="lang-en">Sleep clinic appointment</span><span class="lang-zh">睡眠科门诊预约</span></td>
+          <td>
+            <span class="lang-en">Coordinate your appointment with the sleep specialist at the selected hospital; confirm visit date, time, and required documents.</span>
+            <span class="lang-zh">为您协调选定医院睡眠专科的门诊预约；确认就诊日期、时间及所需材料。</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col-key"><span class="lang-en">Sleep study scheduling</span><span class="lang-zh">睡眠监测预约协调</span></td>
+          <td>
+            <span class="lang-en">If the attending physician recommends a polysomnography, we coordinate the scheduling of the overnight sleep study and communicate pre-test preparation requirements.</span>
+            <span class="lang-zh">如主诊医师建议进行多导睡眠监测，我们协助协调整夜睡眠监测的排期，并传达检测前准备事项。</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col-key"><span class="lang-en">Bilingual interpretation &amp; accompaniment</span><span class="lang-zh">双语口译陪同</span></td>
+          <td>
+            <span class="lang-en">A YuanU coordinator accompanies you to the hospital visit, providing real-time bilingual interpretation between you and the physician.</span>
+            <span class="lang-zh">远游协调员陪同您到院就诊，提供您与医师之间的实时双语口译。</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col-key"><span class="lang-en">Report translation</span><span class="lang-zh">报告翻译</span></td>
+          <td>
+            <span class="lang-en">Translate the hospital-issued sleep study report into English (translation only — no medical interpretation).</span>
+            <span class="lang-zh">将医院出具的睡眠监测报告翻译为英文（仅翻译，不做医学解读）。</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col-key"><span class="lang-en">CPAP equipment consultation</span><span class="lang-zh">CPAP 设备咨询协调</span></td>
+          <td>
+            <span class="lang-en">If the physician recommends CPAP therapy, we can coordinate a consultation with the hospital's respiratory equipment team regarding device options and specifications.</span>
+            <span class="lang-zh">如医师建议使用 CPAP 通气治疗，我们可协助协调与医院呼吸设备团队的咨询，了解设备选项与参数。</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- ============ §4 · Process ============ -->
+<section class="s alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span class="lang-en">§ 4 · Process</span>
+        <span class="lang-zh">§ 4 · 流程</span>
+      </div>
+      <h2 class="lang-en">4. From inquiry to sleep study report</h2>
+      <h2 class="lang-zh">4. 从初次咨询到睡眠监测报告</h2>
+    </div>
+
+    <ol style="padding-left: 22px; line-height: 1.9;">
+      <li class="lang-en"><strong>Initial inquiry:</strong> You contact YuanU with a brief description of your sleep concerns. We review your information and suggest a suitable hospital and department.</li>
+      <li class="lang-zh"><strong>初次咨询：</strong>您联系远游并简要描述睡眠方面的困扰。我们审核您的信息后，建议合适的医院和科室。</li>
+      <li class="lang-en"><strong>Appointment confirmation:</strong> We coordinate the specialist appointment, confirm the date and time, and send you a pre-visit checklist (documents to bring, preparation notes).</li>
+      <li class="lang-zh"><strong>预约确认：</strong>我们协调专科门诊预约，确认日期时间，并向您发送就诊前清单（需携带的材料、注意事项）。</li>
+      <li class="lang-en"><strong>On-site visit:</strong> A YuanU coordinator accompanies you to the hospital, provides bilingual interpretation during the consultation, and assists with check-in and payment logistics.</li>
+      <li class="lang-zh"><strong>到院就诊：</strong>远游协调员陪同您到院，在问诊过程中提供双语口译，并协助挂号及缴费事宜。</li>
+      <li class="lang-en"><strong>Sleep study (if recommended):</strong> If the physician orders a polysomnography, we coordinate the overnight study scheduling and communicate preparation instructions.</li>
+      <li class="lang-zh"><strong>睡眠监测（如医师建议）：</strong>如医师开具多导睡眠监测，我们协调整夜监测排期并传达检测准备须知。</li>
+      <li class="lang-en"><strong>Report delivery &amp; translation:</strong> After the hospital issues the report, we deliver it to you along with an English translation summary.</li>
+      <li class="lang-zh"><strong>报告交付与翻译：</strong>医院出具报告后，我们将报告及英文翻译摘要一并交付给您。</li>
+      <li class="lang-en"><strong>Follow-up coordination:</strong> If the physician recommends further evaluation or a follow-up visit, we coordinate the next appointment as needed.</li>
+      <li class="lang-zh"><strong>后续协调：</strong>如医师建议进一步评估或复诊，我们按需协调下一次预约。</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ §5 · Pricing ============ -->
+<section class="s">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span class="lang-en">§ 5 · Pricing</span>
+        <span class="lang-zh">§ 5 · 费用</span>
+      </div>
+      <h2 class="lang-en">5. Coordination fees</h2>
+      <h2 class="lang-zh">5. 协调服务费用</h2>
+      <p class="lede lang-en" style="font-size:16px;">The fees below are YuanU's coordination service charges only. Hospital medical fees are separate and paid directly to the hospital.</p>
+      <p class="lede lang-zh" style="font-size:16px;">以下费用仅为远游的协调服务费。医院端医疗费用另计，直接支付给医院。</p>
+    </div>
+
+    <table class="tbl">
+      <thead>
+        <tr>
+          <th style="width: 40%;"><span class="lang-en">Service item</span><span class="lang-zh">服务项目</span></th>
+          <th style="width: 30%;"><span class="lang-en">YuanU coordination fee</span><span class="lang-zh">远游协调费</span></th>
+          <th style="width: 30%;"><span class="lang-en">Notes</span><span class="lang-zh">备注</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="col-key"><span class="lang-en">Outpatient coordination (sleep clinic)</span><span class="lang-zh">门诊协调（睡眠科）</span></td>
+          <td class="col-price">¥500 – ¥800 / visit</td>
+          <td>
+            <span class="lang-en">Includes appointment scheduling, on-site interpretation, and basic logistics.</span>
+            <span class="lang-zh">含预约协调、到院口译陪同及基础事务支持。</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col-key"><span class="lang-en">Sleep study coordination</span><span class="lang-zh">睡眠监测协调</span></td>
+          <td class="col-price"><span class="lang-en">Quoted separately</span><span class="lang-zh">另行报价</span></td>
+          <td>
+            <span class="lang-en">Includes scheduling, pre-test preparation guidance, and post-test report translation. Fee varies with hospital and study type.</span>
+            <span class="lang-zh">含排期协调、检测前准备指导及检测后报告翻译。费用因医院和监测类型而异。</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="col-key"><span class="lang-en">CPAP equipment consultation coordination</span><span class="lang-zh">CPAP 设备咨询协调</span></td>
+          <td class="col-price"><span class="lang-en">Quoted separately</span><span class="lang-zh">另行报价</span></td>
+          <td>
+            <span class="lang-en">Coordination of consultation with hospital respiratory equipment team.</span>
+            <span class="lang-zh">协调与医院呼吸设备团队的咨询。</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="boundary-block">
+      <h4 class="lang-en">What's not included</h4>
+      <h4 class="lang-zh">不含在内</h4>
+      <ul style="padding-left: 20px; margin: 0;">
+        <li class="lang-en">Hospital medical fees (consultation, sleep study, lab tests, etc.) — paid directly to the hospital.</li>
+        <li class="lang-zh">医院端医疗费（门诊费、睡眠监测费、检查费等）— 直接支付给医院。</li>
+        <li class="lang-en">CPAP device purchase or rental costs.</li>
+        <li class="lang-zh">CPAP 设备购买或租赁费用。</li>
+        <li class="lang-en">Transportation, accommodation, and personal expenses.</li>
+        <li class="lang-zh">交通、住宿及个人消费。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ §6 · Service Boundary ============ -->
+<section class="s alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">
+        <span class="lang-en">§ 6 · Service Boundary</span>
+        <span class="lang-zh">§ 6 · 服务边界</span>
+      </div>
+      <h2 class="lang-en">6. Service boundary &amp; disclaimer</h2>
+      <h2 class="lang-zh">6. 服务边界与免责</h2>
+    </div>
+
+    <div class="boundary-block warn">
+      <h4 class="lang-en">YuanU is a coordination service — not a medical institution</h4>
+      <h4 class="lang-zh">远游是协调服务公司 — 非医疗机构</h4>
+      <p class="lang-en">YuanU's role is strictly limited to administrative coordination and bilingual interpretation. We <strong>do not</strong>:</p>
+      <p class="lang-zh">远游的角色严格限于行政协调与双语翻译。我们<strong>不</strong>：</p>
+      <ul style="padding-left: 20px; margin-top: 10px;">
+        <li class="lang-en">Make any medical diagnosis or provide clinical opinions</li>
+        <li class="lang-zh">进行任何医学诊断或提供临床意见</li>
+        <li class="lang-en">Recommend specific treatment plans or medications</li>
+        <li class="lang-zh">建议具体的治疗方案或用药</li>
+        <li class="lang-en">Interpret sleep study results, pathology reports, or imaging findings</li>
+        <li class="lang-zh">解读睡眠监测结果、病理报告或影像学发现</li>
+        <li class="lang-en">Guarantee any clinical outcome or timeline</li>
+        <li class="lang-zh">对任何临床结果或时间线做出承诺</li>
+      </ul>
+      <p class="lang-en" style="margin-top: 14px;">All medical decisions — including whether to order a sleep study, what diagnosis to assign, and what management approach to follow — are made independently by licensed physicians at the partnering hospital. See the <a href="about.html#boundary">full Service Boundary on the About page</a>.</p>
+      <p class="lang-zh" style="margin-top: 14px;">所有医疗决策——包括是否开具睡眠监测、做出何种诊断以及采取何种管理方案——均由合作医院的执业医师独立做出。完整服务边界见 <a href="about.html#boundary">About 页</a>。</p>
+    </div>
+
+    <!-- Final CTA -->
+    <div class="hero-cta" style="margin-top: 48px; justify-content: center;">
+      <a href="contact.html" class="btn btn--primary">
+        <span class="lang-en">Submit your sleep inquiry</span>
+        <span class="lang-zh">提交睡眠咨询</span>
+        <span class="arrow">→</span>
+      </a>
+      <a href="specialist-consultation.html" class="btn btn--ghost">
+        <span class="lang-en">See other specialist services</span>
+        <span class="lang-zh">查看其它专科服务</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4><span class="lang-en">YuanU Medical Concierge</span><span class="lang-zh">YuanU Medical Concierge · 远游医疗</span></h4>
+        <p class="lang-en">A service of Beijing YuanU International Travel Co., Ltd., founded 2006.</p>
+        <p class="lang-zh">北京远游国际旅行社有限责任公司旗下品牌，公司成立于 2006 年。</p>
+        <p class="lang-en">YuanU is a <a href="about.html#boundary" class="boundary-link">licensed medical-coordination service company</a>, not a medical institution. All diagnoses, examinations and treatments are provided independently by licensed physicians at partnering hospitals. YuanU does not provide medical opinions or guarantee clinical outcomes.</p>
+        <p class="lang-zh">远游是经许可的<a href="about.html#boundary" class="boundary-link">医疗协调服务公司</a>，非医疗机构。所有诊断、检查与治疗均由合作医院的执业医师独立提供；远游不出具医学意见，不就医疗结果做承诺。</p>
+        <p class="micro lang-en">YuanU is an independent travel / concierge company; we do not provide clinical services and do not speak for any hospital.</p>
+        <p class="micro lang-zh">远游是独立的旅行服务/陪诊公司，不提供临床医疗服务，亦不代表任何医院发言。</p>
+      </div>
+
+      <div>
+        <h4><span class="lang-en">Navigate</span><span class="lang-zh">导航</span></h4>
+        <ul>
+          <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-zh">首页</span></a></li>
+          <li><a href="about.html"><span class="lang-en">About</span><span class="lang-zh">关于</span></a></li>
+          <li><a href="why-beijing.html"><span class="lang-en">Why Beijing</span><span class="lang-zh">为什么北京</span></a></li>
+          <li><a href="screening.html"><span class="lang-en">Health Screening</span><span class="lang-zh">健康体检</span></a></li>
+          <li><a href="endoscopy.html"><span class="lang-en">Endoscopy</span><span class="lang-zh">胃肠镜</span></a></li>
+          <li><a href="patient-support.html"><span class="lang-en">Patient Support</span><span class="lang-zh">患者支持</span></a></li>
+          <li><a href="faq.html"><span class="lang-en">FAQ</span><span class="lang-zh">问答</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4><span class="lang-en">Other</span><span class="lang-zh">其他</span></h4>
+        <ul>
+          <li><a href="other-services.html"><span class="lang-en">Other Services</span><span class="lang-zh">其它服务</span></a></li>
+          <li><a href="contact.html"><span class="lang-en">Contact Us</span><span class="lang-zh">联系我们</span></a></li>
+          <li><a href="contact.html#privacy"><span class="lang-en">Privacy Notice</span><span class="lang-zh">隐私声明</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4><span class="lang-en">Beijing Office</span><span class="lang-zh">北京办公</span></h4>
+        <p class="lang-en">Beijing YuanU International Travel Co., Ltd.</p>
+        <p class="lang-zh">北京远游国际旅行社有限责任公司</p>
+        <p class="lang-en">Beijing, China</p>
+        <p class="lang-zh">中国 · 北京</p>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <span class="license">
+        <span class="lang-en">Travel agency license · L-BJ-CJ00262</span>
+        <span class="lang-zh">旅行社经营许可证 · L-BJ-CJ00262</span>
+      </span>
+      <span>© 2026 Beijing YuanU International Travel Co., Ltd. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* === minimal lang-switch script === */
+(function () {
+  var body = document.body;
+  var buttons = document.querySelectorAll('.lang-toggle button');
+  function setLang(lang) {
+    body.setAttribute('data-lang', lang);
+    document.documentElement.setAttribute('lang', lang === 'zh' ? 'zh-CN' : 'en');
+    buttons.forEach(function (b) {
+      b.classList.toggle('active', b.getAttribute('data-set-lang') === lang);
+    });
+    try { localStorage.setItem('yuanu-lang', lang); } catch (e) {}
+  }
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () { setLang(b.getAttribute('data-set-lang')); });
+  });
+  try {
+    var saved = localStorage.getItem('yuanu-lang');
+    if (saved === 'zh' || saved === 'en') setLang(saved);
+  } catch (e) {}
+})();
+</script>
+
+</body>
+</html>

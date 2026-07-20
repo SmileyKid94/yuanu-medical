@@ -86,6 +86,50 @@
     margin: 0;
   }
 
+  /* Specialties grid */
+  .specialties-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 30px;
+  }
+  .specialty-card {
+    display: block;
+    background: #fff;
+    border: 1px solid var(--border, #e0dad0);
+    padding: 20px 22px;
+    border-radius: 4px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+  }
+  .specialty-card:hover {
+    border-color: var(--brand-gold, #B89668);
+    box-shadow: 0 2px 8px rgba(15,39,51,0.08);
+  }
+  .specialty-card .spec-en {
+    font-family: "Cormorant Garamond", "Noto Serif SC", Georgia, serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--brand-navy, #0F2733);
+    display: block;
+    margin-bottom: 4px;
+  }
+  .specialty-card .spec-zh {
+    font-size: 13px;
+    color: #6b7280;
+    display: block;
+  }
+  .specialty-card .spec-arrow {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 13px;
+    color: var(--brand-gold, #B89668);
+    transition: transform 0.2s;
+  }
+  .specialty-card:hover .spec-arrow {
+    transform: translateX(4px);
+  }
+
   /* Hospitals grid */
   .hospitals-grid {
     display: grid;
@@ -385,6 +429,23 @@ body[data-lang="zh"] .topbar .nav a { font-family: var(--sans-zh); font-size: 14
 .topbar .nav a.active { color: var(--teal-700); }
 .topbar .nav a.active::after { width: 100%; }
 
+/* --- nav dropdown --- */
+.nav-dropdown { position: relative; }
+.nav-dropdown-toggle { cursor: default; }
+.nav-dropdown-menu {
+  display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+  background: var(--ivory); border: 1px solid var(--rule); padding: 10px 0;
+  min-width: 220px; box-shadow: 0 8px 24px rgba(15,39,51,0.10); z-index: 200;
+  margin-top: 10px;
+}
+.nav-dropdown:hover .nav-dropdown-menu { display: block; }
+.nav-dropdown-menu a {
+  display: block; padding: 8px 20px; font-size: 13px; white-space: nowrap;
+}
+.nav-dropdown-menu a::after { display: none; }
+.nav-dropdown-menu a:hover { background: var(--ivory-2); color: var(--teal-900); }
+.nav-dropdown-menu a.active { color: var(--teal-900); font-weight: 600; }
+
 .topbar .lang-toggle {
   display: flex;
   border: 1px solid var(--rule-2);
@@ -421,8 +482,8 @@ body[data-lang="zh"] .topbar .nav a { font-family: var(--sans-zh); font-size: 14
 }
 .site-foot .footer-grid {
   display: grid;
-  grid-template-columns: 2.2fr 1fr 1fr 1fr;
-  gap: 56px;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 36px;
   margin-bottom: 56px;
 }
 .site-foot h4 {
@@ -488,13 +549,33 @@ body[data-lang="zh"] .site-foot h4 { font-family: var(--serif-zh); font-weight: 
       </span>
     </a>
     <nav class="nav" aria-label="Main navigation">
-      <a href="/" class="active"><span class="lang-en">Home</span><span class="lang-zh">首页</span></a>
-      <a href="/about.html"><span class="lang-en">About</span><span class="lang-zh">关于</span></a>
-      <a href="/why-beijing.html"><span class="lang-en">Why Beijing</span><span class="lang-zh">为什么北京</span></a>
-      <a href="/screening.html"><span class="lang-en">Health Screening</span><span class="lang-zh">健康体检</span></a>
-      <a href="/endoscopy.html"><span class="lang-en">Endoscopy</span><span class="lang-zh">胃肠镜</span></a>
-      <a href="/patient-support.html"><span class="lang-en">Patient Support</span><span class="lang-zh">患者支持</span></a>
-      <a href="/faq.html"><span class="lang-en">FAQ</span><span class="lang-zh">问答</span></a>
+      <a href="index.html" class="active"><span class="lang-en">Home</span><span class="lang-zh">首页</span></a>
+      <a href="about.html"><span class="lang-en">About</span><span class="lang-zh">关于</span></a>
+      <a href="why-beijing.html"><span class="lang-en">Why Beijing</span><span class="lang-zh">为什么北京</span></a>
+      <div class="nav-dropdown">
+        <a href="#" class="nav-dropdown-toggle"><span class="lang-en">Services ▾</span><span class="lang-zh">服务项目 ▾</span></a>
+        <div class="nav-dropdown-menu">
+          <a href="screening.html"><span class="lang-en">Health Screening</span><span class="lang-zh">健康体检</span></a>
+          <a href="endoscopy.html"><span class="lang-en">Endoscopy</span><span class="lang-zh">胃肠镜</span></a>
+          <a href="specialist-consultation.html"><span class="lang-en">Specialist Consultation</span><span class="lang-zh">专科会诊</span></a>
+          <a href="complex-care.html"><span class="lang-en">Complex Care</span><span class="lang-zh">复杂专科</span></a>
+          <a href="cardiology.html"><span class="lang-en">Cardiology</span><span class="lang-zh">心血管内科</span></a>
+          <a href="oncology.html"><span class="lang-en">Oncology</span><span class="lang-zh">肿瘤科</span></a>
+          <a href="orthopedics.html"><span class="lang-en">Orthopedics</span><span class="lang-zh">骨科</span></a>
+          <a href="ophthalmology.html"><span class="lang-en">Ophthalmology</span><span class="lang-zh">眼科</span></a>
+          <a href="gynecology-womens-health.html"><span class="lang-en">Gynecology &amp; Women's Health</span><span class="lang-zh">妇科与女性健康</span></a>
+          <a href="dermatology.html"><span class="lang-en">Dermatology</span><span class="lang-zh">皮肤科</span></a>
+          <a href="sleep-medicine.html"><span class="lang-en">Sleep Medicine</span><span class="lang-zh">睡眠医学</span></a>
+          <a href="pediatrics.html"><span class="lang-en">Pediatrics</span><span class="lang-zh">儿童健康</span></a>
+          <a href="urology.html"><span class="lang-en">Urology</span><span class="lang-zh">泌尿外科</span></a>
+          <a href="mens-health.html"><span class="lang-en">Men's Health</span><span class="lang-zh">男性健康</span></a>
+          <a href="other-services.html"><span class="lang-en">Other Services</span><span class="lang-zh">其它服务</span></a>
+        </div>
+      </div>
+      <a href="hospitals.html"><span class="lang-en">Hospitals</span><span class="lang-zh">合作医院</span></a>
+      <a href="patient-support.html"><span class="lang-en">Patient Support</span><span class="lang-zh">患者支持</span></a>
+      <a href="faq.html"><span class="lang-en">FAQ</span><span class="lang-zh">问答</span></a>
+      <a href="contact.html"><span class="lang-en">Contact</span><span class="lang-zh">联系</span></a>
     </nav>
     <div class="lang-toggle" role="group" aria-label="language switch">
       <button data-set-lang="en" class="active">EN</button>
@@ -507,16 +588,23 @@ body[data-lang="zh"] .site-foot h4 { font-family: var(--serif-zh); font-weight: 
 <!-- ==========================================================  HERO  ========================================================== -->
 <section class="hero">
   <div class="container">
-    <h1>Beijing Healthcare Navigation<br>for International Patients</h1>
-    <p class="lead">
+    <h1 class="lang-en">Beijing Healthcare Navigation<br>for International Patients</h1>
+    <h1 class="lang-zh">在京就医导航<br>面向国际患者</h1>
+    <p class="lead lang-en">
       Independent care coordination at Beijing's leading tertiary hospitals.
       Non-clinical, non-diagnostic. English-speaking support from inquiry to discharge —
       we handle appointments, interpretation, insurance direct-billing verification and logistics,
       so you can focus on your care.
     </p>
+    <p class="lead lang-zh">
+      在北京顶级三甲医院提供独立的医疗协调服务。非临床、非诊断。从初次咨询到出院，全程英语支持——
+      我们负责预约挂号、口译陪同、保险直付资格核实及后勤安排，让您专注于治疗本身。
+    </p>
     <div class="cta-row">
-      <a href="/#contact" class="btn-primary">Start an Inquiry</a>
-      <a href="/insurance-direct-billing" class="btn-secondary">Check Your Insurance</a>
+      <a href="/#contact" class="btn-primary lang-en">Start an Inquiry</a>
+      <a href="/#contact" class="btn-primary lang-zh">发起咨询</a>
+      <a href="/insurance-direct-billing" class="btn-secondary lang-en">Check Your Insurance</a>
+      <a href="/insurance-direct-billing" class="btn-secondary lang-zh">查询保险</a>
     </div>
   </div>
 </section>
@@ -524,67 +612,203 @@ body[data-lang="zh"] .site-foot h4 { font-family: var(--serif-zh); font-weight: 
 <!-- ==========================================================  TRUST BAR  ========================================================== -->
 <div class="trust-bar">
   <div class="container">
-    <strong>Licensed since 2006</strong> · Travel Agency License No. L-BJ-CJ00262
+    <span class="lang-en"><strong>Licensed since 2006</strong> · Travel Agency License No. L-BJ-CJ00262
     &nbsp;·&nbsp; Beijing YuanU International Travel Co., Ltd.
-    &nbsp;·&nbsp; <strong>30+</strong> international insurers accepted at BFH-IMD
+    &nbsp;·&nbsp; <strong>30+</strong> international insurers accepted at BFH-IMD</span>
+    <span class="lang-zh"><strong>持证经营始于 2006 年</strong> · 旅行社经营许可证号 L-BJ-CJ00262
+    &nbsp;·&nbsp; 北京远游国际旅行社有限责任公司
+    &nbsp;·&nbsp; 北京友谊医院国际医疗部支持 <strong>30+</strong> 家国际保险公司直付</span>
   </div>
 </div>
 
 <!-- ==========================================================  SERVICES  ========================================================== -->
 <section id="services" class="section">
   <div class="container">
-    <h2>What We Do</h2>
-    <p>We coordinate — we do not diagnose or prescribe. Our role is to make Beijing's leading hospitals
+    <h2 class="lang-en">What We Do</h2>
+    <h2 class="lang-zh">我们的服务</h2>
+    <p class="lang-en">We coordinate — we do not diagnose or prescribe. Our role is to make Beijing's leading hospitals
        accessible and navigable for international patients, families and corporate clients.</p>
+    <p class="lang-zh">我们做协调——不做诊断，不开处方。我们的职责是让国际患者、家属及企业客户能够顺畅地在北京顶级医院就医。</p>
 
     <div class="services-grid">
 
       <div class="service-card">
-        <h3>Appointment Coordination</h3>
-        <p>English booking with international medical departments, department-level scheduling,
+        <h3 class="lang-en">Appointment Coordination</h3>
+        <h3 class="lang-zh">预约挂号协调</h3>
+        <p class="lang-en">English booking with international medical departments, department-level scheduling,
            interpreter arrangement for consultations and follow-ups.</p>
+        <p class="lang-zh">通过国际医疗部进行英语预约，精确到科室的排号调度，以及门诊和复诊的口译陪同安排。</p>
       </div>
 
       <div class="service-card">
-        <h3>Executive Health Check-ups</h3>
-        <p>VIP corridor access at BFH-IMD, private examination rooms, English-language reports,
+        <h3 class="lang-en">Executive Health Check-ups</h3>
+        <h3 class="lang-zh">高端健康体检</h3>
+        <p class="lang-en">VIP corridor access at BFH-IMD, private examination rooms, English-language reports,
            delivery to your home country or referring physician.</p>
+        <p class="lang-zh">北京友谊医院国际医疗部 VIP 通道，独立检查室，英文体检报告，可寄送回国或转交您的转诊医生。</p>
       </div>
 
       <div class="service-card">
-        <h3>Specialist Consultations</h3>
-        <p>Second-opinion visits and follow-up care across cardiology, oncology, orthopedics,
+        <h3 class="lang-en">Specialist Consultations</h3>
+        <h3 class="lang-zh">专家门诊协调</h3>
+        <p class="lang-en">Second-opinion visits and follow-up care across cardiology, oncology, orthopedics,
            gastroenterology, ophthalmology, dentistry and traditional Chinese medicine.</p>
+        <p class="lang-zh">覆盖心内科、肿瘤科、骨科、消化内科、眼科、口腔科及中医科的二次诊疗与复诊随访。</p>
       </div>
 
       <div class="service-card">
-        <h3>Insurance Direct-Billing</h3>
-        <p>Verification of your coverage against BFH-IMD's confirmed direct-billing list,
+        <h3 class="lang-en">Insurance Direct-Billing</h3>
+        <h3 class="lang-zh">保险直付服务</h3>
+        <p class="lang-en">Verification of your coverage against BFH-IMD's confirmed direct-billing list,
            pre-authorization coordination and hospital-side billing office liaison.</p>
+        <p class="lang-zh">核实您的保险是否在友谊医院国际医疗部直付名单内，协助预授权审批，并与医院收费处对接。</p>
       </div>
 
       <div class="service-card">
-        <h3>Post-Treatment Recovery</h3>
-        <p>Recovery accommodation arrangements in Beijing, follow-up appointment scheduling,
+        <h3 class="lang-en">Post-Treatment Recovery</h3>
+        <h3 class="lang-zh">诊后康复支持</h3>
+        <p class="lang-en">Recovery accommodation arrangements in Beijing, follow-up appointment scheduling,
            medication pickup coordination and discharge documentation support.</p>
+        <p class="lang-zh">北京康复住宿安排、复诊预约、取药协调及出院文件整理支持。</p>
       </div>
 
       <div class="service-card">
-        <h3>Responsible Companion Support</h3>
-        <p>Non-medical companion service for elderly or unaccompanied patients: hospital transfers,
+        <h3 class="lang-en">Responsible Companion Support</h3>
+        <h3 class="lang-zh">责任陪诊服务</h3>
+        <p class="lang-en">Non-medical companion service for elderly or unaccompanied patients: hospital transfers,
            in-room support, meal coordination and daily check-ins.</p>
+        <p class="lang-zh">面向老年或独行患者的非医疗陪诊服务：院内转科陪同、诊室陪护、用餐安排及每日问候。</p>
       </div>
 
     </div>
   </div>
 </section>
 
+<!-- ==========================================================  SPECIALTIES  ========================================================== -->
+<section id="specialties" class="section section-alt">
+  <div class="container">
+    <h2 class="lang-en">Specialties We Cover</h2>
+    <h2 class="lang-zh">覆盖专科方向</h2>
+    <p class="lang-en">Beyond our core coordination services, we facilitate specialist consultations across these clinical areas at Beijing's leading Grade 3A hospitals. Each specialty page provides detailed information about the conditions we commonly coordinate care for, the hospitals involved, and the process.</p>
+    <p class="lang-zh">除核心协调服务外，我们还在北京顶级三甲医院提供以下专科方向的就医协调。每个专科页面详细说明了常见协调病种、合作医院及就诊流程。</p>
+
+    <div class="specialties-grid">
+
+      <a href="screening.html" class="specialty-card">
+        <span class="spec-en lang-en">Health Screening</span>
+        <span class="spec-en lang-zh">健康体检</span>
+        <span class="spec-zh lang-en">Executive check-ups at BFH-IMD</span>
+        <span class="spec-zh lang-zh">友谊医院国际医疗部高端体检</span>
+        <span class="spec-arrow">→</span>
+      </a>
+
+      <a href="endoscopy.html" class="specialty-card">
+        <span class="spec-en lang-en">Gastroenterology &amp; Endoscopy</span>
+        <span class="spec-en lang-zh">消化与胃肠镜</span>
+        <span class="spec-zh lang-en">EGD, colonoscopy at BFH-IMD</span>
+        <span class="spec-zh lang-zh">友谊医院国际医疗部胃镜、肠镜</span>
+        <span class="spec-arrow">→</span>
+      </a>
+
+      <a href="cardiology.html" class="specialty-card">
+        <span class="spec-en lang-en">Cardiology</span>
+        <span class="spec-en lang-zh">心血管内科</span>
+        <span class="spec-zh lang-en">Coronary, arrhythmia, valve disorders</span>
+        <span class="spec-zh lang-zh">冠心病、心律失常、瓣膜病</span>
+        <span class="spec-arrow">→</span>
+      </a>
+
+      <a href="oncology.html" class="specialty-card">
+        <span class="spec-en lang-en">Oncology</span>
+        <span class="spec-en lang-zh">肿瘤科</span>
+        <span class="spec-zh lang-en">Second opinions, MDT consultation</span>
+        <span class="spec-zh lang-zh">二次诊疗、多学科会诊</span>
+        <span class="spec-arrow">→</span>
+      </a>
+
+      <a href="orthopedics.html" class="specialty-card">
+        <span class="spec-en lang-en">Orthopedics</span>
+        <span class="spec-en lang-zh">骨科</span>
+        <span class="spec-zh lang-en">Joint, spine, sports medicine</span>
+        <span class="spec-zh lang-zh">关节、脊柱、运动医学</span>
+        <span class="spec-arrow">→</span>
+      </a>
+
+      <a href="ophthalmology.html" class="specialty-card">
+        <span class="spec-en lang-en">Ophthalmology</span>
+        <span class="spec-en lang-zh">眼科</span>
+        <span class="spec-zh lang-en">Refractive surgery, cataract, retina</span>
+        <span class="spec-zh lang-zh">屈光手术、白内障、眼底病</span>
+        <span class="spec-arrow">→</span>
+      </a>
+
+      <a href="gynecology-womens-health.html" class="specialty-card">
+        <span class="spec-en lang-en">Gynecology &amp; Women's Health</span>
+        <span class="spec-en lang-zh">妇科与女性健康</span>
+        <span class="spec-zh lang-en">Screening, benign conditions, reproductive health</span>
+        <span class="spec-zh lang-zh">妇科检查、良性疾病、生殖健康</span>
+        <span class="spec-arrow">→</span>
+      </a>
+
+      <a href="dermatology.html" class="specialty-card">
+        <span class="spec-en lang-en">Dermatology</span>
+        <span class="spec-en lang-zh">皮肤科</span>
+        <span class="spec-zh lang-en">Medical dermatology, allergy, laser</span>
+        <span class="spec-zh lang-zh">医学皮肤科、过敏检测、激光</span>
+        <span class="spec-arrow">→</span>
+      </a>
+
+      <a href="sleep-medicine.html" class="specialty-card">
+        <span class="spec-en lang-en">Sleep Medicine</span>
+        <span class="spec-en lang-zh">睡眠医学</span>
+        <span class="spec-zh lang-en">Sleep apnea, insomnia, sleep studies</span>
+        <span class="spec-zh lang-zh">睡眠呼吸暂停、失眠、睡眠监测</span>
+        <span class="spec-arrow">→</span>
+      </a>
+
+      <a href="pediatrics.html" class="specialty-card">
+        <span class="spec-en lang-en">Pediatrics</span>
+        <span class="spec-en lang-zh">儿童健康</span>
+        <span class="spec-zh lang-en">Developmental assessment, common conditions</span>
+        <span class="spec-zh lang-zh">发育评估、常见儿科疾病</span>
+        <span class="spec-arrow">→</span>
+      </a>
+
+      <a href="urology.html" class="specialty-card">
+        <span class="spec-en lang-en">Urology</span>
+        <span class="spec-en lang-zh">泌尿外科</span>
+        <span class="spec-zh lang-en">Kidney stones, BPH, urological surgery</span>
+        <span class="spec-zh lang-zh">肾结石、前列腺增生、泌尿外科手术</span>
+        <span class="spec-arrow">→</span>
+      </a>
+
+      <a href="mens-health.html" class="specialty-card">
+        <span class="spec-en lang-en">Men's Health</span>
+        <span class="spec-en lang-zh">男性健康</span>
+        <span class="spec-zh lang-en">Prostate, reproductive health, hormonal</span>
+        <span class="spec-zh lang-zh">前列腺、生殖健康、激素评估</span>
+        <span class="spec-arrow">→</span>
+      </a>
+
+    </div>
+
+    <p style="margin-top: 24px; font-size: 14px; color: #6b7280;" class="lang-en">
+      Looking for a specialty not listed here? <a href="contact.html" style="color: var(--brand-gold); border-bottom: 1px solid var(--brand-gold);">Contact us</a> — we may still be able to coordinate.
+    </p>
+    <p style="margin-top: 24px; font-size: 14px; color: #6b7280;" class="lang-zh">
+      没有找到您需要的专科？<a href="contact.html" style="color: var(--brand-gold); border-bottom: 1px solid var(--brand-gold);">联系我们</a>，我们仍可尝试协调。
+    </p>
+  </div>
+</section>
+
 <!-- ==========================================================  HOSPITALS  ========================================================== -->
 <section id="hospitals" class="section section-alt">
   <div class="container">
-    <h2>Hospitals We Coordinate With</h2>
-    <p>We coordinate visits at three of Beijing's leading Grade 3A tertiary hospitals.
+    <h2 class="lang-en">Hospitals We Coordinate With</h2>
+    <h2 class="lang-zh">合作协调医院</h2>
+    <p class="lang-en">We coordinate visits at three of Beijing's leading Grade 3A tertiary hospitals.
        Each has a dedicated international medical department or English-support pathway.</p>
+    <p class="lang-zh">我们在北京三家顶级三甲医院提供就医协调。每家医院均设有国际医疗部或英语服务通道。</p>
 
     <div class="hospitals-grid">
 
@@ -592,9 +816,11 @@ body[data-lang="zh"] .site-foot h4 { font-family: var(--serif-zh); font-weight: 
         <img src="/assets/images/hospitals/bfh-xicheng-main.jpg" alt="Beijing Friendship Hospital · Xicheng main campus" loading="lazy">
         <div class="hospital-card-body">
           <div class="abbr">BFH-IMD</div>
-          <h3>Beijing Friendship Hospital · International Medical Department</h3>
-          <p>Our primary coordination site. English-speaking staff, 30+ international insurers
+          <h3 class="lang-en">Beijing Friendship Hospital · International Medical Department</h3>
+          <h3 class="lang-zh">北京友谊医院 · 国际医疗部</h3>
+          <p class="lang-en">Our primary coordination site. English-speaking staff, 30+ international insurers
              accepted with direct billing, VIP health check-up corridor, seven specialty clusters.</p>
+          <p class="lang-zh">我们的主要协调站点。配有英语工作人员，支持 30 余家国际保险公司直付，设有 VIP 体检通道，涵盖七大专科群。</p>
         </div>
       </div>
 
@@ -602,9 +828,11 @@ body[data-lang="zh"] .site-foot h4 { font-family: var(--serif-zh); font-weight: 
         <img src="/assets/images/hospitals/pumch-facade.jpg" alt="Peking Union Medical College Hospital main facade" loading="lazy">
         <div class="hospital-card-body">
           <div class="abbr">PUMCH</div>
-          <h3>Peking Union Medical College Hospital</h3>
-          <p>Case-by-case coordination for complex specialist consultations. Nationally ranked
+          <h3 class="lang-en">Peking Union Medical College Hospital</h3>
+          <h3 class="lang-zh">北京协和医院</h3>
+          <p class="lang-en">Case-by-case coordination for complex specialist consultations. Nationally ranked
              top hospital, particularly for rare diseases and multi-disciplinary reviews.</p>
+          <p class="lang-zh">针对复杂专科问诊的逐案协调。全国顶级医院，尤其在罕见病和多学科会诊方面享有盛誉。</p>
         </div>
       </div>
 
@@ -612,17 +840,23 @@ body[data-lang="zh"] .site-foot h4 { font-family: var(--serif-zh); font-weight: 
         <img src="/assets/images/hospitals/pkuph-stone-marker.jpg" alt="Peking University People's Hospital campus marker" loading="lazy">
         <div class="hospital-card-body">
           <div class="abbr">PKUPH</div>
-          <h3>Peking University People's Hospital</h3>
-          <p>Case-by-case coordination for orthopedics, hematology and trauma care.
+          <h3 class="lang-en">Peking University People's Hospital</h3>
+          <h3 class="lang-zh">北京大学人民医院</h3>
+          <p class="lang-en">Case-by-case coordination for orthopedics, hematology and trauma care.
              Strong reputation in surgical specialties and post-operative recovery pathways.</p>
+          <p class="lang-zh">针对骨科、血液科及创伤救治的逐案协调。在外科专科及术后康复领域享有良好声誉。</p>
         </div>
       </div>
 
     </div>
 
-    <p class="hospitals-disclaimer">
+    <p class="hospitals-disclaimer lang-en">
       We coordinate visits at these hospitals; we are not their partner, agent, or authorized representative.
       All medical decisions remain with the hospital's licensed physicians.
+    </p>
+    <p class="hospitals-disclaimer lang-zh">
+      我们在上述医院提供就医协调服务；我们并非其合作伙伴、代理或授权代表。
+      所有医疗决定均由医院执业医师独立做出。
     </p>
   </div>
 </section>
@@ -630,22 +864,28 @@ body[data-lang="zh"] .site-foot h4 { font-family: var(--serif-zh); font-weight: 
 <!-- ==========================================================  INSURANCE  ========================================================== -->
 <section id="insurance-entry" class="section">
   <div class="container">
-    <h2>International Insurance Direct-Billing</h2>
-    <p>Present your card and passport at BFH-IMD — no upfront payment for covered treatment.
+    <h2 class="lang-en">International Insurance Direct-Billing</h2>
+    <h2 class="lang-zh">国际保险直付</h2>
+    <p class="lang-en">Present your card and passport at BFH-IMD — no upfront payment for covered treatment.
        We verify eligibility with the hospital's billing office before your visit.</p>
+    <p class="lang-zh">在北京友谊医院国际医疗部出示保险卡和护照即可——符合保障范围的治疗无需预付费用。
+       我们会在就诊前与医院收费处核实您的直付资格。</p>
 
     <div class="insurance-count">
       <div class="insurance-count-item">
         <strong>23</strong>
-        <span>Confirmed direct-billing insurers &amp; TPAs</span>
+        <span class="lang-en">Confirmed direct-billing insurers &amp; TPAs</span>
+        <span class="lang-zh">已确认直付的保险公司及第三方管理机构</span>
       </div>
       <div class="insurance-count-item">
         <strong>30+</strong>
-        <span>Additional insurers accessible via TPAs</span>
+        <span class="lang-en">Additional insurers accessible via TPAs</span>
+        <span class="lang-zh">可通过第三方管理机构对接的其他保险公司</span>
       </div>
       <div class="insurance-count-item">
         <strong>0</strong>
-        <span>Upfront payment for covered claims</span>
+        <span class="lang-en">Upfront payment for covered claims</span>
+        <span class="lang-zh">符合保障范围的理赔预付金额</span>
       </div>
     </div>
 
@@ -669,16 +909,20 @@ body[data-lang="zh"] .site-foot h4 { font-family: var(--serif-zh); font-weight: 
       <img src="/assets/images/insurance/17-msh-international.jpg" alt="MSH International" loading="lazy">
     </div>
 
-    <a href="/insurance-direct-billing" class="btn-primary">See the Full List &amp; Coverage Details →</a>
+    <a href="/insurance-direct-billing" class="btn-primary lang-en">See the Full List &amp; Coverage Details →</a>
+    <a href="/insurance-direct-billing" class="btn-primary lang-zh">查看完整名单及保障详情 →</a>
   </div>
 </section>
 
 <!-- ==========================================================  TESTIMONIALS  ========================================================== -->
 <section id="testimonials-entry" class="section section-alt">
   <div class="container">
-    <h2>What Our Clients Say</h2>
-    <p>Anonymised coordination journeys of clients from Germany, Italy, Poland, the United States and the United Kingdom.
+    <h2 class="lang-en">What Our Clients Say</h2>
+    <h2 class="lang-zh">客户反馈</h2>
+    <p class="lang-en">Anonymised coordination journeys of clients from Germany, Italy, Poland, the United States and the United Kingdom.
        All entries are reviewed for medical-advertising compliance, non-diagnostic and non-clinical.</p>
+    <p class="lang-zh">来自德国、意大利、波兰、美国和英国客户的匿名就医协调记录。
+       所有案例均经过医疗广告合规审查，不涉及诊断和临床内容。</p>
 
     <div class="testimonials-preview">
 
@@ -686,7 +930,8 @@ body[data-lang="zh"] .site-foot h4 { font-family: var(--serif-zh); font-weight: 
         <img src="/assets/images/testimonials/01-de-health-screening.jpg" alt="Executive Health Check-up · Germany" loading="lazy">
         <div class="testimonial-mini-body">
           <div class="flag-line">🇩🇪 M.S. · Munich</div>
-          <div class="service">Executive Health Check-up</div>
+          <div class="service lang-en">Executive Health Check-up</div>
+          <div class="service lang-zh">高端健康体检</div>
         </div>
       </div>
 
@@ -694,7 +939,8 @@ body[data-lang="zh"] .site-foot h4 { font-family: var(--serif-zh); font-weight: 
         <img src="/assets/images/testimonials/02-it-ophthalmology.jpg" alt="Ophthalmology second opinion · Italy" loading="lazy">
         <div class="testimonial-mini-body">
           <div class="flag-line">🇮🇹 A.R. · Milan</div>
-          <div class="service">Ophthalmology Consultation</div>
+          <div class="service lang-en">Ophthalmology Consultation</div>
+          <div class="service lang-zh">眼科专家问诊</div>
         </div>
       </div>
 
@@ -702,7 +948,8 @@ body[data-lang="zh"] .site-foot h4 { font-family: var(--serif-zh); font-weight: 
         <img src="/assets/images/testimonials/03-pl-dental.jpg" alt="Dental coordination · Poland" loading="lazy">
         <div class="testimonial-mini-body">
           <div class="flag-line">🇵🇱 J.K. · Warsaw</div>
-          <div class="service">Dental Coordination</div>
+          <div class="service lang-en">Dental Coordination</div>
+          <div class="service lang-zh">口腔科就医协调</div>
         </div>
       </div>
 
@@ -710,7 +957,8 @@ body[data-lang="zh"] .site-foot h4 { font-family: var(--serif-zh); font-weight: 
         <img src="/assets/images/testimonials/04-us-tcm.jpg" alt="Traditional Chinese Medicine · United States" loading="lazy">
         <div class="testimonial-mini-body">
           <div class="flag-line">🇺🇸 L.J. · Boston</div>
-          <div class="service">TCM Consultation</div>
+          <div class="service lang-en">TCM Consultation</div>
+          <div class="service lang-zh">中医问诊</div>
         </div>
       </div>
 
@@ -718,47 +966,63 @@ body[data-lang="zh"] .site-foot h4 { font-family: var(--serif-zh); font-weight: 
         <img src="/assets/images/testimonials/05-gb-orthopedics.jpg" alt="Orthopedic follow-up · United Kingdom" loading="lazy">
         <div class="testimonial-mini-body">
           <div class="flag-line">🇬🇧 R.P. · London</div>
-          <div class="service">Orthopedic Follow-up</div>
+          <div class="service lang-en">Orthopedic Follow-up</div>
+          <div class="service lang-zh">骨科术后复诊</div>
         </div>
       </div>
 
     </div>
 
-    <a href="/testimonials" class="btn-primary">Read All Client Stories →</a>
+    <a href="/testimonials" class="btn-primary lang-en">Read All Client Stories →</a>
+    <a href="/testimonials" class="btn-primary lang-zh">查看全部客户案例 →</a>
   </div>
 </section>
 
 <!-- ==========================================================  CONTACT  ========================================================== -->
 <section id="contact" class="section">
   <div class="container">
-    <h2>Get in Touch</h2>
-    <p>All inquiries are handled by email. We reply within one business day (Beijing time, GMT+8).
+    <h2 class="lang-en">Get in Touch</h2>
+    <h2 class="lang-zh">联系我们</h2>
+    <p class="lang-en">All inquiries are handled by email. We reply within one business day (Beijing time, GMT+8).
        For urgent same-week arrivals, please note this in your message.</p>
+    <p class="lang-zh">所有咨询均通过邮件处理。我们将在一个工作日内回复（北京时间 GMT+8）。
+       如需当周紧急到达，请在留言中注明。</p>
 
-    <p><strong>Primary:</strong> <a href="mailto:contact@yuanu.com">contact@yuanu.com</a><br>
+    <p class="lang-en"><strong>Primary:</strong> <a href="mailto:contact@yuanu.com">contact@yuanu.com</a><br>
        <strong>Please CC:</strong> zhangjianping@yuanu.com</p>
+    <p class="lang-zh"><strong>主邮箱：</strong><a href="mailto:contact@yuanu.com">contact@yuanu.com</a><br>
+       <strong>请抄送：</strong>zhangjianping@yuanu.com</p>
 
     <form class="contact-form" action="mailto:contact@yuanu.com?cc=zhangjianping@yuanu.com" method="post" enctype="text/plain">
-      <label for="cf-name">Your Name</label>
+      <label for="cf-name" class="lang-en">Your Name</label>
+      <label for="cf-name" class="lang-zh">您的姓名</label>
       <input type="text" id="cf-name" name="name" required>
 
-      <label for="cf-email">Email Address</label>
+      <label for="cf-email" class="lang-en">Email Address</label>
+      <label for="cf-email" class="lang-zh">电子邮箱</label>
       <input type="email" id="cf-email" name="email" required>
 
-      <label for="cf-country">Country / Region</label>
+      <label for="cf-country" class="lang-en">Country / Region</label>
+      <label for="cf-country" class="lang-zh">国家 / 地区</label>
       <input type="text" id="cf-country" name="country">
 
-      <label for="cf-service">Service of Interest</label>
+      <label for="cf-service" class="lang-en">Service of Interest</label>
+      <label for="cf-service" class="lang-zh">感兴趣的服务</label>
       <input type="text" id="cf-service" name="service" placeholder="e.g. Executive check-up, cardiology consultation, insurance verification">
 
-      <label for="cf-message">Message</label>
+      <label for="cf-message" class="lang-en">Message</label>
+      <label for="cf-message" class="lang-zh">留言内容</label>
       <textarea id="cf-message" name="message" rows="5" required placeholder="Please share your needs, expected timing, and any insurance details."></textarea>
 
-      <button type="submit" class="btn-primary">Send Inquiry</button>
+      <button type="submit" class="btn-primary lang-en">Send Inquiry</button>
+      <button type="submit" class="btn-primary lang-zh">发送咨询</button>
 
-      <p class="contact-note">
+      <p class="contact-note lang-en">
         We reply within 1 business day (Beijing, GMT+8). Your information is used solely
         to coordinate your care — see our <a href="/privacy-policy">Privacy Policy</a>.
+      </p>
+      <p class="contact-note lang-zh">
+        我们将在 1 个工作日内回复（北京时间 GMT+8）。您的信息仅用于协调您的就医事宜——详见我们的<a href="/privacy-policy">隐私政策</a>。
       </p>
     </form>
   </div>
@@ -787,6 +1051,22 @@ body[data-lang="zh"] .site-foot h4 { font-family: var(--serif-zh); font-weight: 
           <li><a href="/endoscopy.html"><span class="lang-en">Endoscopy</span><span class="lang-zh">胃肠镜</span></a></li>
           <li><a href="/patient-support.html"><span class="lang-en">Patient Support</span><span class="lang-zh">患者支持</span></a></li>
           <li><a href="/faq.html"><span class="lang-en">FAQ</span><span class="lang-zh">问答</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4><span class="lang-en">Specialties</span><span class="lang-zh">专科方向</span></h4>
+        <ul>
+          <li><a href="/cardiology.html"><span class="lang-en">Cardiology</span><span class="lang-zh">心血管内科</span></a></li>
+          <li><a href="/oncology.html"><span class="lang-en">Oncology</span><span class="lang-zh">肿瘤科</span></a></li>
+          <li><a href="/orthopedics.html"><span class="lang-en">Orthopedics</span><span class="lang-zh">骨科</span></a></li>
+          <li><a href="/ophthalmology.html"><span class="lang-en">Ophthalmology</span><span class="lang-zh">眼科</span></a></li>
+          <li><a href="/gynecology-womens-health.html"><span class="lang-en">Gynecology</span><span class="lang-zh">妇科</span></a></li>
+          <li><a href="/dermatology.html"><span class="lang-en">Dermatology</span><span class="lang-zh">皮肤科</span></a></li>
+          <li><a href="/sleep-medicine.html"><span class="lang-en">Sleep Medicine</span><span class="lang-zh">睡眠医学</span></a></li>
+          <li><a href="/pediatrics.html"><span class="lang-en">Pediatrics</span><span class="lang-zh">儿童健康</span></a></li>
+          <li><a href="/urology.html"><span class="lang-en">Urology</span><span class="lang-zh">泌尿外科</span></a></li>
+          <li><a href="/mens-health.html"><span class="lang-en">Men's Health</span><span class="lang-zh">男性健康</span></a></li>
         </ul>
       </div>
 
