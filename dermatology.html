@@ -545,64 +545,79 @@ body[data-lang="zh"] .tbl thead th { font-family: var(--sans-zh); letter-spacing
   </div>
 </section>
 
-<!-- ============ §5 · Pricing ============ -->
+<!-- ============ §5 · Pricing (Three-Tier) ============ -->
 <section class="s">
   <div class="container">
     <div class="section-head">
       <div class="eyebrow">
-        <span class="lang-en">§ 5 · Pricing</span>
-        <span class="lang-zh">§ 5 · 费用说明</span>
+        <span class="lang-en">§ Pricing</span>
+        <span class="lang-zh">§ 费用</span>
       </div>
-      <h2 class="lang-en">5. Coordination fees</h2>
-      <h2 class="lang-zh">5. 协调服务费说明</h2>
-      <p class="lede lang-en" style="font-size:16px;">The fees below are YuanU's coordination service charges only. Hospital medical fees are separate and paid directly to the hospital.</p>
-      <p class="lede lang-zh" style="font-size:16px;">以下费用仅为远游的协调服务费。医院端医疗费用另行计算，直接支付给医院。</p>
+      <h2 class="lang-en">Transparent Tiered Pricing</h2>
+      <h2 class="lang-zh">透明分档定价</h2>
     </div>
 
-    <table class="tbl">
+    <table class="price-table">
       <thead>
         <tr>
-          <th style="width: 30%;"><span class="lang-en">Service type</span><span class="lang-zh">服务类型</span></th>
-          <th style="width: 35%;"><span class="lang-en">YuanU coordination fee</span><span class="lang-zh">远游协调费</span></th>
-          <th style="width: 35%;"><span class="lang-en">Notes</span><span class="lang-zh">备注</span></th>
+          <th><span class="lang-en">Tier</span><span class="lang-zh">档位</span></th>
+          <th><span class="lang-en">Service Fee</span><span class="lang-zh">协调服务费</span></th>
+          <th><span class="lang-en">Typical Scenarios</span><span class="lang-zh">适用场景</span></th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td class="col-key"><span class="lang-en">Outpatient coordination</span><span class="lang-zh">门诊协调</span></td>
-          <td class="col-price">¥500 – ¥800 / visit</td>
           <td>
-            <span class="lang-en">Per-visit coordination including appointment, on-site bilingual support, and post-visit report organization.</span>
-            <span class="lang-zh">每次就诊的协调服务，含预约、现场双语陪同及诊后报告整理。</span>
+            <span class="lang-en"><strong>Essential</strong></span>
+            <span class="lang-zh"><strong>基础档</strong></span>
+          </td>
+          <td>
+            <span class="lang-en"><strong style="font-family: var(--mono); font-size: 18px; color: var(--teal-900);">$499</strong> / person</span>
+            <span class="lang-zh"><strong style="font-family: var(--mono); font-size: 18px; color: var(--teal-900);">$499</strong> / 人</span>
+          </td>
+          <td>
+            <span class="lang-en">Initial consultation · health screening · single-specialty outpatient</span>
+            <span class="lang-zh">初步问诊 · 健康体检 · 单专科门诊</span>
           </td>
         </tr>
-        <tr class="row-emph">
-          <td class="col-key"><span class="lang-en">Procedure / laser coordination</span><span class="lang-zh">操作/激光协调</span></td>
-          <td class="col-price">15% – 25% of hospital fee</td>
+        <tr class="price-highlight">
           <td>
-            <span class="lang-en">For procedures requiring extended coordination (e.g., laser treatment sessions, skin surgery). Percentage of the hospital's medical fee, varying with complexity and on-site hours.</span>
-            <span class="lang-zh">涉及需延长协调周期的操作（如激光治疗、皮肤手术）。按医院端医疗费用的百分比计算，视复杂度与陪诊时长浮动。</span>
+            <span class="lang-en"><strong>Specialist</strong></span>
+            <span class="lang-zh"><strong>专科档</strong></span>
+          </td>
+          <td>
+            <span class="lang-en"><strong style="font-family: var(--mono); font-size: 18px; color: var(--teal-900);">$1,999</strong> / person</span>
+            <span class="lang-zh"><strong style="font-family: var(--mono); font-size: 18px; color: var(--teal-900);">$1,999</strong> / 人</span>
+          </td>
+          <td>
+            <span class="lang-en">Specialist consultation · diagnostic workup · multi-test coordination</span>
+            <span class="lang-zh">专科会诊 · 诊断检查 · 多项检查协调</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="lang-en"><strong>Complex Care</strong></span>
+            <span class="lang-zh"><strong>复杂专科档</strong></span>
+          </td>
+          <td>
+            <span class="lang-en"><strong style="font-family: var(--mono); font-size: 18px; color: var(--teal-900);">$3,999</strong> / person</span>
+            <span class="lang-zh"><strong style="font-family: var(--mono); font-size: 18px; color: var(--teal-900);">$3,999</strong> / 人</span>
+          </td>
+          <td>
+            <span class="lang-en">Multi-specialty / MDT · surgery coordination · extended in-hospital support</span>
+            <span class="lang-zh">多专科/MDT · 手术协调 · 住院全程支持</span>
           </td>
         </tr>
       </tbody>
     </table>
 
     <div class="boundary-block">
-      <h4 class="lang-en">What is not included</h4>
-      <h4 class="lang-zh">不包含在内</h4>
-      <ul style="padding-left: 20px; margin: 0;">
-        <li class="lang-en">Hospital medical fees (paid directly to the hospital)</li>
-        <li class="lang-zh">医院端医疗费（直接支付给医院）</li>
-        <li class="lang-en">Diagnostic testing fees (allergy panels, dermoscopy, biopsy, pathology — paid directly to the hospital)</li>
-        <li class="lang-zh">诊断检查费（过敏原检测、皮肤镜、活检、病理——直接支付给医院）</li>
-        <li class="lang-en">Flights, accommodation, personal expenses</li>
-        <li class="lang-zh">机票、住宿、个人消费</li>
-        <li class="lang-en">Third-language interpretation beyond English–Chinese (quoted separately if needed)</li>
-        <li class="lang-zh">英中之外的第三方语种翻译（如需则另行报价）</li>
-      </ul>
+      <p class="lang-en">All fees above are YuanU's coordination service fees only. They do not cover hospital-side medical costs (consultation, examination, surgery, medication). Hospital fees are paid by the patient directly to the hospital. The applicable tier and final pricing are confirmed before service begins.</p>
+      <p class="lang-zh">以上均为远游的协调服务费，不含医院端医疗费用（门诊费、检查费、手术费、药品费）。医院费用由患者直接支付给医院。适用档位及最终价格在服务开始前确认。</p>
     </div>
   </div>
 </section>
+
 
 <!-- ============ §6 · Service Boundary ============ -->
 <section class="s alt">
