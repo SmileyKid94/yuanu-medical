@@ -533,6 +533,135 @@ body[data-lang="zh"] .site-foot h4 { font-family: var(--serif-zh); font-weight: 
   .site-foot .footer-grid { grid-template-columns: 1fr; }
 }
 
+
+/* Pricing Tiers Section */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.pricing-card {
+  background: #fff;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  padding: 30px 25px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.pricing-card.pricing-featured {
+  border-color: var(--brand-gold);
+  border-width: 3px;
+  transform: scale(1.05);
+}
+
+.pricing-card.pricing-featured:hover {
+  transform: scale(1.05) translateY(-5px);
+}
+
+.pricing-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--brand-gold);
+  color: #fff;
+  padding: 4px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.pricing-tier {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--brand-navy);
+  margin-bottom: 8px;
+}
+
+.pricing-tier-zh {
+  font-size: 16px;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.pricing-price {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--brand-gold);
+  margin: 15px 0 5px;
+}
+
+.pricing-price-zh {
+  font-size: 20px;
+  color: var(--brand-navy);
+  margin-bottom: 20px;
+}
+
+.pricing-per {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.pricing-features li {
+  padding: 8px 0;
+  font-size: 14px;
+  color: #4b5563;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.pricing-features li:before {
+  content: "✓ ";
+  color: var(--brand-gold);
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* Insurance Partners List */
+.insurance-partners-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.insurance-partner-item {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--brand-gold);
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+
+.insurance-partner-item strong {
+  color: var(--brand-navy);
+  font-size: 15px;
+}
+
+.insurance-note {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--muted);
+  font-style: italic;
+}
+
 </style>
 </head>
 <body data-lang="en">
@@ -603,8 +732,8 @@ body[data-lang="zh"] .site-foot h4 { font-family: var(--serif-zh); font-weight: 
     <div class="cta-row">
       <a href="/#contact" class="btn-primary lang-en">Start an Inquiry</a>
       <a href="/#contact" class="btn-primary lang-zh">发起咨询</a>
-      <a href="/insurance-direct-billing" class="btn-secondary lang-en">Check Your Insurance</a>
-      <a href="/insurance-direct-billing" class="btn-secondary lang-zh">查询保险</a>
+      <a href="/insurance-direct-billing.html" class="btn-secondary lang-en">Check Your Insurance</a>
+      <a href="/insurance-direct-billing.html" class="btn-secondary lang-zh">查询保险</a>
     </div>
   </div>
 </section>
@@ -909,8 +1038,93 @@ body[data-lang="zh"] .site-foot h4 { font-family: var(--serif-zh); font-weight: 
       <img src="/assets/images/insurance/17-msh-international.jpg" alt="MSH International" loading="lazy">
     </div>
 
-    <a href="/insurance-direct-billing" class="btn-primary lang-en">See the Full List &amp; Coverage Details →</a>
-    <a href="/insurance-direct-billing" class="btn-primary lang-zh">查看完整名单及保障详情 →</a>
+    <a href="/insurance-direct-billing.html" class="btn-primary lang-en">See the Full List &amp; Coverage Details →</a>
+    <a href="/insurance-direct-billing.html" class="btn-primary lang-zh">查看完整名单及保障详情 →</a>
+  </div>
+</section>
+
+
+<!-- ==========================================================  PRICING TIERS  ========================================================== -->
+<section id="pricing-tiers" class="section section-alt">
+  <div class="container">
+    <h2 class="lang-en">Service Tiers</h2>
+    <h2 class="lang-zh">服务档位</h2>
+    <p class="lang-en" style="text-align: center; max-width: 700px; margin: 0 auto 40px;">YuanU offers three service tiers to match your healthcare needs. All tiers include bilingual coordination, medical record translation, and on-site support.</p>
+    <p class="lang-zh" style="text-align: center; max-width: 700px; margin: 0 auto 40px;">远游提供三档服务，满足您的医疗需求。所有档位均包含双语协调、病历翻译及现场陪同服务。</p>
+    
+    <div class="pricing-grid">
+      <!-- Essential Tier -->
+      <div class="pricing-card">
+        <div class="pricing-tier">Essential</div>
+        <div class="pricing-tier-zh">基础档</div>
+        <div class="pricing-price">$499<span class="pricing-per">/ person</span></div>
+        <div class="pricing-price-zh">¥499<span class="pricing-per">/ 人</span></div>
+        <ul class="pricing-features">
+          <li class="lang-en">Initial consultation · health screening · single-specialty outpatient visit</li>
+          <li class="lang-zh">初次咨询 · 健康体检 · 单科室门诊</li>
+          <li class="lang-en">Bilingual appointment coordination</li>
+          <li class="lang-zh">双语预约协调</li>
+          <li class="lang-en">Medical record translation (summary)</li>
+          <li class="lang-zh">病历翻译（摘要）</li>
+          <li class="lang-en">On-site interpreter support</li>
+          <li class="lang-zh">现场口译陪同</li>
+        </ul>
+        <a href="/#contact" class="btn-primary">Book Now / 立即预约</a>
+      </div>
+      
+      <!-- Specialist Tier -->
+      <div class="pricing-card pricing-featured">
+        <div class="pricing-badge lang-en">Most Popular</div>
+        <div class="pricing-badge lang-zh">最受欢迎</div>
+        <div class="pricing-tier">Specialist</div>
+        <div class="pricing-tier-zh">专科档</div>
+        <div class="pricing-price">$1,999<span class="pricing-per">/ person</span></div>
+        <div class="pricing-price-zh">¥1,999<span class="pricing-per">/ 人</span></div>
+        <ul class="pricing-features">
+          <li class="lang-en">Multi-specialty consultations · follow-up care · second opinion</li>
+          <li class="lang-zh">多科室会诊 · 复诊随访 · 二次诊疗</li>
+          <li class="lang-en">Comprehensive medical record translation</li>
+          <li class="lang-zh">完整病历翻译</li>
+          <li class="lang-en">Specialist referral coordination</li>
+          <li class="lang-zh">专家转诊协调</li>
+          <li class="lang-en">Insurance pre-authorization support</li>
+          <li class="lang-zh">保险预授权支持</li>
+          <li class="lang-en">Extended on-site accompaniment</li>
+          <li class="lang-zh">延长现场陪同服务</li>
+        </ul>
+        <a href="/#contact" class="btn-primary">Book Now / 立即预约</a>
+      </div>
+      
+      <!-- Complex Care Tier -->
+      <div class="pricing-card">
+        <div class="pricing-tier">Complex Care</div>
+        <div class="pricing-tier-zh">复杂护理档</div>
+        <div class="pricing-price">$3,999<span class="pricing-per">/ person</span></div>
+        <div class="pricing-price-zh">¥3,999<span class="pricing-per">/ 人</span></div>
+        <ul class="pricing-features">
+          <li class="lang-en">MDT consultations · surgical coordination · inpatient support</li>
+          <li class="lang-zh">多学科会诊 · 手术协调 · 住院支持</li>
+          <li class="lang-en">Full medical record translation & delivery</li>
+          <li class="lang-zh">完整病历翻译及送达</li>
+          <li class="lang-en">Multi-hospital coordination</li>
+          <li class="lang-zh">多医院协调</li>
+          <li class="lang-en">Insurance direct-billing liaison</li>
+          <li class="lang-zh">保险直付对接</li>
+          <li class="lang-en">Post-treatment recovery support</li>
+          <li class="lang-zh">诊后康复支持</li>
+          <li class="lang-en">Dedicated coordinator assignment</li>
+          <li class="lang-zh">专属协调员配置</li>
+        </ul>
+        <a href="/#contact" class="btn-primary">Book Now / 立即预约</a>
+      </div>
+    </div>
+    
+    <p class="lang-en" style="text-align: center; margin-top: 40px; font-size: 14px; color: var(--muted);">
+      <em>Pricing is confirmed before service begins. Final tier assignment depends on service scope and complexity.</em>
+    </p>
+    <p class="lang-zh" style="text-align: center; margin-top: 20px; font-size: 14px; color: var(--muted);">
+      <em>具体价格在服务开始前确认。最终档位根据服务范围和复杂程度确定。</em>
+    </p>
   </div>
 </section>
 
